@@ -1,0 +1,18 @@
+title: Raincatcher documentation website
+exclude:
+  - LICENSE
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+incremential: true
+
+asciidoc: {}
+asciidoctor:
+  base_dir: :docdir
+  safe: unsafe
+  atrributes: 
+    - idseparator: _
+    - source-highlighter: coderay
+    - icons: font
+
