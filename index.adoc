@@ -11,11 +11,11 @@ Reference Documentation for FeedHenry Raincatcher change change change
 
 // Push titles down one level
 :leveloffset: 1
-include::sections/overview.adoc[tabsize=4]
-include::sections/modules.adoc[tabsize=4]
-include::sections/security.adoc[tabsize=4]
-include::sections/development.adoc[tabsize=4]
-include::sections/production.adoc[tabsize=4]
+include::./sections/overview.adoc[tabsize=4]
+include::./sections/modules.adoc[tabsize=4]
+include::./sections/security.adoc[tabsize=4]
+include::./sections/development.adoc[tabsize=4]
+include::./sections/production.adoc[tabsize=4]
 :leveloffset: 0
 
 == {ProductName} API Reference
