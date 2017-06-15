@@ -5,14 +5,14 @@ exclude:
   - Rakefile
   - Gemfile
   - Gemfile.lock
-incremential: true
-
-asciidoc: {}
+asciidoc: 
+  processor: asciidoctor
 asciidoctor:
   base_dir: :docdir
   safe: unsafe
   atrributes: 
-    - idseparator: _
-    - source-highlighter: coderay
-    - icons: font
+    idseparator: _
+    source-highlighter: coderay
+    icons: font
+    site-source: index.adoc
 
