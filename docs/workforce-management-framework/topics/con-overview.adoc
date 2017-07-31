@@ -1,21 +1,15 @@
-[id='Overview-{chapter}']
-= Overview
+[id='raincatcher-overview-{chapter}']
+= {WFM-RC-NameLong} Overview
 
-This section provides a overview of {WFM-RC-NameLong} documentation.
-You can read this document in a linear fashion, or you can skip sections if something doesn’t interest you.
+This section describes what {WFM-RC-NameLong} is at a high level.
 
-==  About the documentation
+== Introduction
 
-The  {WFM-RC-NameLong} documentation is available as html files generated from asciidocs documents.
-You can view source code of this page on github: https://feedhenry-raincatcher.github.io/raincatcher-docs/
+{WFM-RC-NameLong} is a software framework and is made up with varying node.js modules which are written in TypeScript.
+These moudles are packaged and distributed as part of the {WFM-RC-NameLong} solution.
+The primary use of the {WFM-RC-NameLong} solution is to provide a Workforce Management Oriented framework for Workforce Management applications.
 
-== Getting started
+The {WFM-RC-NameLong} solution comprises of two fully independent frameworks:
 
-To quickly start write mobile enabled Workflow Management applications please follow our guides:
-
-- link:./guides/wfm.html[WFM Guide]
-Getting Started for Workflow Management Solutions.
-
-- link:./guides/framework.html[Framework Guide]
-Getting Started with {WFM-RC-NameLong} core components.
-
+ * Workflow Management Framework
+ * Rapid Application Development Framework
