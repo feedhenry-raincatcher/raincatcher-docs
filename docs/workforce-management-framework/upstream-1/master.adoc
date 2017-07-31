@@ -11,6 +11,7 @@ Reference Documentation for {WFM-RC-NameLong}
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
+include::overview-of-raincatcher.adoc[leveloffset=+2]
 include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
 
 [[preparing-the-local-development-environment]]

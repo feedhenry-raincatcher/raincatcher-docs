@@ -3,8 +3,6 @@ include::topics/shared/attributes.adoc[]
 //':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
 :chapter: introducing-raincatcher-features
 
-include::topics/con-overview.adoc[leveloffset=+1]
-
 [[introducing-raincatcher-features]]
 = Introducing {WFM-RC-NameLong} Features
 
