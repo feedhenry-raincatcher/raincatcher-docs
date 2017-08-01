@@ -65,15 +65,15 @@ They are simply headings.
 Each Chapter will contain one to many User Stories.
 
 In *master.adoc*, the User Stories are formed using references to Modular Doc *.adoc* files.
-The structure of the User Story is defined with headings and the structure is based on an xref:assembly-template[Assembly template(TEMPLATE_ASSEMBLY.adoc)].
+The structure of the User Story is defined with headings and the structure is based on an link:https://github.com/redhat-documentation/modular-docs/tree/master/files[Assembly template(TEMPLATE_ASSEMBLY.adoc)].
 
 Modular Docs are *.adoc* files and contain the content and are primarily located in the _topics_ folder.
 Modular Docs are imported into the User Stories.
 There are 3 types of Modular Docs:
 
-.  xref:https://github.com/redhat-documentation/modular-docs/tree/master/files[Concept template (TEMPLATE_CONCEPT_concept_template_and_guidelines.adoc)]
-.  xref:https://github.com/redhat-documentation/modular-docs/tree/master/files[Procedure template (TEMPLATE_PROCEDURE_doing_one_procedure.adoc)]
-.  xref:https://github.com/redhat-documentation/modular-docs/tree/master/files[Reference template(TEMPLATE_REFERENCE_reference_template_and_guidelines.adoc)]
+.  link:https://github.com/redhat-documentation/modular-docs/tree/master/files[Concept template (TEMPLATE_CONCEPT_concept_template_and_guidelines.adoc)]
+.  link:https://github.com/redhat-documentation/modular-docs/tree/master/files[Procedure template (TEMPLATE_PROCEDURE_doing_one_procedure.adoc)]
+.  link:https://github.com/redhat-documentation/modular-docs/tree/master/files[Reference template(TEMPLATE_REFERENCE_reference_template_and_guidelines.adoc)]
 
 To best understand the information above, see the example located in the repo.
 
@@ -119,8 +119,8 @@ In a user story-based world, docs describe, for example, how to make an omelette
 
 A User Story is created using the 3 types of Modular Docs:
 
-.  xref:https://github.com/redhat-documentation/modular-docs/tree/master/files[Concept template (TEMPLATE_CONCEPT_concept_template_and_guidelines.adoc)]
-.  xref:https://github.com/redhat-documentation/modular-docs/tree/master/files[Procedure template (TEMPLATE_PROCEDURE_doing_one_procedure.adoc)]
-.  xref:https://github.com/redhat-documentation/modular-docs/tree/master/files[Reference template(TEMPLATE_REFERENCE_reference_template_and_guidelines.adoc)]
+.  link:https://github.com/redhat-documentation/modular-docs/tree/master/files[Concept template (TEMPLATE_CONCEPT_concept_template_and_guidelines.adoc)]
+.  link:https://github.com/redhat-documentation/modular-docs/tree/master/files[Procedure template (TEMPLATE_PROCEDURE_doing_one_procedure.adoc)]
+.  link:https://github.com/redhat-documentation/modular-docs/tree/master/files[Reference template(TEMPLATE_REFERENCE_reference_template_and_guidelines.adoc)]
 
 To best understand the information above, see the example located in the repo.
