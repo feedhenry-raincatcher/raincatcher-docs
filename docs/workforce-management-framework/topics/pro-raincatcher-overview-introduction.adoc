@@ -1,35 +1,37 @@
 == Introduction
 
-{WFM-RC-NameLong}  consist of set of node.js modules written in TypeScript language that are packaged and distributed as
+{WFM-RC-NameLong}  consist of set of npm modules written in TypeScript language that are packaged and distributed as
 {WFM-RC-NameLong} provides a set of reusable components that can simplify mobile, web and cloud application development.
 Solution allows developers to write secure, offline ready websites and mobile applications.
 {WFM-RC-NameLong} provides Workforce Management oriented framework for Workforce Management applications.
 
-Solution consist of two fully independent frameworks:
+Solution consist of two fully independent Frameworks:
 
- * Workflow Management Framework
- * Rapid Application Development Framework
+ * Workforce Management
+ * Security
 
-As extension to frameworks above {ProductName} provides set of example module implementations as part of demo applications.
+===  Workforce Management Framework
 
-===  Workflow Management Framework
-
-{WFM-RC-NameLong} Workflow Management Framework build BPMN compliant workflow management solution.
-WFM framework allows to build advanced Business Process Management solutions.
+{WFM-RC-NameLong} Workforce Management Framework builds a clear definition of the work required through engineered
+standards and optimal methods for performing each task as efficiently and safely as possible.
+WFM framework allows to build advanced Workforce Management solutions.
 Framework helps to write solutions that connects a business back-office with its fleet of mobilized employees.
 
  * Task: defines single unit of work for business process
  * Flow: contain ordered set of tasks and handlers for executing tasks in proper order
  * Process: instance of flow containing current progress and business objects.
 
-Users can write custom Tasks (Workflow Steps) that will implement any business logic and link implementation with any UI solution.
-Framework abstract from any web or mobile application libraries, allowing developers to focus on implementation of the process.
+Users can write custom Tasks (Workflow Steps) that will implement any business logic and link implementation with any
+UI solution.
 
-===  Rapid Application Development Framework
+{WFM-RC-NameLong} allows you to build production-grade Node.js and Cordova based applications from the
+following technology stack.
 
-{WFM-RC-NameLong} Rapid Application Development Framework allows to build production-grade Node.js and Cordova based applications.
-
-image:../../shared/images/technologies.png[Technologies]
+|===
+|TypeScript
+|Cordova
+|Node.js
+|===
 
 Main targets for framework:
 
@@ -47,12 +49,13 @@ Main targets for framework:
     ** Restful API creation
     ** Unit testing
 
-Framework abstract from any application logic and technologies allowing developers to extend it for their needs.
+The Modules abstract from any application logic and technologies allowing developers to extend it for their needs.
 
 ===  Demo application
 
-- Set of example implementations for Workflow Management Solutions (Workorder, WorkorderResult)
-- Website, Mobile and server demo applications serving as reference implementation for the framework.
+- Raincatcher-core contains non-production demo example that is used to showcase the modules functionality.
+- Raincatcher-angularjs has a set of example implementations for Workforce Management Solutions (Workorder, WorkorderResult)
+- Raincatcher-angularjs has a Website, Mobile and server demo applications serving as reference implementation for the framework.
 
 === RainCatcher module relationships
 
@@ -69,7 +72,9 @@ User Space Modules
 |===
 | vehicle-inspection-task
 
-|interface VehicleAssessment extends Task
+| processRepository
+| taskRepository
+| processInstanceRepository
 |===
 
 Raincatcher Core Modules and Interfaces
@@ -84,7 +89,7 @@ Raincatcher Core Modules and Interfaces
 
 ===  Module structure
 
-RainCatcher modules are written in link:http://typescriptlang.org[TypeScript].
+RainCatcher core components are written in link:http://typescriptlang.org[TypeScript].
 
 The main files are modules that by default export a class containing the main implementation for the module's intent,with a named export containing a public interface that should be depended upon, and reimplemented.
 
