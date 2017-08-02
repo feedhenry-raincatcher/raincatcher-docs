@@ -1,10 +1,8 @@
-[id='raincatcher-overview-{chapter}']
+[id='con-raincatcher-overview-{chapter}']
 = {WFM-RC-NameLong} Overview
 
-This section describes what {WFM-RC-NameLong} is at a high level.
-
 {WFM-RC-NameLong} is a software framework and is made up with varying node.js modules which are written in TypeScript.
-These moudles are packaged and distributed as part of the {WFM-RC-NameLong} solution.
+These modules are packaged and distributed as part of the {WFM-RC-NameLong} solution.
 The primary use of the {WFM-RC-NameLong} solution is to provide a Workforce Management Oriented framework for Workforce Management applications.
 
 The {WFM-RC-NameLong} solution comprises of two fully independent frameworks:
