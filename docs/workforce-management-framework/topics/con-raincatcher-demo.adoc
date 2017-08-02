@@ -1,0 +1,7 @@
+[id='con-raincatcher-demo-{chapter}']
+=  {WFM-RC-NameLong} Demo Application
+
+{WFM-RC-NameLong} contains a demo application which is used to demonstrate various {WFM-RC-NameLong} features.
+
+// Hard coded xref was required
+For more information, see xref:ref-raincatcher-demo-raincatcher-reference-material[{WFM-RC-NameLong} Demo Application Reference Information].
