@@ -1,11 +1,11 @@
-[[setting-the-bunyan-logging-level]]
+[id='pro-setting-the-bunyan-logging-level-{chapter}']
 = Setting the Bunyan Logging Level
 
-Determine the logging level you want (for more information, see xref:logging-reference-template-and-guidelines-{chapter}[Logging Reference Template and Guidelines]) and set the Bunyan logging level accordingly.
+Determine the logging level you want (for more information, see xref:ref-logging-{chapter}[Logging Reference Information]) and set the Bunyan logging level accordingly.
 
 .Prerequisites
 
-* The Bunyan Logging Module is imported. For more information, see xref:importing-the-bunyan-logging-module[Importing the Bunyan Logging Module]
+* The Bunyan Logging Module is imported. For more information, see xref:pro-importing-the-bunyan-logging-module-{chapter}[Importing the Bunyan Logging Module]
 
 .Procedure
 
@@ -21,4 +21,4 @@ setLogger(new ConsoleLogger(LogLevel.INFO));
 
 .Related Information
 
-* For more information, see xref:logging-reference-template-and-guidelines-{chapter}[Logging Reference Template and Guidelines]
+* For more information, see xref:ref-logging-{chapter}[Logging Reference Information]

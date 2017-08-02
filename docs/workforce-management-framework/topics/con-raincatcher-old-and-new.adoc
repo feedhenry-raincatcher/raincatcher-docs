@@ -1,0 +1,9 @@
+[id='con-raincatcher-old-and-new-{chapter}']
+= Differentiating between {WFM-RC-NameLong} 'Next' and 'Beta'
+
+{WFM-RC-NameLong} Beta is the older version of the {WFM-RC-NameLong} framework.
+
+{WFM-RC-NameLong} Next is the new version of the {WFM-RC-NameLong} framework.
+
+// Hard coded xref was required
+For more information, see xref:ref-raincatcher-new-and-old-raincatcher-reference-material[{WFM-RC-NameLong} 'Next' and 'Beta' Reference Information].

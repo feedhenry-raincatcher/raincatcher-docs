@@ -1,5 +1,5 @@
-[id='logging-reference-template-and-guidelines-{chapter}']
-= Logging Reference Template and Guidelines
+[id='ref-logging-{chapter}']
+= Logging Reference Information
 
 This section describes:
 

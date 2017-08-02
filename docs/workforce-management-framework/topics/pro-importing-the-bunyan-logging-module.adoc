@@ -1,4 +1,4 @@
-[[importing-the-bunyan-logging-module]]
+[id='pro-importing-the-bunyan-logging-module-{chapter}']
 = Importing the Bunyan Logging Module
 
 To incorporate the Bunyan logging into a project, the {WFM-RC-NameShort} Logging Module is imported and then the Bunyan Logging Module is initialized.
@@ -29,4 +29,4 @@ logger.info('This log will render with BunyanLogger');
 
 .Related Information
 
-* For more information, see xref:logging-reference-template-and-guidelines-{chapter}[Logging Reference Template and Guidelines]
+* For more information, see xref:ref-logging-{chapter}[Logging Reference Information]
