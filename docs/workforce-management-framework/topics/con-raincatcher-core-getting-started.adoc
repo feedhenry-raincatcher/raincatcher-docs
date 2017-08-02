@@ -1,4 +1,4 @@
-[[id='raincatcher-core-getting-started-{chapter}']]
+[id='raincatcher-core-getting-started-{chapter}']
 = RainCatcher-core Getting Started
 
 Getting started with the Feedhenry RainCatcher Core Repository
