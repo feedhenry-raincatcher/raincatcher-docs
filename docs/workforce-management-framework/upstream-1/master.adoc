@@ -28,8 +28,9 @@ include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
 [[troubleshooting-a-raincatcher-project]]
 == Troubleshooting a {WFM-RC-NameShort} Project
 
-[[raincatcher-modules-reference]]
-== {WFM-RC-NameShort} Modules Reference
+[[raincatcher-support-modules]]
+== {WFM-RC-NameShort} Supported Modules
+include::raincatcher-supported-modules-in-detail.adoc[leveloffset=+2]
 
 [[raincatcher-appendix]]
 == {WFM-RC-NameShort} Appendix
