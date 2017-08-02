@@ -1,0 +1,8 @@
+[id='con-raincatcher-demo-{chapter}']
+=  {WFM-RC-NameLong} Demo Applications
+
+There is a demo in Raincatcher-core and a demo application in Raincatcher-Angularjs.
+
+- Raincatcher-core contains non-production demo example that is used to showcase the modules functionality.
+- Raincatcher-angularjs has a set of example implementations for Workforce Management Solutions (Workorder, WorkorderResult)
+- Raincatcher-angularjs has a Website, Mobile and server demo applications serving as reference implementation for the framework.

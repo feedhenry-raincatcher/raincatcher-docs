@@ -1,0 +1,21 @@
+include::topics/shared/attributes.adoc[]
+
+//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:chapter: understanding-raincatcher
+
+[[understanding-raincatcher]]
+= Understanding {WFM-RC-NameLong}
+
+include::topics/con-raincatcher-overview.adoc[leveloffset=+0]
+
+include::topics/con-raincatcher-demo.adoc[leveloffset=+0]
+
+include::topics/con-module-structures-and-relationships.adoc[leveloffset=+0]
+
+//Not needed at time of creation
+//== Procedure
+
+//Not needed at time of creation
+//== Related Information
+
+

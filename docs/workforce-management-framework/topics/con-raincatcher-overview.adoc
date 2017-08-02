@@ -10,4 +10,4 @@ The primary use of the {WFM-RC-NameLong} solution is to provide a Workforce Mana
 The {WFM-RC-NameLong} solution comprises of two fully independent frameworks:
 
  * Workflow Management Framework
- * Rapid Application Development Framework
+ * Security Framework
