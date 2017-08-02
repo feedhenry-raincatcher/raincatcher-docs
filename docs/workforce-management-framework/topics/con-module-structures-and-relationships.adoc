@@ -1,0 +1,7 @@
+[id='con-module-structures-and-relationships-{chapter}']
+= Module Structures and Relationships
+
+<**TODO**> Add Concept only info here. No details, just provide user with _context_. If they want to know more, let them choose to click on the link to the reference material.
+
+// Hard coded xref was required
+For more information, see xref:ref-module-structures-and-relationships-raincatcher-reference-material[Module Structure and Relationship Reference Information].

@@ -1,4 +1,4 @@
-[id='logging-module-{chapter}']
+[id='con-logging-{chapter}']
 = Logging Module
 
 The {WFM-RC-NameLong} Logger Module is a logging facade for node.js based applications and it is used by all {WFM-RC-NameLong} modules.

@@ -1,0 +1,15 @@
+include::topics/shared/attributes.adoc[]
+
+//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:chapter: raincatcher-reference-material
+
+[[raincatcher-reference-material]]
+= {WFM-RC-NameLong} Reference Material
+
+include::topics/ref-raincatcher-overview.adoc[leveloffset=+1]
+
+include::topics/ref-raincatcher-old-and-new.adoc[leveloffset=+1]
+
+include::topics/ref-raincatcher-demo.adoc[leveloffset=+1]
+
+include::topics/ref-module-structures-and-relationships.adoc[leveloffset=+1]

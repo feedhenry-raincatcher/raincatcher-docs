@@ -3,7 +3,7 @@
 <productnumber>{DocInfoProductNumber}</productnumber>
 <subtitle>For Use with {ProductName} {ProductRelease}</subtitle>
 <abstract>
-    <para>This documentation does ABC for {ProductName} {ProductRelease}.</para>
+    <para>This {ProductName} documentation is version {ProductRelease} of the {WFM-RC-NameLong}.</para>
 </abstract>
 <authorgroup>
     <orgname>Red Hat Customer Content Services </orgname>

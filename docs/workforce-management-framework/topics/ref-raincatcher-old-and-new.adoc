@@ -1,0 +1,11 @@
+[id='ref-raincatcher-new-and-old-{chapter}']
+= {WFM-RC-NameLong} 'Next' and 'Beta' Reference Information
+
+{WFM-RC-NameLong} *Beta* information can be found here<***todo***> (delete if you wish).
+
+{WFM-RC-NameLong} *Next* is the new version of the {WFM-RC-NameLong} framework.
+
+*Next* is different from *Beta* in the following ways:
+* <**todo**>
+* <**todo**>
+* <**todo**>
