@@ -27,15 +27,14 @@ Check your Node.JS version running `node -v`
 This repository contains many subpackages managed through https://lernajs.io/[Lerna],
 and they are contained in the following directories:
 
-* *client/*
-- Front-end packages, from API clients to user interface modules
-* *cloud/*
-- Cloud app packages, intended to be run on an Node.JS environment
-* *demo/*
-- Full-fledged Demo applications, showcasing the usage of multiple modules
-* *templates/*
-- Templates and examples for other packages in the repository
+|====
+|Directory | Description
 
+|*client/* |Front-end packages, from API clients to user interface modules
+|*cloud/* |Cloud app packages, intended to be run on an Node.JS environment
+|*demo/*  |Full-fledged Demo applications, showcasing the usage of multiple modules
+|*templates/*| Templates and examples for other packages in the repository
+|====
 
 == Creating a new package
 
@@ -47,15 +46,15 @@ Review the `/templates/base/README.md` for further information.
 
 ==== Directories
 
-* *src/*
-- Contains the TypeScript sources.
-* *test/*
-- The unit tests for the module. Should contain a `mocha.opts` file for configuring
+|====
+|Directories|Description
+
+|*src/*| Contains the TypeScript sources.
+|*test/*| The unit tests for the module. Should contain a `mocha.opts` file for configuring
 Mocha.
-* *coverage/ and .nyc_output*
-- Istanbul output, should be .gitignored.
-* *example/*
-- Example usage for module.
+|*coverage/ and .nyc_output*|Istanbul output, should be .gitignored.
+|*example/*|Example usage for module.
+|====
 
 === Module structure
 
