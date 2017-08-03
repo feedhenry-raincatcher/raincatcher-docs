@@ -62,7 +62,7 @@ The main files are modules that by default export a class containing the main
 implementation for the module's intent, with a named export containing a public
 interface that should be depended upon, and reimplemented.
 
-[source,javascript]
+[source,typescript]
     import Implementation, { PublicInterface } from '@raincatcher/module';
 
 
@@ -93,7 +93,7 @@ Since code that requires a module's tests are most likely interested in a reusab
 the `test/index.ts` file's default export should be a function that receives all the required
 parameters for running the test suite on a given implementation of the interface.
 
-[source,javascript]
+[source,typescript]
 ----
 import publicInterfaceTestSuite from '@raincatcher/module/test';
 import { PublicInterface } from '@raincatcher/module';
