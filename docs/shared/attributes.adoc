@@ -22,6 +22,8 @@
 :ComponentName:
 :ComponentVersion:
 
+// Dependancy versions
+:Node-version: Node 6
 //
 // Documentation publishing attributes used in the master-docinfo.xml file
 //

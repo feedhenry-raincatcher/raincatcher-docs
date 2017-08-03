@@ -7,7 +7,7 @@ own modules or extend existing modules.
 
 == Developing
 
-RainCatcher supports and is tested on Node.JS 6 and should run on latest LTS.
+RainCatcher supports and is tested on {Node-version} and should run on latest LTS.
 
 Check your Node.JS version running `node -v`
 
@@ -54,7 +54,7 @@ Mocha.
 |*example/*|Example usage for module.
 |====
 
-=== Module structure
+==== Module structure
 
 RainCatcher modules are written in [TypeScript](http://typescriptlang.org).
 
