@@ -44,8 +44,6 @@ Review the `/templates/base/README.md` for further information.
 
 === Package structure
 
-==== Directories
-
 |====
 |Directories|Description
 
