@@ -39,3 +39,13 @@ This repository contains many subpackages managed through Lerna, and they're con
 | demo/ | Full-fledged demo applications, showcasing the usage of multiple modules
 | core/client | Client side modules from core repository
 |====
+
+== Repository commands
+
+|====
+| Command | Description
+
+|npm run test |run unit tests
+|npm run bootstrap |install required dependencies for modules
+|npm run start |run demo applications
+|====
