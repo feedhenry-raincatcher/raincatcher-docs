@@ -23,7 +23,7 @@ image::../../shared/images/raincatcher.svg[logo]
 == Preparing the Local Development Environment
 
 [[getting-started-with-raincatcher]]
-== Getting Started with {WFM-RC-NameShort}
+//== Getting Started with {WFM-RC-NameShort}
 include::getting-started-raincatcher.adoc[leveloffset=+1]
 
 [[programming-a-raincatcher-project]]
