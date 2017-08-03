@@ -1,0 +1,6 @@
+[id='ref-result-module-{chapter}']
+=  Result Module Reference Guide
+
+(PRD-104.2)
+<**TODO**>
+Any links to the module's API or other reference material should be included in this doc.

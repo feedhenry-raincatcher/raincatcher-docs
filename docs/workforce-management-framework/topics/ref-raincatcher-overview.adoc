@@ -22,13 +22,17 @@ The Framework abstracts the developer from any web or mobile application librari
 {WFM-RC-NameLong} allows you to build production-grade Node.js and Cordova based applications from the
 following technology stack.
 
+.Application Technologies
+
 |===
 |TypeScript
 |Cordova
 |Node.js
 |===
 
-Main targets for framework:
+.{WFM-RC-NameLong} Framework goals
+The {WFM-RC-NameLong} Framework goals:
+
 
 * Rapid, production ready application development framework.
 * Covers Mobile, web and server side application development

@@ -9,3 +9,8 @@ The {WFM-RC-NameLong} solution comprises of two fully independent frameworks:
 
  * Workflow Management Framework
  * Security Framework
+
+
+// Hard coded xref was required
+For more information, see xref:ref-workflow-management-framework-raincatcher-reference-material[Workflow Management Framework Reference Information].
+
