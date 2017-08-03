@@ -30,7 +30,7 @@ Raincatcher Core Modules and Interfaces
 |===
 
 
-===  Module structure
+==  Module structure
 
 RainCatcher core components are written in link:http://typescriptlang.org[TypeScript].
 
@@ -41,7 +41,7 @@ The main files are modules that by default export a class containing the main im
 import Implementation, { PublicInterface } from '@raincatcher/module';
 ```
 
-=== Default exports
+== Default exports
 
 Each module exports by default an implementation and set of interfaces by name.
 Default implementation will usually implement most common use case for module.

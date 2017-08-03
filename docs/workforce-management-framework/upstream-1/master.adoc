@@ -1,12 +1,13 @@
 include::topics/shared/attributes.adoc[]
-
-[[Raincatcher]]
-= {WFM-RC-NameLong}
-
 :sectnums:
 :toc: left
 :toclevels: 5
 :last-update-label!:
+
+[[Raincatcher]]
+= {WFM-RC-NameLong}
+
+
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
@@ -40,8 +41,6 @@ include::raincatcher-reference-material.adoc[leveloffset=+2]
 // * Appendix: Revision Information *
 // **********************************
 include::topics/shared/templates/revision-info.adoc[]
-
-image::./topics/shared/images/raincatcher.svg[logo]
 
 // **********************************
 // * EXAMPLE - uncomment below to see
