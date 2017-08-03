@@ -1,0 +1,658 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE book [
+<!ENTITY % BOOK_ENTITIES SYSTEM "master.ent">
+%BOOK_ENTITIES;
+<!ENTITY % sgml.features "IGNORE">
+<!ENTITY % xml.features "INCLUDE">
+<!ENTITY % DOCBOOK_ENTS PUBLIC "-//OASIS//ENTITIES DocBook Character Entities V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/dbcentx.mod">
+%DOCBOOK_ENTS;
+]>
+<book version="5.0" xml:lang="en-US" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<?asciidoc-toc maxdepth="4"?><?asciidoc-numbered ?>
+	<info>
+		<title>RainCatcher</title>
+		<subtitle>For Use with FeedHenry 1</subtitle>
+		 <date>2017-08-03</date>
+		<productname>FeedHenry</productname>
+		<productnumber>3.x</productnumber>
+		<abstract>
+			<para>
+				This documentation does ABC for FeedHenry 1.
+			</para>
+		</abstract>
+		<xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+		<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	</info>
+	<chapter xml:id="introducing-raincatcher">
+		<title>Introducing RainCatcher</title>
+		<section xml:id="introducing-raincatcher-features">
+			<title>Introducing RainCatcher Features</title>
+			<section xml:id="logging-module-introducing-raincatcher-features">
+				<title>Logging Module</title>
+				<simpara>
+					The RainCatcher Logger Module is a logging facade for node.js based applications and it is used by all RainCatcher modules. The RainCatcher Logger Module is is contained in the <literal>raincatcher-core</literal> module.
+				</simpara>
+				<simpara>
+					There are two implementations of the RainCatcher Logger module, Bunyan and Console. By default, the Bunyan and the Console implementations are not setup and so, no logging exists by default. Users can use their own loggers by wrapping their logger into the provided class.
+				</simpara>
+				<simpara>
+					For more information, see the <link xlink:href="https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/logger/example">Logger Example</link>.
+				</simpara>
+			</section>
+		</section>
+	</chapter>
+	<chapter xml:id="preparing-the-local-development-environment">
+		<title>Preparing the Local Development Environment</title>
+
+	</chapter>
+	<chapter xml:id="getting-started-with-raincatcher">
+		<title>Getting Started with RainCatcher</title>
+
+	</chapter>
+	<chapter xml:id="programming-a-raincatcher-project">
+		<title>Programming a RainCatcher Project</title>
+		<section xml:id="using-wfm-logger-and-setting-a-logging-level">
+			<title>Using RainCatcher Logger and Setting a Logging Level</title>
+			<section xml:id="logging-module-using-wfm-logger-and-setting-a-logging-level">
+				<title>Logging Module</title>
+				<simpara>
+					The RainCatcher Logger Module is a logging facade for node.js based applications and it is used by all RainCatcher modules. The RainCatcher Logger Module is is contained in the <literal>raincatcher-core</literal> module.
+				</simpara>
+				<simpara>
+					There are two implementations of the RainCatcher Logger module, Bunyan and Console. By default, the Bunyan and the Console implementations are not setup and so, no logging exists by default. Users can use their own loggers by wrapping their logger into the provided class.
+				</simpara>
+				<simpara>
+					For more information, see the <link xlink:href="https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/logger/example">Logger Example</link>.
+				</simpara>
+			</section>
+			<section remap="_procedures" xml:id="procedures">
+				<title>Procedures</title>
+				<section xml:id="importing-the-bunyan-logging-module">
+					<title>Importing the Bunyan Logging Module</title>
+					<simpara>
+						To incorporate the Bunyan logging into a project, the RainCatcher Logging Module is imported and then the Bunyan Logging Module is initialized.
+					</simpara>
+					<itemizedlist>
+						<title>Prerequisites</title>
+						<listitem>
+							<simpara>
+								<literal>raincatcher-core module</literal> must be installed.
+							</simpara>
+						</listitem>
+					</itemizedlist>
+					<orderedlist numeration="arabic">
+						<title>Procedure</title>
+						<listitem>
+							<simpara>
+								Add the following code to the file where you want to import the Bunyan Logging:
+							</simpara>
+							
+<programlisting language="javascript" linenumbering="unnumbered">// Import logger implementation
+import {BunyanLogger, logger, setLogger} from '@raincatcher/logger';
+
+// Instaniate logger
+setLogger(new BunyanLogger({name: 'index', level:'info' }));</programlisting>
+						</listitem>
+						<listitem>
+							<simpara>
+								To log a comment, add the following code <emphasis>after</emphasis> the code directly above:
+							</simpara>
+							
+<programlisting language="javascript" linenumbering="unnumbered">logger.info('This log will render with BunyanLogger');</programlisting>
+						</listitem>
+					</orderedlist>
+					<itemizedlist>
+						<title>Related Information</title>
+						<listitem>
+							<simpara>
+								For more information, see <link linkend="logging-reference-template-and-guidelines-using-wfm-logger-and-setting-a-logging-level">Logging Reference Template and Guidelines</link>
+							</simpara>
+						</listitem>
+					</itemizedlist>
+				</section>
+				<section xml:id="setting-the-bunyan-logging-level">
+					<title>Setting the Bunyan Logging Level</title>
+					<simpara>
+						Determine the logging level you want (for more information, see <link linkend="logging-reference-template-and-guidelines-using-wfm-logger-and-setting-a-logging-level">Logging Reference Template and Guidelines</link>) and set the Bunyan logging level accordingly.
+					</simpara>
+					<itemizedlist>
+						<title>Prerequisites</title>
+						<listitem>
+							<simpara>
+								The Bunyan Logging Module is imported. For more information, see <link linkend="importing-the-bunyan-logging-module">Importing the Bunyan Logging Module</link>
+							</simpara>
+						</listitem>
+					</itemizedlist>
+					<orderedlist numeration="arabic">
+						<title>Procedure</title>
+						<listitem>
+							<simpara>
+								Directly underneath the code for importing the Bunyan Logging Module, set the &lt;LogLevel&gt;:
+							</simpara>
+							
+<programlisting language="json" linenumbering="unnumbered">setLogger(new ConsoleLogger(&lt;LogLevel&gt;));
+
+#Example:
+setLogger(new ConsoleLogger(LogLevel.INFO));</programlisting>
+						</listitem>
+					</orderedlist>
+					<itemizedlist>
+						<title>Related Information</title>
+						<listitem>
+							<simpara>
+								For more information, see <link linkend="logging-reference-template-and-guidelines-using-wfm-logger-and-setting-a-logging-level">Logging Reference Template and Guidelines</link>
+							</simpara>
+						</listitem>
+					</itemizedlist>
+				</section>
+				<section xml:id="importing-the-console-logging-module">
+					<title>Importing the Console Logging Module</title>
+					<simpara>
+						To incorporate the Console logging into a project, the RainCatcher Logging Module is imported and then the Console Logging Module is initialized.
+					</simpara>
+					<itemizedlist>
+						<title>Prerequisites</title>
+						<listitem>
+							<simpara>
+								<literal>raincatcher-core module</literal> must be installed.
+							</simpara>
+						</listitem>
+					</itemizedlist>
+					<orderedlist numeration="arabic">
+						<title>Procedure</title>
+						<listitem>
+							<simpara>
+								Add the following code to the file where you want to import the Console Logging:
+							</simpara>
+							
+<programlisting language="javascript" linenumbering="unnumbered">// Import logger implementation
+import {ConsoleLogger, logger, setLogger} from '@raincatcher/logger';
+
+// Instaniate logger
+const log = new ConsoleLogger();;
+setLogger(log);</programlisting>
+						</listitem>
+						<listitem>
+							<simpara>
+								To log a comment, add the following code <emphasis>after</emphasis> the code directly above:
+							</simpara>
+							
+<programlisting language="javascript" linenumbering="unnumbered">logger.info('This log will render with ConsoleLogger');</programlisting>
+						</listitem>
+					</orderedlist>
+					<itemizedlist>
+						<title>Related Information</title>
+						<listitem>
+							<simpara>
+								For more information, see <link linkend="logging-reference-template-and-guidelines-using-wfm-logger-and-setting-a-logging-level">Logging Reference Template and Guidelines</link>
+							</simpara>
+						</listitem>
+					</itemizedlist>
+				</section>
+				<section xml:id="setting-the-console-logging-level">
+					<title>Setting the Console Logging Level</title>
+					<simpara>
+						Determine the logging level you want (for more information, see <link linkend="logging-reference-template-and-guidelines-using-wfm-logger-and-setting-a-logging-level">Logging Reference Template and Guidelines</link>) and set the Console logging level accordingly.
+					</simpara>
+					<itemizedlist>
+						<title>Prerequisites</title>
+						<listitem>
+							<simpara>
+								The Console Logging Module is imported. For more information, see <link linkend="importing-the-console-logging-module">Importing the Console Logging Module</link>
+							</simpara>
+						</listitem>
+					</itemizedlist>
+					<orderedlist numeration="arabic">
+						<title>Procedure</title>
+						<listitem>
+							<simpara>
+								Directly underneath the code for importing the Console Logging Module, set the &lt;LogLevel&gt;:
+							</simpara>
+							
+<programlisting language="json" linenumbering="unnumbered">setLogger(new BunyanLogger(&lt;LogLevel&gt;));
+
+#Example:
+setLogger(new BunyanLogger(LogLevel.INFO));</programlisting>
+						</listitem>
+					</orderedlist>
+					<itemizedlist>
+						<title>Related Information</title>
+						<listitem>
+							<simpara>
+								For more information, see <link linkend="logging-reference-template-and-guidelines-using-wfm-logger-and-setting-a-logging-level">Logging Reference Template and Guidelines</link>
+							</simpara>
+						</listitem>
+					</itemizedlist>
+				</section>
+			</section>
+			<section remap="_related_information" xml:id="related_information">
+				<title>Related Information</title>
+				<section xml:id="logging-reference-template-and-guidelines-using-wfm-logger-and-setting-a-logging-level">
+					<title>Logging Reference Template and Guidelines</title>
+					<simpara>
+						This section describes:
+					</simpara>
+					<itemizedlist>
+						<listitem>
+							<simpara>
+								<link linkend="client-and-server-logging-using-wfm-logger-and-setting-a-logging-level">Client and Server Logging</link>
+							</simpara>
+						</listitem>
+						<listitem>
+							<simpara>
+								<link linkend="bunyan-and-console-logging-levels-using-wfm-logger-and-setting-a-logging-level">Bunyan and Console Logging Levels</link>
+							</simpara>
+						</listitem>
+						<listitem>
+							<simpara>
+								<link linkend="understanding-the-logging-levels-using-wfm-logger-and-setting-a-logging-level">Understanding the Logging Levels</link>
+							</simpara>
+						</listitem>
+					</itemizedlist>
+					<section xml:id="client-and-server-logging-using-wfm-logger-and-setting-a-logging-level">
+						<title>Client and Server Logging</title>
+						<table colsep="1" frame="all" rowsep="1">
+							<title>Logging for Applicaitons</title>
+							<tgroup cols="2">
+								<colspec colname="col_1" colwidth="50*"></colspec>
+								<colspec colname="col_2" colwidth="50*"></colspec>
+								<thead>
+									<row>
+										<entry align="left" valign="top"><emphasis role="strong">Logging Module</emphasis></entry>
+										<entry align="left" valign="top"><emphasis role="strong">Application</emphasis></entry>
+									</row>
+								</thead>
+								<tbody>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											Bunyan
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											Server
+										</simpara>
+										</entry>
+									</row>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											Console
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											Client
+										</simpara>
+										</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+						<note>
+							<simpara>
+								Both the Bunyan and Console modules can both be used for local development and platform development.
+							</simpara>
+						</note>
+					</section>
+					<section xml:id="bunyan-and-console-logging-levels-using-wfm-logger-and-setting-a-logging-level">
+						<title>Bunyan and Console Logging Levels</title>
+						<table colsep="1" frame="all" rowsep="1">
+							<title>Bunyan Logging Levels</title>
+							<tgroup cols="2">
+								<colspec colname="col_1" colwidth="50*"></colspec>
+								<colspec colname="col_2" colwidth="50*"></colspec>
+								<thead>
+									<row>
+										<entry align="left" valign="top"><emphasis role="strong">Value</emphasis></entry>
+										<entry align="left" valign="top"><emphasis role="strong">Parameter Type</emphasis></entry>
+									</row>
+								</thead>
+								<tbody>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											debug
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											string
+										</simpara>
+										</entry>
+									</row>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											info
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											string
+										</simpara>
+										</entry>
+									</row>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											warn
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											string
+										</simpara>
+										</entry>
+									</row>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											error
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											string
+										</simpara>
+										</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+						<simpara>
+							For more information, see link:[<link xlink:href="https://www.npmjs.com/package/bunyan">https://www.npmjs.com/package/bunyan</link>]Bunyan Levels.
+						</simpara>
+						<table colsep="1" frame="all" rowsep="1">
+							<title>Console Logging Levels</title>
+							<tgroup cols="2">
+								<colspec colname="col_1" colwidth="50*"></colspec>
+								<colspec colname="col_2" colwidth="50*"></colspec>
+								<thead>
+									<row>
+										<entry align="left" valign="top"><emphasis role="strong">Value</emphasis></entry>
+										<entry align="left" valign="top"><emphasis role="strong">Parameter Type</emphasis></entry>
+									</row>
+								</thead>
+								<tbody>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											debug
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											<literal>LogLevel.DEBUG</literal> or string
+										</simpara>
+										</entry>
+									</row>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											info
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											<literal>LogLevel.INFO</literal> or string
+										</simpara>
+										</entry>
+									</row>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											warn
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											<literal>LogLevel.WARN</literal> or string
+										</simpara>
+										</entry>
+									</row>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											error
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											<literal>LogLevel.ERROR</literal> or string
+										</simpara>
+										</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+					</section>
+					<section xml:id="understanding-the-logging-levels-using-wfm-logger-and-setting-a-logging-level">
+						<title>Understanding the Logging Levels</title>
+						<simpara>
+							The following table illustrates what logging information is displayed for each Logging Level
+						</simpara>
+						<table colsep="1" frame="all" rowsep="1">
+							<title>Information displayed by Logging Level</title>
+							<tgroup cols="2">
+								<colspec colname="col_1" colwidth="50*"></colspec>
+								<colspec colname="col_2" colwidth="50*"></colspec>
+								<thead>
+									<row>
+										<entry align="left" valign="top"><emphasis role="strong">Logging Level</emphasis></entry>
+										<entry align="left" valign="top"><emphasis role="strong">Information Displayed</emphasis></entry>
+									</row>
+								</thead>
+								<tbody>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											debug
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											debug, info, warn and error
+										</simpara>
+										</entry>
+									</row>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											info
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											info, warn, and error
+										</simpara>
+										</entry>
+									</row>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											warn
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											warn and info
+										</simpara>
+										</entry>
+									</row>
+									<row>
+										<entry align="left" valign="top">
+										<simpara>
+											error
+										</simpara>
+										</entry>
+										<entry align="left" valign="top">
+										<simpara>
+											error
+										</simpara>
+										</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+					</section>
+				</section>
+			</section>
+		</section>
+	</chapter>
+	<chapter xml:id="testing-a-raincatcher-project">
+		<title>Testing a RainCatcher Project</title>
+
+	</chapter>
+	<chapter xml:id="troubleshooting-a-raincatcher-project">
+		<title>Troubleshooting a RainCatcher Project</title>
+
+	</chapter>
+	<chapter xml:id="raincatcher-support-modules">
+		<title>RainCatcher Supported Modules</title>
+		<section xml:id="module-detailing">
+			<title>Module Detailing</title>
+			<section xml:id="con-auth-demo-module-raincatcher-supported-modules-in-detail">
+				<title>Auth-Demo</title>
+				<simpara>
+					The name of this module is <literal>wfm-auth-demo</literal>.
+				</simpara>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; This module should be explained from a high level and its primary function defined.
+				</simpara>
+			</section>
+			<section xml:id="con-auth-keycloak-module-raincatcher-supported-modules-in-detail">
+				<title>Auth-Keycloak</title>
+				<simpara>
+					The name of this module is <literal>wfm-auth-keycloak</literal>.
+				</simpara>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; This module should be explained from a high level and its primary function defined.
+				</simpara>
+			</section>
+			<section xml:id="con-mongoose-module-raincatcher-supported-modules-in-detail">
+				<title>Mongoose</title>
+				<simpara>
+					The name of this module is <literal>wfm-mongoose-store</literal>.
+				</simpara>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; This module should be explained from a high level and its primary function defined.
+				</simpara>
+			</section>
+			<section xml:id="con-result-module-raincatcher-supported-modules-in-detail">
+				<title>Result</title>
+				<simpara>
+					The name of this module is <literal>wfm-result</literal>.
+				</simpara>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; This module should be explained from a high level and its primary function defined.
+				</simpara>
+			</section>
+			<section xml:id="con-sync-module-raincatcher-supported-modules-in-detail">
+				<title>Sync</title>
+				<simpara>
+					The name of this module is <literal>wfm-sync</literal>.
+				</simpara>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; This module should be explained from a high level and its primary function defined.
+				</simpara>
+			</section>
+			<section xml:id="con-user-module-raincatcher-supported-modules-in-detail">
+				<title>User (No Auth)</title>
+				<simpara>
+					The name of this module is <literal>wfm-user</literal>.
+				</simpara>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; This module should be explained from a high level and its primary function defined.
+				</simpara>
+			</section>
+			<section xml:id="con-workflow-module-raincatcher-supported-modules-in-detail">
+				<title>Workflow</title>
+				<simpara>
+					The name of this module is <literal>wfm-workflow</literal>.
+				</simpara>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; This module should be explained from a high level and its primary function defined.
+				</simpara>
+			</section>
+			<section xml:id="con-workorder-module-raincatcher-supported-modules-in-detail">
+				<title>Workorder</title>
+				<simpara>
+					The name of this module is <literal>wfm-workorder</literal>.
+				</simpara>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; This module should be explained from a high level and its primary function defined.
+				</simpara>
+			</section>
+		</section>
+		<section remap="_reference_material_including_apis" xml:id="reference_material_including_apis">
+			<title>Reference Material including APIs</title>
+			<section xml:id="ref-auth-demo-module-raincatcher-supported-modules-in-detail">
+				<title>Auth-Demo</title>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; Reference material should be included in this doc and also any links to the module’s API, etc
+				</simpara>
+			</section>
+			<section xml:id="ref-auth-keycloak-module-raincatcher-supported-modules-in-detail">
+				<title>Auth-Keycloak</title>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; Reference material should be included in this doc and also any links to the module’s API, etc
+				</simpara>
+			</section>
+			<section xml:id="ref-mongoose-module-raincatcher-supported-modules-in-detail">
+				<title>Mongoose</title>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; Reference material should be included in this doc and also any links to the module’s API, etc
+				</simpara>
+			</section>
+			<section xml:id="ref-result-module-raincatcher-supported-modules-in-detail">
+				<title>Result</title>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; Reference material should be included in this doc and also any links to the module’s API, etc
+				</simpara>
+			</section>
+			<section xml:id="ref-sync-module-raincatcher-supported-modules-in-detail">
+				<title>Sync</title>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; Reference material should be included in this doc and also any links to the module’s API, etc
+				</simpara>
+			</section>
+			<section xml:id="ref-user-module-raincatcher-supported-modules-in-detail">
+				<title>User (No Auth)</title>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; Reference material should be included in this doc and also any links to the module’s API, etc
+				</simpara>
+			</section>
+			<section xml:id="ref-workflow-module-raincatcher-supported-modules-in-detail">
+				<title>Workflow</title>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; Reference material should be included in this doc and also any links to the module’s API, etc
+				</simpara>
+			</section>
+			<section xml:id="ref-workorder-module-raincatcher-supported-modules-in-detail">
+				<title>Workorder</title>
+				<simpara>
+					(PRD-104.2) &lt;<emphasis role="strong">TODO</emphasis>&gt; Reference material should be included in this doc and also any links to the module’s API, etc
+				</simpara>
+			</section>
+		</section>
+	</chapter>
+	<chapter xml:id="raincatcher-modules-reference">
+		<title>RainCatcher Modules Reference</title>
+		<simpara>
+			<emphasis>Revised on 2017-08-03 11:00:10 IST</emphasis>
+		</simpara>
+		<informalfigure>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/topics/shared/images/topics/shared/images/raincatcher.svg" format="SVG" />
+			</imageobject>
+			<textobject>
+				<phrase>logo</phrase>
+			</textobject>
+		</mediaobject>
+		</informalfigure>
+	</chapter>
+</book>
+

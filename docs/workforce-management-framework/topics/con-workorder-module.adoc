@@ -1,0 +1,8 @@
+[id='con-workorder-module-{chapter}']
+=  Workorder
+
+The name of this module is  `wfm-workorder`.
+
+(PRD-104.2)
+<**TODO**>
+This module should be explained from a high level and its primary function defined.
