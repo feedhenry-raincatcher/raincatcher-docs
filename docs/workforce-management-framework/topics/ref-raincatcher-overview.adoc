@@ -23,6 +23,7 @@ The Framework abstracts the developer from any web or mobile application librari
 following technology stack.
 
 .Application Technologies
+
 |===
 |TypeScript
 |Cordova
@@ -31,6 +32,7 @@ following technology stack.
 
 .{WFM-RC-NameLong} Framework goals
 The {WFM-RC-NameLong} Framework goals:
+
 
 * Rapid, production ready application development framework.
 * Covers Mobile, web and server side application development

@@ -1,5 +1,6 @@
-[id='ref-module-structures-and-relationships-{chapter}']
-= Module Structure and Relationship Reference Information
+[id='ref-module-struct-and-rels-{chapter}']
+
+= Module Structures and Relationships Information
 
 Raincatcher-AngularJS Application
 |===
@@ -13,7 +14,11 @@ Raincatcher-AngularJS Application
 User Space Modules
 |===
 | vehicle-inspection-task
-|interface VehicleAssessment extends Task
+
+| processRepository
+| taskRepository
+| processInstanceRepository
+
 |===
 
 Raincatcher Core Modules and Interfaces
@@ -24,17 +29,21 @@ Raincatcher Core Modules and Interfaces
 |Security abstraction layer, class PassportAuth, Keycloak Middleware
 |===
 
-==  Module structure
 
-RainCatcher modules are written in link:http://typescriptlang.org[TypeScript].
+===  Module structure
+
+RainCatcher core components are written in link:http://typescriptlang.org[TypeScript].
+
 
 The main files are modules that by default export a class containing the main implementation for the module's intent,with a named export containing a public interface that should be depended upon, and reimplemented.
 
 ```typescript
 import Implementation, { PublicInterface } from '@raincatcher/module';
 ```
-== Default exports
+
+=== Default exports
 
 Each module exports by default an implementation and set of interfaces by name.
 Default implementation will usually implement most common use case for module.
 Along with the default export, all modules include a public interface definition that are depended upon by other RainCatcher modules instead of depending on the implementation itself.
+
