@@ -4,9 +4,15 @@ include::topics/shared/attributes.adoc[]
 :toclevels: 5
 :last-update-label!:
 
+
+
+////
 [[Raincatcher]]
 = {WFM-RC-NameLong}
+////
 
+
+image::../../shared/images/raincatcher.svg[logo]
 
 
 [[introducing-raincatcher]]
@@ -18,7 +24,7 @@ include::topics/shared/attributes.adoc[]
 
 [[getting-started-with-raincatcher]]
 == Getting Started with {WFM-RC-NameShort}
-include::topics/con-raincatcher-core-getting-started.adoc[leveloffset=+1]
+include::getting-started-raincatcher.adoc[leveloffset=+1]
 
 [[programming-a-raincatcher-project]]
 == Programming a {WFM-RC-NameShort} Project
@@ -38,4 +44,4 @@ include::topics/con-raincatcher-core-getting-started.adoc[leveloffset=+1]
 // **********************************
 include::topics/shared/templates/revision-info.adoc[]
 
-image::./topics/shared/images/raincatcher.svg[logo]
+

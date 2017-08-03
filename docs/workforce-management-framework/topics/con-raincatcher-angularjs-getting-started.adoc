@@ -1,0 +1,41 @@
+[id='raincatcher-AngularJS-getting-started-{chapter}']
+= RainCatcher-AngularJS Getting Started
+
+Raincatcher-AngularJS is a repo contains demo applications created using the Raincatcher-core modules.
+These application work together to demonstrate the full capabilities of the Raincatcher-core framework.
+
+== Setup
+
+[source,bash]
+----
+    git clone https://github.com/feedhenry-raincatcher/raincatcher-angularjs
+    cd raincatcher-angularjs
+    npm install
+    npm run bootstrap
+----
+
+Start the demo Applications buy
+
+[source,bash]
+----
+    npm run start
+----
+
+== About
+Raincatcher-angularjs contains a client mobile application, web portal application
+which are tied together with the Raincatcher-core. The mobile client is application for end
+users to process work orders. The web portal is a management tool for distributing work orders
+to end users. The Raincatcher-core acts as a cloud server where the data is passed and stored
+between client and web.
+
+== Repository folder structure
+This repository contains many subpackages managed through Lerna, and they're contained in the following directories:
+
+[width="75%"]
+|====
+| Directory | Description
+
+| packages/ | Packages implementing angularjs directives and other ui components used in demo applications
+| demo/ | Full-fledged demo applications, showcasing the usage of multiple modules
+| core/client | Client side modules from core repository
+|====
