@@ -1,11 +1,9 @@
 include::topics/shared/attributes.adoc[]
 
 = {WFM-RC-NameLong}
-Reference Documentation for {WFM-RC-NameLong}
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
-include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
 
 [[preparing-the-local-development-environment]]
 == Preparing the Local Development Environment
@@ -25,6 +23,9 @@ include::using-wfm-logger-and-setting-a-logging-level.adoc[leveloffset=+2]
 
 [[raincatcher-modules-reference]]
 == {WFM-RC-NameShort} Modules Reference
+
+[[raincatcher-appendix]]
+== {WFM-RC-NameShort} Appendix
 
 // **********************************
 // * Appendix: Revision Information *

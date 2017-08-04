@@ -1,0 +1,33 @@
+include::topics/shared/attributes.adoc[]
+
+//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:chapter: raincatcher-supported-modules-in-detail
+
+[[detailing-of-the-raincatcher-modules]]
+= Detailing of the {WFM-RC-NameLong} Modules
+
+// comment modules that won't exist
+//include::topics/con-auth-demo-module.adoc[leveloffset=+1]
+//include::topics/con-auth-keycloak-module.adoc[leveloffset=+1]
+//include::topics/con-mongoose-module.adoc[leveloffset=+1]
+//include::topics/con-result-module.adoc[leveloffset=+1]
+include::topics/con-sync-module.adoc[leveloffset=+1]
+//include::topics/con-user-no-auth-module.adoc[leveloffset=+1]
+
+// these were intergrated into wfm
+//include::topics/con-workflow-module.adoc[leveloffset=+1]
+//include::topics/con-workorder-module.adoc[leveloffset=+1]
+
+//Not needed at time of creation
+//== Procedure
+
+= Reference Material including APIs
+
+//include::topics/ref-auth-demo-module.adoc[leveloffset=+1]
+//include::topics/ref-auth-keycloak-module.adoc[leveloffset=+1]
+//include::topics/ref-mongoose-module.adoc[leveloffset=+1]
+//include::topics/ref-result-module.adoc[leveloffset=+1]
+include::topics/ref-sync-module.adoc[leveloffset=+1]
+//include::topics/ref-user-no-auth-module.adoc[leveloffset=+1]
+//include::topics/ref-workflow-module.adoc[leveloffset=+1]
+//include::topics/ref-workorder-module.adoc[leveloffset=+1]

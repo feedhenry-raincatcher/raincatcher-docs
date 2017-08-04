@@ -6,8 +6,6 @@ include::topics/shared/attributes.adoc[]
 [[introducing-raincatcher-features]]
 = Introducing {WFM-RC-NameLong} Features
 
-include::topics/con-logging.adoc[leveloffset=+1]
-
 //Not needed at time of creation
 //== Procedure
 

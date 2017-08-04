@@ -1,0 +1,8 @@
+[id='con-user-module-{chapter}']
+=  User (No Auth) Module Details
+
+The name of this module is  `wfm-user`.
+
+(PRD-104.2)
+<**TODO**>
+This module should be explained from a high level and its primary function defined.

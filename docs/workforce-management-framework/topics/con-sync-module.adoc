@@ -1,0 +1,8 @@
+[id='con-sync-module-{chapter}']
+=  Sync Module Details
+
+The name of this module is  `wfm-sync`.
+
+(PRD-104.2)
+<**TODO**>
+This module should be explained from a high level and its primary function defined.
