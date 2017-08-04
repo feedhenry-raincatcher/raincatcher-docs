@@ -29,7 +29,7 @@ include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
 
 [[raincatcher-support-modules]]
 == {WFM-RC-NameShort} Supported Modules
-include::raincatcher-supported-modules-in-detail.adoc[leveloffset=+2]
+//include::raincatcher-supported-modules-in-detail.adoc[leveloffset=+2]
 
 [[raincatcher-appendix]]
 == {WFM-RC-NameShort} Appendix
