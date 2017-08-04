@@ -2,10 +2,9 @@
 = Logging Module
 
 The {WFM-RC-NameLong} Logger Module is a logging facade for node.js based applications and it is used by all {WFM-RC-NameLong} modules.
-The {WFM-RC-NameLong} Logger Module is is contained in the `raincatcher-core` module.
+The {WFM-RC-NameLong} Logger Module is is contained in the `raincatcher-core` module. Users can
+use there own loggers by wrapping them into provided interface. See link:TODOtypedoclink[typedoc] for more information on interface structure.
 
-There are two implementations of the {WFM-RC-NameLong} Logger module, Bunyan and Console.
-By default, the Bunyan and the Console implementations are not setup and so, no logging exists by default.
-Users can use their own loggers by wrapping their logger into the provided class.
+ <TODO> generate typedoc and link to documentation.
 
-For more information, see the link:https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/logger/example[Logger Example].
+
