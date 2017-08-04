@@ -1,4 +1,5 @@
 include::topics/shared/attributes.adoc[]
+
 :sectnums:
 :toc: left
 :toclevels: 5
@@ -6,8 +7,6 @@ include::topics/shared/attributes.adoc[]
 
 [[Raincatcher]]
 = {WFM-RC-NameLong}
-
-
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
@@ -40,10 +39,6 @@ include::raincatcher-reference-material.adoc[leveloffset=+2]
 // **********************************
 // * Appendix: Revision Information *
 // **********************************
+
 include::topics/shared/templates/revision-info.adoc[]
 
-// **********************************
-// * EXAMPLE - uncomment below to see
-// * render this example 
-// **********************************
-//include::using-raincatcher-logger-and-setting-a-logging-level.adoc[leveloffset=+2]
