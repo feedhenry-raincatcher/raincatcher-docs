@@ -8,8 +8,6 @@ include::topics/shared/attributes.adoc[]
 [[Raincatcher]]
 = {WFM-RC-NameLong}
 
-
-
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
 //include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
@@ -36,6 +34,6 @@ include::topics/shared/attributes.adoc[]
 // **********************************
 // * Appendix: Revision Information *
 // **********************************
-include::topics/shared/templates/revision-info.adoc[]
 
+include::topics/shared/templates/revision-info.adoc[]
 
