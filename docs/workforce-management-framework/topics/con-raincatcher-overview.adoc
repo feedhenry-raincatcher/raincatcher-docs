@@ -1,0 +1,25 @@
+[id='con-raincatcher-overview-{chapter}']
+= {WFM-RC-NameLong} Overview
+
+{WFM-RC-NameLong} is a software framework and is made up with varying node.js modules which are written in TypeScript.
+These modules are packaged and distributed as part of the {WFM-RC-NameLong} solution.
+The primary use of the {WFM-RC-NameLong} solution is to provide a Workforce Management Oriented framework for Workforce Management applications.
+
+The RainCatcher is available as three github repositories:
+
+- *Raincatcher-Core*
+Repository that contains all of the supported modules and demo server.
+
+
+- *Raincatcher-Angularjs*
+Repository that contains angular.js user interface for Raincatcher..
+We are working actively on moving to a new user interface and we are going to provide more than one UI implementation.
+
+- *Raincatcher-Docs*
+This repository will contain RainCatcher documentation
+
+
+
+// Hard coded xref was required
+For more information, see xref:ref-workflow-management-framework-raincatcher-reference-material[Workflow Management Framework Reference Information].
+

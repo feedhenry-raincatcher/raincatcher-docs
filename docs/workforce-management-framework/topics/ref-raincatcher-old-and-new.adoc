@@ -1,0 +1,17 @@
+[id='ref-raincatcher-new-and-old-{chapter}']
+= {WFM-RC-NameLong} 'Next' and 'Beta' Reference Information
+
+{WFM-RC-NameLong} *Beta* information can be found at link:https://github.com/feedhenry-raincatcher/raincatcher-documentation[Beta Documentation].
+
+{WFM-RC-NameLong} *Next* is the new version of the {WFM-RC-NameLong} framework.
+
+The main changes compared to beta are as follows:
+
+- Removed mediator pattern used in beta
+- Fully object oriented approach (Classes and Interfaces)
+- Lightweight in code, with a focus on giving developers multiple choices
+- TypeScript native (for better documentation and developer experience)
+- All modules in single repository (core), multiple choice for user interfaces.
+- Comprehensive documentation available
+- Incorporates only open-source technologies
+- Fully open (We moved our processes, decisions and communication to open channels)

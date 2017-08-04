@@ -5,12 +5,12 @@ include::topics/shared/attributes.adoc[]
 :toclevels: 5
 :last-update-label!:
 
-[[Raincatcher]]
-= {WFM-RC-NameLong}
+image::../../shared/images/raincatcher.svg[logo]
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
-//include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
+include::understanding-raincatcher.adoc[leveloffset=+2]
+include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
 
 [[preparing-the-local-development-environment]]
 == Preparing the Local Development Environment
@@ -20,7 +20,6 @@ include::topics/shared/attributes.adoc[]
 
 [[programming-a-raincatcher-project]]
 == Programming a {WFM-RC-NameShort} Project
-//include::using-wfm-logger-and-setting-a-logging-level.adoc[leveloffset=+2]
 
 [[testing-a-raincatcher-project]]
 == Testing a {WFM-RC-NameShort} Project
@@ -28,8 +27,13 @@ include::topics/shared/attributes.adoc[]
 [[troubleshooting-a-raincatcher-project]]
 == Troubleshooting a {WFM-RC-NameShort} Project
 
-[[raincatcher-modules-reference]]
-== {WFM-RC-NameShort} Modules Reference
+[[raincatcher-support-modules]]
+== {WFM-RC-NameShort} Supported Modules
+include::raincatcher-supported-modules-in-detail.adoc[leveloffset=+2]
+
+[[raincatcher-appendix]]
+== {WFM-RC-NameShort} Appendix
+include::raincatcher-reference-material.adoc[leveloffset=+2]
 
 // **********************************
 // * Appendix: Revision Information *
