@@ -5,8 +5,7 @@ include::topics/shared/attributes.adoc[]
 :toclevels: 5
 :last-update-label!:
 
-[[Raincatcher]]
-= {WFM-RC-NameLong}
+image::../../shared/images/raincatcher.svg[logo]
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}

@@ -1,11 +1,11 @@
 [id='ref-raincatcher-demo-{chapter}']
 = {WFM-RC-NameLong} Demo Application Reference Information
 
-The {WFM-RC-NameLong} demo is packaged as part of `raincatcher-core`.
-The {WFM-RC-NameLong} demo is called *Raincatcher-Angularjs*.
+There is a demo in Raincatcher-core and a demo application in Raincatcher-Angularjs.
 
-The {WFM-RC-NameLong} demo contains:
+- Raincatcher-core contains non-production demo example that is used to showcase the modules functionality.
+- Raincatcher-angularjs has a set of example implementations for Workforce Management Solutions (Workorder, WorkorderResult)
+- Raincatcher-angularjs has a Website, Mobile and server demo applications serving as reference implementation for the framework.
 
-* Raincatcher-core contains non-production demo example that is used to showcase the modules functionality.
-* Raincatcher-angularjs has a set of example implementations for Workforce Management Solutions (Workorder, WorkorderResult)
-* Raincatcher-angularjs has a Website, Mobile and server demo applications serving as reference implementation for the framework.
+// Hard coded xref was required
+For more information, see xref:ref-raincatcher-demo-raincatcher-reference-material[{WFM-RC-NameLong} Demo Application Reference Information].

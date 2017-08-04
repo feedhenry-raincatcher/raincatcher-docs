@@ -5,10 +5,19 @@
 These modules are packaged and distributed as part of the {WFM-RC-NameLong} solution.
 The primary use of the {WFM-RC-NameLong} solution is to provide a Workforce Management Oriented framework for Workforce Management applications.
 
-The {WFM-RC-NameLong} solution comprises of two fully independent frameworks:
+The RainCatcher is available as three github repositories:
 
- * Workflow Management Framework
- * Security Framework
+- *Raincatcher-Core*
+Repository that contains all of the supported modules and demo server.
+
+
+- *Raincatcher-Angularjs*
+Repository that contains angular.js user interface for Raincatcher..
+We are working actively on moving to a new user interface and we are going to provide more than one UI implementation.
+
+- *Raincatcher-Docs*
+This repository will contain RainCatcher documentation
+
 
 
 // Hard coded xref was required
