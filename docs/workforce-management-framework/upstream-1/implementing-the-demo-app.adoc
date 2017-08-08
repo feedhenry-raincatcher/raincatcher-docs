@@ -1,0 +1,15 @@
+include::topics/shared/attributes.adoc[]
+
+//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:chapter: implementing-the-demo-app
+
+[[getting-started-with-the-raincatcher-demo-app]]
+= Getting Started with the {WFM-RC-NameLong} Demo App
+include::topics/con-implementing-the-demo-app.adoc[leveloffset=+1]
+
+== Procedure
+include::topics/pro-installing-the-demo-app.adoc[leveloffset=+2]
+include::topics/pro-configuring-the-demo-app.adoc[leveloffset=+2]
+
+== Related Information
+include::topics/ref-troubleshooting-the-demo-app.adoc[leveloffset=+2]

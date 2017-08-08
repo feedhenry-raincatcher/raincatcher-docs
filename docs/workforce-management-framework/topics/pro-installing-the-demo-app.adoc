@@ -1,0 +1,17 @@
+[id='pro-installing-the-demo-app-{chapter}']
+= Installing the Demo App
+
+//TODO
+//To install the Demo App, 
+
+.Prerequisites
+
+//TODO
+// * `raincatcher-core module` must be installed.
+
+.Procedure
+
+.Related Information
+
+//TODO
+// * For more information, see <link to the troubleshooting guide>
