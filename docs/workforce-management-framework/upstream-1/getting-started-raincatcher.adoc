@@ -1,0 +1,15 @@
+include::topics/shared/attributes.adoc[]
+
+//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:chapter: getting-started-raincatcher.adoc
+
+[[getting-started-raincatcher]]
+= Getting Started with {WFM-RC-NameLong}
+
+include::topics/con-raincatcher-core-getting-started.adoc[leveloffset=+1]
+include::topics/con-raincatcher-angularjs-getting-started.adoc[leveloffset=+1]
+
+//== Procedures
+
+//== Related Information
+
