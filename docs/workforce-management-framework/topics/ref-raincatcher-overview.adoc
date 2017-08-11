@@ -1,0 +1,51 @@
+[id='ref-workflow-management-framework-{chapter}']
+=  Workflow Management Framework Reference Information
+
+The {WFM-RC-NameLong} Workflow Management Framework contains 3 components.
+Developers can write custom Tasks that will implement any business logic and link implementation with any UI solution.
+The Framework abstracts the developer from any web or mobile application libraries which allows developers to focus on implementing the process.
+
+.Workflow Management Framework Components
+|===
+|*Component* |*Use Case*
+
+|Task
+|Defines single unit of work for business process, that is, workflow steps
+
+|Flow
+|Contain ordered set of tasks and handlers for executing tasks in proper order
+
+|Process
+|Instance of flow containing current progress and business objects.
+|===
+
+{WFM-RC-NameLong} allows you to build production-grade Node.js and Cordova based applications from the
+following technology stack.
+
+.Application Technologies
+
+|===
+|TypeScript
+|Cordova
+|Node.js
+|===
+
+.{WFM-RC-NameLong} Framework goals
+The {WFM-RC-NameLong} Framework goals:
+
+
+* Rapid, production ready application development framework.
+* Covers Mobile, web and server side application development
+* Written in TypeScript (with support JavaScript development)
+* Secure out of the box thanks to multiple security providers (Keycloak, Passport.js)
+* Full support for offline enabled applications thanks to FeedHenry Sync
+* Extensibility provided by set of TypeScript based interfaces
+* Provide A sleek, modern, mobile enabled front-end reference applications
+* Provides abstraction layer for common application elements:
+    ** Data access
+    ** Security
+    ** Logging
+    ** Restful API creation
+    ** Unit testing
+
+The Modules abstract from any application logic and technologies allowing developers to extend it for their needs.
