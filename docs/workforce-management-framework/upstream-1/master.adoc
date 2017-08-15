@@ -10,13 +10,14 @@ include::topics/shared/attributes.adoc[]
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
-//include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
+include::../topics/introduction.adoc[leveloffset=+2]
 
 //[[preparing-the-local-development-environment]]
 //== Preparing the Local Development Environment
 
 [[getting-started-with-raincatcher]]
 == Getting Started with {WFM-RC-NameShort}
+include::../topics/getting-started.adoc[leveloffset=+2]
 
 //[[programming-a-raincatcher-project]]
 //== Programming a {WFM-RC-NameShort} Project
@@ -31,12 +32,12 @@ include::topics/shared/attributes.adoc[]
 //[[raincatcher-modules-reference]]
 //== {WFM-RC-NameShort} Modules Reference
 
-[[raincatcher-api-documentation]]
-== Raincatcher API Documentation
+//[[raincatcher-api-documentation]]
+//== Raincatcher API Documentation
 
 // **********************************
 // * Appendix: Revision Information *
 // **********************************
 
-include::topics/shared/templates/revision-info.adoc[]
+//include::topics/shared/templates/revision-info.adoc[]
 
