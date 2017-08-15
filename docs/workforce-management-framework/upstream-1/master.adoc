@@ -6,8 +6,12 @@ include::topics/shared/attributes.adoc[]
 :last-update-label!:
 
 image::../../shared/images/logo-blue.png[logo]
+
+////
 [[Raincatcher]]
 = {WFM-RC-NameLong}
+////
+
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
