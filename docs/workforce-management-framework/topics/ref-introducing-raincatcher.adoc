@@ -1,0 +1,57 @@
+[id='ref-introducing-raincatcher-{chapter}']
+= Defining {WFM-RC-NameShort} Areas of Focus
+
+.Areas of Focus
+|===
+|Area |Focus
+
+|Framework
+|A set of modules for building mobile and website Workforce Management solutions
+
+|Modules
+|Modules specific to {WFM-RC-NameShort}, for example: signatures, scheduler
+
+|Integrations
+|Integrations provide, for example: authentication, storage, offline capabilities, server side synchronization
+
+|User Interfaces
+|Graphical User Interfaces are implemented in AngularJS and Angular
+|===
+
+= Defining {WFM-RC-NameShort} Technologies and Technicalities
+
+* link:https://nodejs.org/en/[Node.js]
+* Hybrid mobile development using link:https://www.typescriptlang.org/docs/home.html[TypeScript](cordova/web/angular)
+* Object Oriented approach (classes and interfaces)
+* Focus on module reuse and flexibility
+* Incorporates only open-source technologies
+
+= Defining {WFM-RC-NameShort} Repositories
+ 
+The {WFM-RC-NameShort} is available as 3 github repositories:
+
+.github repositories
+|===
+|Repository |Description
+
+|link:https://github.com/feedhenry-raincatcher/raincatcher-core[raincatcher-core]
+|Contains all of the supported modules and demo server.
+
+|link:https://github.com/feedhenry-raincatcher/raincatcher-angularjs[raincatcher-angularjs]
+|Contains angularJS user interface for {WFM-RC-NameShort}
+
+|link:https://github.com/feedhenry-raincatcher/raincatcher-docs[raincatcher-docs]
+|Repository contains {WFM-RC-NameShort} documentation
+|===
+
+= {WFM-RC-NameShort} and 'Tech Preview' codebases
+
+The {WFM-RC-NameShort} project was originally called *Tech Preview*.
+The *Tech Preview* codebase is now deprecated and is accessible at link:https://github.com/feedhenry-raincatcher/raincatcher-documentation[Tech Preview Documentation].
+
+The main differences between {WFM-RC-NameShort} and *Tech Preview* are:
+
+* Mediator pattern removed in {WFM-RC-NameShort}
+* *Tech Preview* is not object oriented
+* {WFM-RC-NameShort} is more lightweight
+* *Tech Preview* does not employ TypeScript

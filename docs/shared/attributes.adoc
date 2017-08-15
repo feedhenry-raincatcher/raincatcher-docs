@@ -16,6 +16,7 @@
 //***NEW START***
 :WFM-RC-NameLong: RainCatcher
 :WFM-RC-NameShort: RainCatcher
+:WFM-RC-Version: 1.0
 //***NEW END***
 
 // Component Names
