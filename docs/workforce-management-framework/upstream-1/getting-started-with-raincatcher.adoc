@@ -20,8 +20,8 @@ This section covers the following topics:
 * node and npm installed locally (tested on node {WFM-RC-NodeVersion})
 * git installed locally
 * access to `git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git`
-* mongodb installed locally
-* redis installed locally
+* MongoDb installed locally
+* Redis installed locally
 
 = Procedures
 include::topics/con-demo-app.adoc[leveloffset=+1]

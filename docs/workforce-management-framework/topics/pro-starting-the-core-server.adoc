@@ -14,4 +14,4 @@
 npm run start
 ----
 
-NOTE: The Core server requires mongodb and redis to be running
+NOTE: The Core server requires MongoDb and Redis to be running

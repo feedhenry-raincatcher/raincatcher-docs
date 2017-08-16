@@ -35,12 +35,12 @@ This section includes:
 * Hybrid mobile development using link:https://www.typescriptlang.org/docs/home.html[TypeScript](cordova/web/angular)
 * Object Oriented approach (classes and interfaces)
 * Focus on module reuse and flexibility
-* Incorporates only open-source technologies
+* Incorporates open-source technologies, for example: 
 
 [id='identifying-raincatcher-repositories-{chapter}']
 == Identifying {WFM-RC-NameShort} Repositories
  
-The {WFM-RC-NameShort} is available as 3 github repositories:
+The {WFM-RC-NameShort} is available in 3 github repositories: MongoDb, Keycloak, Passport.js
 
 .github Repositories
 |===
