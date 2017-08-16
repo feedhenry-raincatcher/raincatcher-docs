@@ -1,5 +1,5 @@
 [id='ref-demo-app-{chapter}']
-= {WFM-RC-NameShort} Demo App Reference Material
+= {WFM-RC-NameShort} Demo Application Reference Material
 
 This section includes:
 

@@ -4,7 +4,7 @@ include::topics/shared/attributes.adoc[]
 :chapter: getting-started-with-raincatcher
 
 = Introduction
-This section assists the reader in getting started with the {WFM-RC-NameShort} Demo Application.
+This section assists the reader in getting started with the {WFM-RC-NameShort} demo application.
 This section covers the following topics:
 
 . xref:con-demo-app-{chapter}[Introducing the {WFM-RC-NameShort} Demo Application]
@@ -13,14 +13,15 @@ This section covers the following topics:
 . xref:pro-installing-core-dependencies-{chapter}[Installing Core Dependencies]
 . xref:pro-starting-the-core-server-{chapter}[Starting the Core Server]
 . xref:pro-running-the-mobile-and-portal-demo-applications-{chapter}[Running the Mobile and Portal Demo Applications]
-. xref:ref-demo-app-{chapter}[{WFM-RC-NameShort} Demo App Reference Material]
+. xref:ref-demo-app-{chapter}[{WFM-RC-NameShort} Demo Application Reference Material]
 
 = Prerequisites
 
-* node and npm installed (tested on node {WFM-NODE-VERSION})
-* git installed
-* mongodb installed
-* redis installed
+* node and npm installed locally (tested on node {WFM-RC-NodeVersion})
+* git installed locally
+* access to `git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git`
+* mongodb installed locally
+* redis installed locally
 
 = Procedures
 include::topics/con-demo-app.adoc[leveloffset=+1]
@@ -29,7 +30,7 @@ include::topics/pro-installing-angular-dependencies.adoc[leveloffset=+1]
 include::topics/pro-installing-core-dependencies.adoc[leveloffset=+1]
 include::topics/pro-starting-the-core-server.adoc[leveloffset=+1]
 include::topics/pro-running-the-mobile-and-portal-demo-applications.adoc[leveloffset=+1]
-For login details, see section xref:credentials-for-the-demo-application-{chapter}[Credentials for the Demo Application] of _Demo App Reference Material_.
+For login details, refer to xref:credentials-for-the-demo-application-{chapter}[Credentials for the Demo Application] section of xref:ref-demo-app-{chapter}[{WFM-RC-NameShort} Demo Application Reference Material].
 
 = Related Information
 include::topics/ref-demo-app.adoc[leveloffset=+1]

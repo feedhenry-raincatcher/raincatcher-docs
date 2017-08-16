@@ -17,6 +17,7 @@
 :WFM-RC-NameLong: RainCatcher
 :WFM-RC-NameShort: RainCatcher
 :WFM-RC-Version: 1.0
+:WFM-RC-NodeVersion: <parameter found in attributes.adoc>
 //***NEW END***
 
 // Component Names

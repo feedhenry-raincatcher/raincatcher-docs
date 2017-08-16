@@ -15,4 +15,4 @@ cd ..
 npm run start
 ----
 
-Both the Mobile and Portal Demo should start automatically in a browser.
+Both the Mobile and Portal Demo open automatically in a browser.

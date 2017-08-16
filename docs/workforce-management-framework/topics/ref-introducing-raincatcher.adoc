@@ -1,5 +1,15 @@
 [id='ref-introducing-raincatcher-{chapter}']
-= Defining {WFM-RC-NameShort} Areas of Focus
+= {WFM-RC-NameShort} Reference Material
+
+This section includes:
+
+. xref:highlighting-raincatcher-areas-of-focus-{chapter}[Highlighting {WFM-RC-NameShort} Areas of Focus]
+. xref:describing-raincatcher-technologies-and-technicalities-{chapter}[Describing {WFM-RC-NameShort} Technologies and Technicalities]
+. xref:identifying-raincatcher-repositories-{chapter}[Identifying {WFM-RC-NameShort} Repositories]
+. xref:highlighting-raincatcher-tech-preview-differences-{chapter}[Highlighting {WFM-RC-NameShort} and 'Tech Preview' Differences]
+
+[id='highlighting-raincatcher-areas-of-focus-{chapter}']
+== Highlighting {WFM-RC-NameShort} Areas of Focus
 
 .Areas of Focus
 |===
@@ -18,7 +28,8 @@
 |Graphical User Interfaces are implemented in AngularJS and Angular
 |===
 
-= Defining {WFM-RC-NameShort} Technologies and Technicalities
+[id='describing-raincatcher-technologies-and-technicalities-{chapter}']
+== Describing {WFM-RC-NameShort} Technologies and Technicalities
 
 * link:https://nodejs.org/en/[Node.js]
 * Hybrid mobile development using link:https://www.typescriptlang.org/docs/home.html[TypeScript](cordova/web/angular)
@@ -26,11 +37,12 @@
 * Focus on module reuse and flexibility
 * Incorporates only open-source technologies
 
-= Defining {WFM-RC-NameShort} Repositories
+[id='identifying-raincatcher-repositories-{chapter}']
+== Identifying {WFM-RC-NameShort} Repositories
  
 The {WFM-RC-NameShort} is available as 3 github repositories:
 
-.github repositories
+.github Repositories
 |===
 |Repository |Description
 
@@ -44,7 +56,8 @@ The {WFM-RC-NameShort} is available as 3 github repositories:
 |Repository contains {WFM-RC-NameShort} documentation
 |===
 
-= {WFM-RC-NameShort} and 'Tech Preview' codebases
+[id='highlighting-raincatcher-tech-preview-differences-{chapter}']
+== Highlighting {WFM-RC-NameShort} and 'Tech Preview' Differences
 
 The {WFM-RC-NameShort} project was originally called *Tech Preview*.
 The *Tech Preview* codebase is now deprecated and is accessible at link:https://github.com/feedhenry-raincatcher/raincatcher-documentation[Tech Preview Documentation].
