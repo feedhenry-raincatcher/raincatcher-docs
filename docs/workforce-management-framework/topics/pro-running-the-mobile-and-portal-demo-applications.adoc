@@ -1,0 +1,18 @@
+[id='pro-running-the-mobile-and-portal-demo-applications-{chapter}']
+= Running the Mobile and Portal Demo Applications
+
+.Prerequisites
+
+. xref:pro-starting-the-core-server-{chapter}[Starting the Core Server]
+
+.Procedure
+
+== Run the Mobile and Portal Demo Applications
+
+[source,bash]
+----
+cd ..
+npm run start
+----
+
+Both the Mobile and Portal Demo should start automatically in a browser.

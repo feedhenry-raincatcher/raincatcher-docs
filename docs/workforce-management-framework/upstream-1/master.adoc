@@ -17,7 +17,7 @@ include::introducing-raincatcher.adoc[leveloffset=+2]
 
 [[getting-started-with-raincatcher]]
 == Getting Started with {WFM-RC-NameShort}
-//include::../topics/getting-started.adoc[leveloffset=+2]
+include::getting-started-with-raincatcher.adoc[leveloffset=+2]
 
 //[[programming-a-raincatcher-project]]
 //== Programming a {WFM-RC-NameShort} Project

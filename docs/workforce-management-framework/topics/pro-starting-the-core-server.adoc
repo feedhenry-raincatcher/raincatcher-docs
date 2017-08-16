@@ -1,0 +1,17 @@
+[id='pro-starting-the-core-server-{chapter}']
+= Starting the Core Server
+
+.Prerequisites
+
+. xref:pro-installing-core-dependencies-{chapter}[Installing Core Dependencies]
+
+.Procedure
+
+== Start the Core Node.js Server
+
+NOTE: The Core server requires mongodb and redis to be running
+
+[source,bash]
+----
+npm run start
+----

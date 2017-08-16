@@ -1,0 +1,6 @@
+[id='con-demo-app-{chapter}']
+= Introducing the {WFM-RC-NameShort} Demo Application
+
+The {WFM-RC-NameShort} demo app comprises of two applications and are called *Mobile* and *Portal*.
+When the *Mobile* and *Portal* demo applications are running, they are accessed via a graphical user interface.
+To gain access to the *Mobile* and *Portal* demo applications, the user is required to login to each demo application.

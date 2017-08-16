@@ -1,0 +1,18 @@
+[id='pro-cloning-the-git-repository-{chapter}']
+= Cloning the Git Repository
+
+.Prerequisites
+
+* access to `git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git`
+* git is installed
+
+.Procedure
+
+== Clone the Git Repository
+
+[source,bash]
+----
+git clone git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git
+
+cd raincatcher-angularjs
+----
