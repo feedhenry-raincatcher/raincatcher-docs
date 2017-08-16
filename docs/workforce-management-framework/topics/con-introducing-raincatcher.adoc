@@ -5,10 +5,9 @@
 {WFM-RC-NameLong} is a Workforce Management Platform.
 The latest version of {WFM-RC-NameShort} is {WFM-RC-Version}.
 
-The primary goal of {WFM-RC-NameShort} is to deliver a set of modules and user-interface implementation so that a user can integrate {WFM-RC-NameShort} features into their application.
+The primary goal of {WFM-RC-NameShort} is to deliver a set of modules and a user-interface implementation for developers to integrate {WFM-RC-NameShort} features into their application.
 
-//Mobile WFM Presentation_JULY_2017.pptx
-These features include:
+The following features are on the {WFM-RC-NameShort} roadmap:
 
 * Workflow Management
 * Geolocation
@@ -18,3 +17,5 @@ These features include:
 * Real-time Data Access
 * Data Synchronization
 * Integration of sensor data
+
+//Features included in {WFM-RC-NameShort} {WFM-RC-Version} are:

@@ -4,9 +4,9 @@
 This section includes:
 
 . xref:highlighting-raincatcher-areas-of-focus-{chapter}[Highlighting {WFM-RC-NameShort} Areas of Focus]
-. xref:describing-raincatcher-technologies-and-technicalities-{chapter}[Describing {WFM-RC-NameShort} Technologies and Technicalities]
+. xref:describing-raincatcher-technically-{chapter}[Describing {WFM-RC-NameShort} Technically]
 . xref:identifying-raincatcher-repositories-{chapter}[Identifying {WFM-RC-NameShort} Repositories]
-. xref:highlighting-raincatcher-tech-preview-differences-{chapter}[Highlighting {WFM-RC-NameShort} and 'Tech Preview' Differences]
+. xref:differentiating-raincatcher-from-tech-preview-{chapter}[Differentiating {WFM-RC-NameShort} from 'Tech Preview']
 
 [id='highlighting-raincatcher-areas-of-focus-{chapter}']
 == Highlighting {WFM-RC-NameShort} Areas of Focus
@@ -16,22 +16,22 @@ This section includes:
 |Area |Focus
 
 |Framework
-|A set of modules for building mobile and website Workforce Management solutions
+|A generic and developer friendly framework (set of classes) for building building mobile and website Workforce Management solutions
 
 |Modules
-|Modules specific to {WFM-RC-NameShort}, for example: signatures, scheduler
+|Modules specific to {WFM-RC-NameShort}, for example: signature-module, scheduler
 
 |Integrations
-|Integrations provide, for example: authentication, storage, offline capabilities, server side synchronization
+|Integrations to satisfy {WFM-RC-NameShort} needs, for example: authentication, storage, offline capabilities, server side synchronization
 
-|User Interfaces
+|User Interface
 |Graphical User Interfaces are implemented in AngularJS and Angular
 |===
 
-[id='describing-raincatcher-technologies-and-technicalities-{chapter}']
-== Describing {WFM-RC-NameShort} Technologies and Technicalities
+[id='describing-raincatcher-technically-{chapter}']
+== Describing {WFM-RC-NameShort} Technically
 
-* link:https://nodejs.org/en/[Node.js]
+* link:https://nodejs.org/en/[Node.js] used for server side code
 * Hybrid mobile development using link:https://www.typescriptlang.org/docs/home.html[TypeScript](cordova/web/angular)
 * Object Oriented approach (classes and interfaces)
 * Focus on module reuse and flexibility
@@ -56,8 +56,8 @@ The {WFM-RC-NameShort} is available as 3 github repositories:
 |Repository contains {WFM-RC-NameShort} documentation
 |===
 
-[id='highlighting-raincatcher-tech-preview-differences-{chapter}']
-== Highlighting {WFM-RC-NameShort} and 'Tech Preview' Differences
+[id='differentiating-raincatcher-from-tech-preview-{chapter}']
+== Differentiating {WFM-RC-NameShort} from 'Tech Preview'
 
 The {WFM-RC-NameShort} project was originally called *Tech Preview*.
 The *Tech Preview* codebase is now deprecated and is accessible at link:https://github.com/feedhenry-raincatcher/raincatcher-documentation[Tech Preview Documentation].
@@ -66,5 +66,4 @@ The main differences between {WFM-RC-NameShort} and *Tech Preview* are:
 
 * Mediator pattern removed in {WFM-RC-NameShort}
 * *Tech Preview* is not object oriented
-* {WFM-RC-NameShort} is more lightweight
-* *Tech Preview* does not employ TypeScript
+* *Tech Preview* is written in javascript
