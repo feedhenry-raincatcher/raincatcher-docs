@@ -16,7 +16,7 @@ This section includes:
 |Area |Focus
 
 |Framework
-|A generic and developer friendly framework (set of classes) for building building mobile and website Workforce Management solutions
+|A generic and developer friendly framework (set of classes) for building mobile and website Workforce Management solutions
 
 |Modules
 |Modules specific to {WFM-RC-NameShort}, for example: signature-module, scheduler
