@@ -17,6 +17,7 @@ include::topics/shared/attributes.adoc[]
 
 [[getting-started-with-raincatcher]]
 == Getting Started with {WFM-RC-NameShort}
+include::implementing-the-demo-app.adoc[leveloffset=+2]
 
 [[programming-a-raincatcher-project]]
 == Programming a {WFM-RC-NameShort} Project
