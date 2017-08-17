@@ -1,3 +1,6 @@
+[id='pro-running-the-demo-app-{chapter}']
+= Introduction
+
 This section includes:
 
 . xref:pro-cloning-the-git-repository-{chapter}[Cloning the Git Repository]
@@ -5,12 +8,20 @@ This section includes:
 . xref:pro-installing-core-dependencies-{chapter}[Installing Core Dependencies]
 . xref:pro-starting-the-core-server-{chapter}[Starting the Core Server]
 . xref:pro-running-the-mobile-and-portal-demo-applications-{chapter}[Running the Mobile and Portal Demo Applications]
-. xref:ref-demo-app-{chapter}[{WFM-RC-NameShort} Demo Application Reference Material]
+
+= Prerequisites
+
+* Node and npm installed (tested on Node {WFM-RC-NodeVersion})
+* git installed
+* access to `git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git`
+* MongoDb installed
+* Redis installed
+
+= Procedure
 
 [id='pro-cloning-the-git-repository-{chapter}']
-= Cloning the Git Repository
-
-.Procedure
+[discrete]
+== Cloning the Git Repository
 
 [source,bash]
 ----
@@ -20,13 +31,8 @@ cd raincatcher-angularjs
 ----
 
 [id='pro-installing-angular-dependencies-{chapter}']
-= Installing Repository Dependencies
-
-.Prerequisites
-
-. xref:pro-cloning-the-git-repository-{chapter}[Cloning the Git Repository]
-
-.Procedure
+[discrete]
+== Installing Repository Dependencies
 
 [source,bash]
 ----
@@ -35,13 +41,8 @@ npm run bootstrap
 ----
 
 [id='pro-installing-core-dependencies-{chapter}']
-= Installing Core Dependencies
-
-.Prerequisites
-
-. xref:pro-installing-angular-dependencies-{chapter}[Installing Angular Dependencies]
-
-.Procedure
+[discrete]
+== Installing Core Dependencies
 
 [source,bash]
 ----
@@ -54,13 +55,8 @@ NOTE: The Core repository is automatically cloned by the git command `npm run bo
 To work with a different branch of the Core repository, checkout in another branch.
 
 [id='pro-starting-the-core-server-{chapter}']
-= Starting the Core Server
-
-.Prerequisites
-
-. xref:pro-installing-core-dependencies-{chapter}[Installing Core Dependencies]
-
-.Procedure
+[discrete]
+== Starting the Core Server
 
 [source,bash]
 ----
@@ -70,13 +66,8 @@ npm run start
 NOTE: The Core server requires MongoDb and Redis to be running
 
 [id='pro-running-the-mobile-and-portal-demo-applications-{chapter}']
-= Running the Mobile and Portal Demo Applications
-
-.Prerequisites
-
-. xref:pro-starting-the-core-server-{chapter}[Starting the Core Server]
-
-.Procedure
+[discrete]
+== Running the Mobile and Portal Demo Applications
 
 [source,bash]
 ----

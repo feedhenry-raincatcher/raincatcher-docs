@@ -1,25 +1,17 @@
 include::topics/shared/attributes.adoc[]
 
 //':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
-:chapter: getting-started-with-raincatcher
+:chapter: running-the-demo-app
 
-= Introduction
+[id='running-the-demo-app-{chapter}']
+= Running the Demo App
 The {WFM-RC-NameShort} demo app comprises of two applications and are called *Mobile* and *Portal*.
 To gain access to the *Mobile* and *Portal* demo applications, the user is required to login to each demo application.
 For testing and demo purposes, *Mobile* and *Portal* are launched in the browser.
 *Mobile* can be built to run on a mobile phone.
 
-
-= Prerequisites
-
-* Node and npm installed (tested on Node {WFM-RC-NodeVersion})
-* git installed
-* access to `git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git`
-* MongoDb installed
-* Redis installed
-
-= Procedures
+// Procedure
 include::topics/pro-running-the-demo-app.adoc[leveloffset=+1]
 
-= Related Information
+// Related Information
 include::topics/ref-demo-app.adoc[leveloffset=+1]

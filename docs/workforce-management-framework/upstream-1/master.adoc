@@ -5,7 +5,7 @@ include::topics/shared/attributes.adoc[]
 :toclevels: 5
 :last-update-label!:
 
-image::../../shared/images/logo-blue.png[logo]
+//image::../../shared/images/logo-blue.png[logo]
 
 [[Raincatcher]]
 = {WFM-RC-NameLong}
@@ -17,9 +17,9 @@ include::introducing-raincatcher.adoc[leveloffset=+2]
 //[[preparing-the-local-development-environment]]
 //== Preparing the Local Development Environment
 
-[[getting-started-with-raincatcher]]
-== Getting Started with {WFM-RC-NameShort}
-include::getting-started-with-raincatcher.adoc[leveloffset=+2]
+[[getting-started]]
+== Getting Started with {WFM-RC-NameLong}
+include::running-the-demo-app.adoc[leveloffset=+2]
 
 //[[programming-a-raincatcher-project]]
 //== Programming a {WFM-RC-NameShort} Project

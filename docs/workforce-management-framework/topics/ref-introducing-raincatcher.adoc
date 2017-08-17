@@ -4,7 +4,7 @@
 This section includes:
 
 . xref:highlighting-raincatcher-areas-of-focus-{chapter}[Highlighting {WFM-RC-NameShort} Areas of Focus]
-. xref:describing-raincatcher-technically-{chapter}[Describing {WFM-RC-NameShort} Technically]
+. xref:raincatcher-at-a-technical-level-{chapter}[{WFM-RC-NameShort} at a Technical Level]
 . xref:identifying-raincatcher-repositories-{chapter}[Identifying {WFM-RC-NameShort} Repositories]
 . xref:differentiating-raincatcher-from-tech-preview-{chapter}[Differentiating {WFM-RC-NameShort} from 'Tech Preview']
 
@@ -28,8 +28,8 @@ This section includes:
 |Graphical User Interfaces are implemented in AngularJS and Angular
 |===
 
-[id='describing-raincatcher-technically-{chapter}']
-== Describing {WFM-RC-NameShort} Technically
+[id='raincatcher-at-a-technical-level-{chapter}']
+== {WFM-RC-NameShort} at a Technical Level
 
 * link:https://nodejs.org/en/[Node.js] used for server side code
 * Hybrid mobile development using https://cordova.apache.org/[Cordova]
@@ -40,7 +40,7 @@ This section includes:
 [id='identifying-raincatcher-repositories-{chapter}']
 == Identifying {WFM-RC-NameShort} Repositories
  
-The {WFM-RC-NameShort} is available in 3 github repositories:
+The {WFM-RC-NameShort} is available in three github repositories:
 
 .github Repositories
 |===
