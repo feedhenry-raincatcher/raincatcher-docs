@@ -1,0 +1,8 @@
+[id='con-auth-demo-module-{chapter}']
+=  Auth-Demo
+
+The name of this module is  `wfm-auth-demo`.
+
+(PRD-104.2)
+<**TODO**>
+This module should be explained from a high level and its primary function defined.

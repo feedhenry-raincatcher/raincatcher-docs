@@ -1,0 +1,8 @@
+[id='con-auth-keycloak-module-{chapter}']
+=  Auth-Keycloak
+
+The name of this module is  `wfm-auth-keycloak`.
+
+(PRD-104.2)
+<**TODO**>
+This module should be explained from a high level and its primary function defined.
