@@ -5,12 +5,8 @@ include::topics/shared/attributes.adoc[]
 :toclevels: 5
 :last-update-label!:
 
-
-////
 [[Raincatcher]]
 = {WFM-RC-NameLong}
-////
-
 
 image::../../shared/images/raincatcher.svg[logo]
 
@@ -41,5 +37,3 @@ include::using-wfm-logger.adoc[leveloffset=+2]
 // * Appendix: Revision Information *
 // **********************************
 include::topics/shared/templates/revision-info.adoc[]
-
-
