@@ -4,33 +4,22 @@ include::topics/shared/attributes.adoc[]
 :chapter: getting-started-with-raincatcher
 
 = Introduction
-This section assists the reader in getting started with the {WFM-RC-NameShort} demo application.
-This section covers the following topics:
+The {WFM-RC-NameShort} demo app comprises of two applications and are called *Mobile* and *Portal*.
+To gain access to the *Mobile* and *Portal* demo applications, the user is required to login to each demo application.
+For testing and demo purposes, *Mobile* and *Portal* are launched in the browser.
+*Mobile* can be built to run on a mobile phone.
 
-. xref:con-demo-app-{chapter}[Introducing the {WFM-RC-NameShort} Demo Application]
-. xref:pro-cloning-the-git-repository-{chapter}[Cloning the Git Repository]
-. xref:pro-installing-angular-dependencies-{chapter}[Installing Angular Dependencies]
-. xref:pro-installing-core-dependencies-{chapter}[Installing Core Dependencies]
-. xref:pro-starting-the-core-server-{chapter}[Starting the Core Server]
-. xref:pro-running-the-mobile-and-portal-demo-applications-{chapter}[Running the Mobile and Portal Demo Applications]
-. xref:ref-demo-app-{chapter}[{WFM-RC-NameShort} Demo Application Reference Material]
 
 = Prerequisites
 
-* node and npm installed locally (tested on node {WFM-RC-NodeVersion})
-* git installed locally
+* Node and npm installed (tested on Node {WFM-RC-NodeVersion})
+* git installed
 * access to `git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git`
-* MongoDb installed locally
-* Redis installed locally
+* MongoDb installed
+* Redis installed
 
 = Procedures
-include::topics/con-demo-app.adoc[leveloffset=+1]
-include::topics/pro-cloning-the-git-repository.adoc[leveloffset=+1]
-include::topics/pro-installing-angular-dependencies.adoc[leveloffset=+1]
-include::topics/pro-installing-core-dependencies.adoc[leveloffset=+1]
-include::topics/pro-starting-the-core-server.adoc[leveloffset=+1]
-include::topics/pro-running-the-mobile-and-portal-demo-applications.adoc[leveloffset=+1]
-For login details, refer to xref:credentials-for-the-demo-application-{chapter}[Credentials for the Demo Application] section of xref:ref-demo-app-{chapter}[{WFM-RC-NameShort} Demo Application Reference Material].
+include::topics/pro-running-the-demo-app.adoc[leveloffset=+1]
 
 = Related Information
 include::topics/ref-demo-app.adoc[leveloffset=+1]

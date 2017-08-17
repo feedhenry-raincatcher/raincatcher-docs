@@ -32,15 +32,15 @@ This section includes:
 == Describing {WFM-RC-NameShort} Technically
 
 * link:https://nodejs.org/en/[Node.js] used for server side code
-* Hybrid mobile development using link:https://www.typescriptlang.org/docs/home.html[TypeScript](cordova/web/angular)
+* Hybrid mobile development using https://cordova.apache.org/[Cordova]
 * Object Oriented approach (classes and interfaces)
 * Focus on module reuse and flexibility
-* Incorporates open-source technologies, for example: 
+* Incorporates open-source technologies, for example: MongoDb, Keycloak, Passport.js
 
 [id='identifying-raincatcher-repositories-{chapter}']
 == Identifying {WFM-RC-NameShort} Repositories
  
-The {WFM-RC-NameShort} is available in 3 github repositories: MongoDb, Keycloak, Passport.js
+The {WFM-RC-NameShort} is available in 3 github repositories:
 
 .github Repositories
 |===
