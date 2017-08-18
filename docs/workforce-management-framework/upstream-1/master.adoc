@@ -7,9 +7,6 @@ include::topics/shared/attributes.adoc[]
 
 image::../../shared/images/logo-blue.png[logo]
 
-[[Raincatcher]]
-= {WFM-RC-NameLong}
-
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
 include::introducing-raincatcher.adoc[leveloffset=+2]
