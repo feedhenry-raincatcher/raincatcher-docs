@@ -1,7 +1,7 @@
 []
-= RainCatcher Passport Auth
+= {WFM-RC-NameShort} Passport Auth
 
-Raincatcher authentication and authorization module using link:http://passportjs.org[PassportJS].
+{WFM-RC-NameShort} authentication and authorization module using link:http://passportjs.org[PassportJS].
 This module allows the:
 - Creation and initialization of a Passport authentication service using Passport's local strategy.
 - Protection of express routes from requests by user authentication and authorization.
@@ -35,4 +35,4 @@ app.get('/secureEndpoint', authService.protect('admin'), (req: express.Request, 
 });
 ----
 
-See link:https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/passportauth/example[./example/index.ts] for a sample implementation
+See link:https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/passportauth/example[./example] for a sample implementation
