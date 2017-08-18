@@ -25,7 +25,7 @@ Passport authentication service using Passport's local strategy. Passports local
 {WFM-RC-NameShort} uses MongoDB for storage on the server.
 
 == Data state in Transit, on Disk, in Device
-Data is not saved in the cookie itself, just the session ID.
+Data is not saved in the cookie itself, just the session ID. Data is passed
 
 == Authentication
 {WFM-RC-NameShort} uses the LocalStrategy for username/password authentication.
