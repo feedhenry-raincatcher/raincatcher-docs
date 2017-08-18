@@ -7,7 +7,6 @@ include::topics/shared/attributes.adoc[]
 
 image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/master/docs/shared/images/logo-blue.png[logo]
 
-
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
 include::introducing-raincatcher.adoc[leveloffset=+2]
@@ -21,5 +20,5 @@ include::running-the-demo-app.adoc[leveloffset=+2]
 
 
 
-
+include::topics/shared/templates/revision-info.adoc[]
 
