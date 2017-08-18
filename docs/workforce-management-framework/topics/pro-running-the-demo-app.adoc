@@ -19,6 +19,8 @@ This section includes:
 
 = Procedure
 
+NOTE: this procedure is for developers to install the latest master .
+
 [id='pro-cloning-the-git-repository-{chapter}']
 [discrete]
 == Cloning the Git Repository

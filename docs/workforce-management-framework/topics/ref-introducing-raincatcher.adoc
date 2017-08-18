@@ -64,6 +64,6 @@ The *Tech Preview* codebase is now deprecated and is accessible at link:https://
 
 The main differences between {WFM-RC-NameShort} and *Tech Preview* are:
 
-* Mediator pattern removed in {WFM-RC-NameShort}
+* Mediator pattern is removed from {WFM-RC-NameShort}
 * *Tech Preview* is not object oriented
-* *Tech Preview* is written in javascript
+* *{WFM-RC-NameShort}* is written in Typescript
