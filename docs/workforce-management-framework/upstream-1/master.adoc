@@ -5,6 +5,8 @@ include::topics/shared/attributes.adoc[]
 :toclevels: 5
 :last-update-label!:
 
+image::../../shared/images/logo-blue.png[logo]
+
 [[Raincatcher]]
 = {WFM-RC-NameLong}
 

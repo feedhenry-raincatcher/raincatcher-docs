@@ -1,0 +1,8 @@
+[id='Security-Strategy-Passport.js-{chapter}']
+= Security Strategy for Passport.js
+
+- Session Management
+- Access Control
+- Password Storage
+- Data state in Transit, on Disk, in Device
+- Authentication
