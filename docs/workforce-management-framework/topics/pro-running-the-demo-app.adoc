@@ -19,8 +19,6 @@ This section includes:
 
 = Procedure
 
-NOTE: this procedure is for developers to install the latest master .
-
 [id='pro-cloning-the-git-repository-{chapter}']
 [discrete]
 == Cloning the Git Repository
@@ -80,3 +78,5 @@ npm run start
 Both the Mobile and Portal Demo open automatically in a browser.
 
 For login details, refer to xref:credentials-for-the-demo-application-{chapter}[Credentials for the Demo Application] section of xref:ref-demo-app-{chapter}[{WFM-RC-NameShort} Demo Application Reference Material].
+
+NOTE: this procedure is for developers to install the latest master branch .

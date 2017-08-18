@@ -61,7 +61,6 @@ The {WFM-RC-NameShort} is available in three github repositories:
 
 The {WFM-RC-NameShort} project was originally called *Tech Preview*.
 The *Tech Preview* codebase is now deprecated and is accessible at link:https://github.com/feedhenry-raincatcher/raincatcher-documentation[Tech Preview Documentation].
-
 The main differences between {WFM-RC-NameShort} and *Tech Preview* are:
 
 * Mediator pattern is removed from {WFM-RC-NameShort}
