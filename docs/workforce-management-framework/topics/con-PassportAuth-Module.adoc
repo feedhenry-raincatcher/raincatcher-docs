@@ -1,38 +1,30 @@
 []
-= {WFM-RC-NameShort} Passport Auth
+= {WFM-RC-NameShort} Passport.js integration module
 
 {WFM-RC-NameShort} authentication and authorization module using link:http://passportjs.org[PassportJS].
+The Passport.js module is the default security module for {WFM-RC-NameShort}. This allows
+for the protection of routes and an authorization stream for users.
 This module allows the:
+
 - Creation and initialization of a Passport authentication service using Passport's local strategy.
 - Protection of express routes from requests by user authentication and authorization.
-- Usage of persistent login sessions using link:https://github.com/expressjs/session[express-session].
+- Usage of persistent login sessions using link:https://github.com/expressjs/session[express-session]
+
+== Configuration of PassportAuth module
+As the PassportAuth module is the default security module it is install as part of the
+link::pro-running-the-demo-app.adoc[getting started] process.
+No configuration is required in order to use this module. It is an out of the box security solution for
+{WFM-RC-NameShort}. Passport.js is a lightweight solution that offers all the
+functionality required to get started. Passport.js has low overhead and setup costs.
 
 
-== Quick Start
-=== Setup
+== Developer Customisation
+The default strategy for the PassportAuth module implements the Passport.js local strategy. As a developer you may wish
+use a different security strategy with the passport.js implementation. You can override the PassportAuth.setup method to
+implement any strategy supported by Passport.js.
 
-[source,typescript]
-----
-...
-import { PassportAuth, UserRepository, UserService }  from '@raincatcher/auth-passport'
 
-// Initialize user data repository, user service and passport
-const userRepo: UserRepository = new YourUserRepository();
-const userService: UserService = new YourUserService();
-const authService: PassportAuth = new PassportAuth(userRepo, userService);
-...
-authService.init(app, sessionOptions); // Initializes express app to use passport and express-session
-...
-----
-Visit link:https://github.com/expressjs/session[express-session] to find more information about the available express
-session options.
-
-=== Usage
-[source,typescript]
-----
-app.get('/secureEndpoint', authService.protect('admin'), (req: express.Request, res: express.Response) => {
-    res.json({routeName: '/secureEndpoint', msg: 'authenticated and authorized to access secure resource'});
-});
-----
-
-See link:https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/passportauth/example[./example] for a sample implementation
+== Implementation and Usage
+For implementation and usage see the
+link:{WFM-RC-Github-core}{WFM-RC-PassportAuth-example}[example]  part
+of the PassportAuth module.

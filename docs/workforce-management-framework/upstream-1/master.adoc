@@ -33,9 +33,14 @@ include::introducing-raincatcher.adoc[leveloffset=+2]
 == Getting Started with {WFM-RC-NameLong}
 include::running-the-demo-app.adoc[leveloffset=+2]
 
+
 [[programming-a-raincatcher-project]]
 == Programming a {WFM-RC-NameShort} Project
 //include::using-wfm-logger-and-setting-a-logging-level.adoc[leveloffset=+2]
+
+[[Security]]
+== Security
+include::security.adoc[leveloffset=+2]
 
 
 

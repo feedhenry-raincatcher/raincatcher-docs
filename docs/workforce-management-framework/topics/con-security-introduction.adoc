@@ -1,0 +1,44 @@
+[]
+= Introduction to {WFM-RC-NameShort} security features
+
+{WFM-RC-NameShort} currently supports two security implementations
+link:http://www.keycloak.org/[Keycloak] and link:http://passportjs.org/[Passport.js].
+
+== Passport.js
+Passport.js is a lightweight authentication middleware for Node.js that is extremely flexible and modular.
+Passport.js offers comprehensive set of link:http://passportjs.org/docs/configure[strategies] support authentication
+using a username and password, Facebook, Twitter, and more.
+For more information see link:http://passportjs.org/[passport.org].
+
+- node.js based
+- No extra server required
+- Available by default when running server application
+- Covers authentication and authorization
+
+== Keycloak
+Keycloak is a full identity management solution with many features
+
+- Identity brokering
+- Client cert auth
+- OTP 2FA
+- User session management
+- Auditing and Events
+- Password Policy Manager
+
+For a full feature list, see link:https://keycloak.gitbooks.io/documentation/server_admin/topics/overview/features.html[Keycloak]
+
+
+== Which to use?
+
+Both solutions have their benefits
+
+*Keycloak*
+
+If you are looking for a full identity management solution that can be tied into
+existing *saml/ldap/sso* solutions then Keycloak should be your choice. Keycloak when running is an separate
+identity management server with all the overheads involved in running a server.
+
+*Passport.js*
+
+If you are looking for a standalone nodejs based authentication solution that is ready out of the box then passport.js
+should be your choice.
