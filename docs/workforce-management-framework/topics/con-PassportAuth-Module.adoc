@@ -11,8 +11,7 @@ This module allows the:
 - Usage of persistent login sessions using link:https://github.com/expressjs/session[express-session]
 
 == Configuration of PassportAuth module
-As the PassportAuth module is the default security module it is install as part of the
-link::pro-running-the-demo-app.adoc[getting started] process.
+As the PassportAuth module is the default security module it is install as part of running the Demo App.
 No configuration is required in order to use this module. It is an out of the box security solution for
 {WFM-RC-NameShort}. Passport.js is a lightweight solution that offers all the
 functionality required to get started. Passport.js has low overhead and setup costs.
