@@ -15,22 +15,19 @@ app.get('/testAdminEndpoint', authService.protect('admin'), (req: express.Reques
   res.json({ routeName: '/testAdminEndpoint', msg: 'authorized to access admin endpoint' });
 });
 
-app.get('/testUserEndpoint', authService.protect('user'), (req: express.Request, res: express.Response) => {
-  res.json({ routeName: '/testUserEndpoint', msg: 'authorized to access user route' });
-});
 ----
 
 == Password Storage
-Passport authentication service is using a default custom strategy that is based on Passport.js's local strategy.
-Passports local strategy is agnostic about database type.
-{WFM-RC-NameShort} uses a local json file for storage on the server.
+Passport authentication service is using a default custom strategy that is based on Passport.js local strategy.
+Passports local strategy is agnostic about database type. // TODO WHY HOW?
+// TODO say how we can provide user source
 
 == Data state in Transit, on Disk, in Device
 Data is not saved in the cookie itself, just the session ID.
 
 == Authentication
-{WFM-RC-NameShort} uses the LocalStrategy for username/password authentication. Authentication is done on the cloud
-server. Routes on the cloud server are protected by username,password and role using the protect method.
+{WFM-RC-NameShort} uses the LocalStrategy(CHANGE THIS) for username/password authentication. Authentication is done on the cloud
+server. Routes on the cloud server are protected by username, password and role using the protect method.
 The login post route has an authenticate method that checks the userId and password
 against the stored user.json file it also checks the user role against the stored role on
 user.json.
