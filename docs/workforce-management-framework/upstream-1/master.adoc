@@ -5,29 +5,15 @@ include::topics/shared/attributes.adoc[]
 :toclevels: 5
 :last-update-label!:
 
-
 image::../../shared/images/logo-blue.png[logo]
-
-[[Raincatcher]]
-= {WFM-RC-NameLong}
-
-
 
 
 [[introducing-raincatcher]]
 == Introducing {WFM-RC-NameLong}
-
 include::introducing-raincatcher.adoc[leveloffset=+2]
-
-//include::introducing-the-features-of-raincatcher.adoc[leveloffset=+2]
-
-[[preparing-the-local-development-environment]]
-== Preparing the Local Development Environment
-
 
 //[[preparing-the-local-development-environment]]
 //== Preparing the Local Development Environment
-
 
 [[getting-started]]
 == Getting Started with {WFM-RC-NameLong}
@@ -42,5 +28,5 @@ include::running-the-demo-app.adoc[leveloffset=+2]
 == Security
 include::security.adoc[leveloffset=+2]
 
-
+include::topics/shared/templates/revision-info.adoc[]
 

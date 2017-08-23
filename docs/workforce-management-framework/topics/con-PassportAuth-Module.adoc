@@ -10,7 +10,6 @@ Passport.js offers comprehensive set of link:http://passportjs.org/docs/configur
 using a username and password, Facebook, Twitter, and more.
 This module allows the:
 
-
 - Authorisation
 - Authentication
 - Storing user sessions using link:https://github.com/expressjs/session[express-session]
