@@ -1,0 +1,19 @@
+= Using the demo application user interface
+The {WFM-RC-LongName} demo application consists of three components:
+
+- A mobile application for end users
+- A portal application for administrator users on a web browser
+- A cloud application for backend server functionality (No user interface)
+
+The demo application has demo users and demo data to show off the functionality of {WFM-RC-LongName} 
+
+== Using the Mobile Applications User inferface
+login screen requires username and password. For a list of users see 
+link:https://github.com/feedhenry-raincatcher/raincatcher-core/blob/master/demo/server/src/modules/wfm-user/users.json[users.json],
+all users in the demo have a default password is `123`
+
+image::/shared/images/login.png[Login]
+
+
+== Using the Portal Application User inferface
+
