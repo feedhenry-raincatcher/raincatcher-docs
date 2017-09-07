@@ -1,19 +1,110 @@
 = Using the demo application user interface
+
 The {WFM-RC-LongName} demo application consists of three components:
 
 - A mobile application for end users
 - A portal application for administrator users on a web browser
 - A cloud application for backend server functionality (No user interface)
 
-The demo application has demo users and demo data to show off the functionality of {WFM-RC-LongName} 
+The demo application has demo users and demo data to show off the functionality of {WFM-RC-LongName}.
+The demo application can define business process or procedure via a custome Workflow and assign these workflows as jobs to
+individual workers as workorders. Workers can view their workorder via a mobile applicaion and administrators
+can managed workorders via the web portal.
 
-== Using the Mobile Applications User inferface
+== Mobile application
+
+The mobile application is used by a end user to interact with workorders that have been assigned to them.
 login screen requires username and password. For a list of users see 
 link:https://github.com/feedhenry-raincatcher/raincatcher-core/blob/master/demo/server/src/modules/wfm-user/users.json[users.json],
 all users in the demo have a default password is `123`
 
 image::/shared/images/login.png[Login]
 
+Once logged in you will be presented with the workorders screen which will show the workorders assigned to the logged in user.
+In this example workorders are accident reports to be filled out at the seen of an accident.
 
-== Using the Portal Application User inferface
+image::/shared/images/Workorder-mobile.png[Workorders]
+
+To log out click on the menu icon in the top left hand side of the screen this will open a sidebar with options to Logout or return
+to the Workorders screen.
+
+image::/shared/images/sidebar.png[Workorders]
+
+Return to the Workorders screen and click on an one of the workorders. The following screen will render
+
+image::/shared/images/workorder-overview.png[overview]
+
+Click on `BEGIN WORKFLOW` to proceed with data entry in the following `Accident Report`.
+
+image::/shared/images/workorder-accidentReport.png[accident report]
+
+Once the `Accident Report` form is completed click on `CONTINUE` on the bottom of the screen to proceed to the 
+`Vehicle Inspection` form. The form asks for checks for fuel ,tires and lights.
+
+image::/shared/images/workorder-vehicleInspection.png[vehicle inspection]
+
+Once the `Vehicle Inspection` form is completed click on `CONTINUE` on the bottom of the screen to proceed to the 
+`Summary` which shows the status of the workorder.
+
+image::/shared/images/workorder-summary.png[summary]
+
+Once on the summary screen you have finished your submission . To proceed click on the menu icon in the top left hand side of the screen this will open a sidebar with options to Logout or return
+to the Workorders screen. On the Workorders screen you will see that the workorder is now marked with a green tick to so completion.
+
+== Portal application
+
+The Portal appliction is used by a administrator to view , edit and assign Workorder and to create new workflows.
+The Portal application is a web application. The view of workorders is restricted to administrators. 
+The login screen is as follows
+
+image::/shared/images/login-portal.png[login portal]
+
+Onced logged in you will be presented with the following screen for admistration of workorders and workflows.
+
+image::/shared/images/portal.png[portal]
+
+From this screen you can create new workorders by clicking the `NEW WORKORDER` button on the right panal. Once clicked
+it will render the following form for creating a new workorder.
+
+image::/shared/images/create-workorder.png[create workorder]
+
+Fill out the form and click `CREATE WORKORDER` and a new workorder will appear in the list on middle panal after a refresh. 
+Once the workorder is created it will sync to the individual worker mobile that it was assigned to. To edit individual workorders
+click the workorder from the center panal list to get the following screen.
+
+image::/shared/images/portal-viewWorkorder.png[view workorder]
+
+In the top right hand side there is a trash icon to allow you to delete a workorder. The pencil icon is beside 
+this allows you to update a workorder's title,assignee and select a workflow, as with creating a workorder these changes will sync to 
+the workers mobile application after the `UPDATE WORKORDER` is clicked. In the bottom right hand side there is an circle with a plus icon , this gives access to the 
+create workorder screen. See the update Workorder screen below
+
+image::/shared/images/update-workorder.png[update workorder]
+
+The other feature available in the portal is the `Workflow` functionality this allows you to create or modify a workflow.
+Workflows are made up of steps, we have a couple of example steps implemented in the demo application. Click Wokrflow on the 
+left panel to access the the workflow screens .
+
+image::/shared/images/workflows.png[workflows]
+
+To create a workflow click on the `CREATE WORKFLOW` button. This will bring you to the create workflow screen where you can add a title.
+Click `CREATE WORKFLOW` button to continue.
+
+image::/shared/images/create-workflow.png[create workflow]
+
+The add step screen will render and will allow you to name your step and select a one of the example step types from a dropdown.
+Click add step to submit your new step as part of your work flow. 
+
+image::/shared/images/workflow-nextstep.png[next step workflow]
+
+You have edit and delete options in the bottom right hand side of each step. Like workorder you have options to delete, update workflows in the top
+right hand side with the trash and pencil icons. You also can use the circle with the plus icon to create new workflows. This new Workflow 
+can be used to create or update workorders. The new workflow will appear in the list in the center panel after a refresh.
+
+image::/shared/images/new-workflow.png[select new workflow]
+
+You can access existing you can access existing workflows by clicking on them in the list in the center panel. Options to edit the workflow are the same 
+as the create.
+
+
 
