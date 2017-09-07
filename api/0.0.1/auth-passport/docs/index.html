@@ -912,13 +912,13 @@ img { max-width: 100%; }
 <div class="container container-main">
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
-			<h1 id="raincatcher-passport-auth">RainCatcher Passport Auth</h1>
-			<p>Raincatcher authentication and authorization module using <a href="http://passportjs.org/">PassportJS</a>.
-			This module allows the:</p>
+			<h1 id="raincatcher-passport-auth">RainCatcher PassportAuth</h1>
+			<p>The PassportAuth module is RainCatcher's implementation of <a href="http://passportjs.org/">Passport.js</a> and is the default authentication and authorization module for RainCatcher.
+			PassportAuth provides:</p>
 			<ul>
-				<li>Creation and initialization of a Passport authentication service using Passport&#39;s local strategy.</li>
-				<li>Protection of express routes from requests by user authentication and authorization.</li>
-				<li>Usage of persistent login sessions using <a href="https://github.com/expressjs/session">express-session</a>.</li>
+				<li>Creation and initialization of a Passport authentication service using Passport&#39;s local strategy</li>
+				<li>Protection of express routes from requests by user authentication and authorization</li>
+				<li>Usage of persistent login sessions using <a href="https://github.com/expressjs/session">express-session</a></li>
 			</ul>
 			<h2 id="quick-start">Quick Start</h2>
 			<h4 id="setup">Setup</h4>
@@ -933,14 +933,13 @@ img { max-width: 100%; }
 authService.init(app, sessionOptions); <span class="hljs-comment">// Initializes express app to use passport and express-session</span>
 ...
 </code></pre>
-			<p>Visit <a href="https://github.com/expressjs/session">express-session</a> to find more information about the available express
-			session options.</p>
+			<p>For more information about the available express session options, see <a href="https://github.com/expressjs/session">express-session</a>.</p>
 			<h4 id="usage">Usage</h4>
 			<pre><code class="lang-typescript">app.get(<span class="hljs-string">'/secureEndpoint'</span>, authService.protect(<span class="hljs-string">'admin'</span>), <span class="hljs-function">(<span class="hljs-params">req: express.Request, res: express.Response</span>) =&gt;</span> {
     res.json({routeName: <span class="hljs-string">'/secureEndpoint'</span>, msg: <span class="hljs-string">'authenticated and authorized to access secure resource'</span>});
 });
 </code></pre>
-			<p>See <a href="./example/index.ts">./example</a> for a sample implementation</p>
+			<p>To view a sample implementation, see <a href="./example/index.ts"> sample example</a>.</p>
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
