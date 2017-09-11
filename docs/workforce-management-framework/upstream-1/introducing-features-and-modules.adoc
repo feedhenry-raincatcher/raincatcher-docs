@@ -7,4 +7,5 @@ include::topics/shared/attributes.adoc[]
 include::topics/con-introducing-securityfeatures.adoc[leveloffset=+1]
 
 = {WFM-RC-NameLong} Modules
+include::topics/con-workflow-module.adoc[leveloffset=+1]
 include::topics/con-passportauth-module.adoc[leveloffset=+1]

@@ -1,0 +1,29 @@
+[id='con-workflow-module-{chapter}']
+= Introducing the {WFM-RC-NameShort} Workflow Module
+
+The {WFM-RC-NameShort} WorkFlow module is based on the link:http://www.bpmn.org/[Business Process Model and Notation (BPMN)] specification and is implemented in link:https://www.typescriptlang.org/[TypeScript].
+
+. The Main {WFM-RC-NameShort} BPMN Entities
+|===
+|Entity |Description
+
+|Step
+|Defines single unit of work
+
+|StepResult
+|The output of the execution of a _Step_
+
+|WorkFlow
+|Contains an ordered set of definitions of _Steps_ to be instantiated into a _WorkOrder_ for execution
+
+|WorkOrder
+|Instance of a _WorkFlow_ to be executed
+
+|WorkOrderResult
+|Tracks the progress of a _WorkOrder_
+|===
+
+This {WFM-RC-NameShort} WorkFlow module allows a developer to build a set of tasks that represent a business process and in turn, meet the needs of a business.
+The classes and interfaces that make up the {WFM-RC-NameShort} WorkFlow module are framework agnostic and as such, allow developers to focus on the implementation of business processes on top of a new or an existing solution.
+
+<Additional information required from Eng>
