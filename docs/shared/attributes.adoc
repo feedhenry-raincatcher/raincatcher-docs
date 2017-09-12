@@ -20,6 +20,7 @@
 :WFM-RC-NodeVersion: 6 LTS
 :WFM-RC-MongoDBVersion: <latest version>
 :WFM-RC-RedisVersion: <latest version>
+:WFM-RC-DockerVersion: <latest version>
 :WFM-RC-Github-Core: https://github.com/feedhenry-raincatcher/raincatcher-core/tree/
 :WFM-RC-Branch: master
 :WFM-RC-PassportAuth-Example: /cloud/passportauth/example

@@ -1,28 +1,35 @@
-[id='enable-keycloak-integration-{chapter}']
-= Enable {WFM-RC-KeycloakName} Integration
+[id='pro-keycloak-enablement-{chapter}']
+= Introduction
 
-The {WFM-RC-NameLong} Demo Applications allow for Authentication and Access Management using
-link:http://www.keycloak.org/index.html[{WFM-RC-KeycloakName}].
-The {WFM-RC-NameLong} {WFM-RC-KeycloakName} integration is situated inside of the Demo Applications.
+This section includes:
 
-By default, the {WFM-RC-KeycloakName} Authentication and Access Management is not setup with the Demo Applications.
-A {WFM-RC-NameLong} {WFM-RC-KeycloakName} Docker image has been created to allow easy deployment of a {WFM-RC-KeycloakName} server configured
-with the {WFM-RC-NameLong} demo data.
+. xref:pro-pointing-passportauth-to-a-datasource-{chapter}[Pointing PassportAuth to a Datasource]
 
-== Run {WFM-RC-KeycloakName} Docker image
+= Prerequisites
 
-The image is published to docker hub:
+. Ensure you have completed xref:getting-started[Getting Started]
+. Docker (tested with version: {WFM-RC-DockerVersion})
 
-    docker run -p 8080:8080 feedhenry/raincatcher-keycloak
+= Enabling {WFM-RC-KeycloakName} Integration
+
+[id='pro-run-keycloak-docker-image-{chapter}']
+[discrete]
+== Run {WFM-RC-KeycloakName} Docker Image
+
+. Ensure you can access the {WFM-RC-KeycloakName} Docker image from link:https://github.com/feedhenry-raincatcher/raincatcher-keycloak[github].
+. Run the {WFM-RC-KeycloakName} Docker image
+
+[source,bash]
+----
+docker run -p 8080:8080 feedhenry/raincatcher-keycloak
+----
 
 For more information on this docker image see the docker image link:{WFM-RC-KeycloakDockerURL}{WFM-RC-Branch}/README.md[README.md].
 
-NOTE: If you wish to configure your own instance of {WFM-RC-KeycloakName} see the following
-link:{WFM-RC-KeycloakURL}getting_started/topics/first-boot.html[getting started guide]. If you wish to use the demo application will need to import our Realm
-settings by importing link:{WFM-RC-KeycloakDockerURL}{WFM-RC-Branch}/data_files/raincatcher-realm.json[/data_files/raincatcher-realm.json] file.
-
 [[enabling-the-keycloak-demo-server]]
 == Enabling {WFM-RC-KeycloakName} on the Demo Server
+
+. Import the link:{WFM-RC-KeycloakDockerURL}{WFM-RC-Branch}/data_files/raincatcher-realm.json[Realm settings] json file.
 
 The following steps are for using the pre-configured docker image but will work for any instance of {WFM-RC-KeycloakName}
 provided you implement our Realm settings.
@@ -73,8 +80,3 @@ To login into {WFM-RC-KeycloakName} Admin Console, navigate to http://localhost:
 
     Username: admin
     Password: admin
-
-
-
-
-
