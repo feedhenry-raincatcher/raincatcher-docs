@@ -913,20 +913,15 @@ img { max-width: 100%; }
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
 			<h1 id="raincatcher-sync-cloud">RainCatcher Sync Cloud</h1>
-			<p>Raincatcher wrapper for Feedhenry DataSync server.
-				This module creates server side service that allows mobile applications to sync offline data to preferred database.
-				By default server connects and stores all client data in mongodb database.
-			This behavior can be changed by providing custom handlers.</p>
-			<p>For advanced usage see <a href="https://github.com/feedhenry/fh-sync/tree/master/docs">FeedHenry Sync documentation</a>.</p>
+			<p>The RainCatcher Sync Cloud module creates a server side service that allows mobile applications (Client Apps) to sync offline data to a preferred data source.
+				By default, the server connects and stores all client data in the mongodb database. This behavior can be changed by providing custom handlers.
+				For advanced use of the Sync Cloud module, see <a href="https://github.com/feedhenry/fh-sync/tree/master/docs">FeedHenry Sync documentation</a>.</p>
 			<blockquote>
-				<p><strong>Note</strong>: Cloud service is utilized by one of the sync clients. See <a href="../client/datasync">datasync-js</a></p>
+				<p><strong>Note</strong>: The Cloud service is utilized by one of the sync clients. For more information, see <a href="../client/datasync">datasync-js</a>.</p>
 			</blockquote>
 			<h2 id="quick-start">Quick start</h2>
-			<ol>
-				<li>Start sync service process</li>
-			</ol>
-			<p>Starting sync service  will monitor and process
-			mew tasks are sent from sync clients</p>
+				<p><strong> 1) Start a sync service process.</strong></p>
+			<p>Starting a sync service will monitor and process	new tasks that are sent from sync clients</p>
 			<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> SyncServer, { SyncApi, SyncExpressMiddleware, SyncOptions } <span class="hljs-keyword">from</span> <span class="hljs-string">'@raincatcher/datasync-cloud'</span>;
 <span class="hljs-keyword">const</span> sync: SyncApi = SyncServer;
 
@@ -940,10 +935,8 @@ sync.connect(connectOptions, <span class="hljs-function"><span class="hljs-keywo
   }
 });
 </code></pre>
-			<ol>
-				<li>Create api endpoint for sync.</li>
-			</ol>
-			<p>This endpoint will be called by all clients that wish to synchronize their local data with server.</p>
+			<p><strong> 2) Create an api endpoint for sync.</strong></p>
+			<p>This endpoint will be called by all clients that synchronize their local data with the server side service.</p>
 			<pre><code class="lang-typescript"><span class="hljs-comment">//middleware</span>
 app.use(bodyParser.json());
 app.use(cors());
@@ -956,16 +949,16 @@ app.use(cors());
 <span class="hljs-keyword">const</span> router = middleware.createSyncExpressRouter();
 app.use(<span class="hljs-string">'/'</span>, router);
 </code></pre>
-			<p>See <a href="./integration">integration</a> for complete runnable example.</p>
-			<h2 id="accessing-underlying-sync-library">Accessing underlying sync library</h2>
-			<p>For advanced use cases developers can access sync library using <code>sync</code> namespace.
-			Library is shipped with their own typings. You can import this directly into your application as below:</p>
+			<p>See <a href="./integration">integration</a> for a complete runnable example.</p>
+			<h2 id="accessing-underlying-sync-library">Accessing the underlying sync library</h2>
+			<p>For advanced use cases, developers can access the _sync library_ using the <code>sync</code> namespace.
+				The sync library is shipped with its own typings. To import this directly into your application, see the following code:</p>
 			<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { sync } <span class="hljs-keyword">from</span> <span class="hljs-string">'../src/index'</span>
 sync.anyapicall(...) ;
 </code></pre>
 			<p>Where <code>anyapicall</code> is one of the types defined in:
 			<a href="https://github.com/feedhenry/fh-sync/blob/master/types/fh-sync.d.ts">https://github.com/feedhenry/fh-sync/blob/master/types/fh-sync.d.ts</a></p>
-			<p>For more advanced usages please follow <a href="https://github.com/feedhenry/fh-sync/tree/master/docs">FeedHenry sync documentation</a></p>
+			<p>For advanced use, see <a href="https://github.com/feedhenry/fh-sync/tree/master/docs">FeedHenry sync documentation</a></p>
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">

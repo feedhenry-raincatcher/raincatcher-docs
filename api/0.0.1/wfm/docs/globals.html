@@ -913,22 +913,22 @@ img { max-width: 100%; }
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
 			<h2 id="raincatcher-wfm">RainCatcher WFM</h2>
-			<p>RainCatcher <strong>W</strong>ork<strong>F</strong>low <strong>M</strong>anagement module is an TypeScript implementation for an equivalent subset of the <a href="http://www.bpmn.org/">BPMN specification</a>.</p>
-			<p>This module allows users to map business process into an organized set of tasks that can be built by developers to suit business needs.</p>
+			<p>RainCatcher <strong>W</strong>ork<strong>F</strong>orce <strong>M</strong>anagement (WFM) module is a TypeScript implementation for an equivalent subset of the <a href="http://www.bpmn.org/">Business Process Model and Notation (BPMN) specification</a>.</p>
+			<p>This module allows users to map a business process into an organized set of tasks that can be built by developers to suit business needs.</p>
 			<h2 id="concepts">Concepts</h2>
-			<p>The WFM module consists of a set of TypeScript interfaces and implementations for Process Management. The main entities are described bellow:</p>
+			<p>The WFM module consists of a set of TypeScript interfaces and implementations for Process Management. The module's main entities are:</p>
 			<ul>
-				<li><code>WorkFlow</code>: contain an ordered set of definitions of <code>Step</code>s, to be instantiated into a <code>WorkOrder</code> for execution</li>
+				<li><code>WorkFlow</code>: contains an ordered set of definitions of <code>Step</code>s that are instantiated into a <code>WorkOrder</code> for execution</li>
 				<li><code>WorkOrder</code>: instance of a <code>WorkFlow</code> to be executed</li>
-				<li><code>Step</code>: defines single unit of work</li>
+				<li><code>Step</code>: defines a single unit of work</li>
 				<li><code>StepResult</code>: the output of the execution of a <code>Step</code></li>
-				<li><code>WorkOrderResult</code>: The tracking of the progress of a <code>WorkOrder</code></li>
+				<li><code>WorkOrderResult</code>: tracks the progress of a <code>WorkOrder</code></li>
 			</ul>
-			<p>The classes are framework-agnostic, allowing developers to focus on the implementation of Business Process on top of any new or existing solution.</p>
+			<p>The classes are framework-agnostic which allows a developer to focus on the implementation of Business Processes on top of any new or existing solution.</p>
 			<h2 id="getting-started">Getting Started</h2>
-			<p>In order to use this module, begin by installing all dependencies:</p>
-			<p>If inside the <a href="http://lernajs.io">lerna</a>-based mono repo: <code>lerna bootstrap --scope=@raincatcher/wfm --include-filtered-dependencies</code></p>
-			<p>For standalone usage: <code>npm install</code></p>
+			<p>1) Install all dependencies:</p>
+			<ul><li>If inside the <a href="http://lernajs.io">lerna</a>-based mono repo: <code>lerna bootstrap --scope=@raincatcher/wfm --include-filtered-dependencies</code></li></ul>
+			<p>2) For standalone usage: <code>npm install</code></p>
 		</div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
