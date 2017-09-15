@@ -1,7 +1,27 @@
 [id='con-workflow-module-{chapter}']
 = Introducing the {WFM-RC-NameShort} Workflow Module
 
-The {WFM-RC-NameShort} WorkFlow module is based on the link:http://www.bpmn.org/[Business Process Model and Notation (BPMN)] specification and is implemented in link:https://www.typescriptlang.org/[TypeScript].
+The {WFM-RC-NameShort} WorkFlow module is based on the link:http://www.bpmn.org/[Business Process Model and Notation (BPMN)] specification and is implemented in link:https://www.typescriptlang.org/[TypeScript]. 
+The classes and interfaces that make up the {WFM-RC-NameShort} WorkFlow module are framework agnostic and as such, allow developers to focus on the implementation of business processes on top of a new or an existing solution.
+
+For example, a _Portal Admin_ could define a _WorkFlow_ by creating a series of _Steps_ and the definition would look similar to the following Vehicle Accident Workflow:
+
+. Vehicle Accident Workflow Example
+|===
+|Step # |Description
+
+|1
+|Accident Report Form
+
+|2
+|Signature step
+|===
+
+The _Portal Admin_ can create a _Workorder_ that contains these _Steps_ and assigns the _Workorder_ to User A. The _Workorder_ then appears in the Client App for User A. Once User A completes a _Step_, the _Step's_ status changes from <ENG: ?> to <ENG: ?>. Once all the _Steps_ are complete, the _Workorder's_ status changes from <ENG: ?> to <ENG: ?> and the _Portal Admin_ recieves a notification that User A has completed the _Workorder_.
+
+NOTE: A _Step_ cannot be undone however, a _Workorder_ can.
+
+For more information about the aspects of the {WFM-RC-NameShort} WorkFlow, see the following table:
 
 . The Main {WFM-RC-NameShort} BPMN Entities
 |===
@@ -22,8 +42,3 @@ The {WFM-RC-NameShort} WorkFlow module is based on the link:http://www.bpmn.org/
 |WorkOrderResult
 |Tracks the progress of a _WorkOrder_
 |===
-
-This {WFM-RC-NameShort} WorkFlow module allows a developer to build a set of tasks that represent a business process and in turn, meet the needs of a business.
-The classes and interfaces that make up the {WFM-RC-NameShort} WorkFlow module are framework agnostic and as such, allow developers to focus on the implementation of business processes on top of a new or an existing solution.
-
-<Additional information required from Eng>
