@@ -913,19 +913,17 @@ img { max-width: 100%; }
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
 			<h1 id="raincatcher-datasync">RainCatcher DataSync</h1>
-			<p>Feedhenry Sync typescript client.
-			Data synchonization javascript client. Library can be used for offline storage of mobile applications data.</p>
-			<p>Raincatcher DataSync is based on <a href="https://github.com/feedhenry/fh-sync-js">sync.js client</a>
-			For advanced usage see <a href="https://github.com/feedhenry/fh-sync/tree/master/docs">FeedHenry Sync documentation</a>.</p>
+			<p>Raincatcher DataSync is based on the <a href="https://github.com/feedhenry/fh-sync-js">Feedhenry sync.js client</a>.</p>
+			<p>For advanced usage of the RainCatcher DataSync module, see <a href="https://github.com/feedhenry/fh-sync/tree/master/docs">FeedHenry Sync</a> documentation.</p>
 			<h2 id="overview">Overview</h2>
-			<p>Sync mobile data synchronization framework provides the following key functionality:</p>
+			<p>Raincatcher DataSync provides the following functionality:</p>
 			<ul>
-				<li>Allows mobile apps to use and update data offline (local cache)</li>
+				<li>Allows synchronisation of WFM workorder data between the RainCatcher mobile client and the RainCatcher cloud server</li>
 				<li>Provides a mechanism to manage bi-directional data synchronization from multiple Client Apps via the Cloud App and into back-end data stores</li>
 				<li>Allows data updates (that is, deltas) to be distributed from the Cloud App to connected clients</li>
 				<li>Provides facilities for managing data collisions from multiple updates in the cloud</li>
 			</ul>
-			<p>This service effectively allows sync apps to seamlessly continue working when the network connection is lost, and allow them to recover when the network connection is restored.</p>
+			<p>This service effectively allows Sync Apps to seamlessly continue working when the network connection is lost, and allow them to recover when the network connection is restored.</p>
 			<h2 id="getting-started-with-sync">Getting started with sync</h2>
 			<h3 id="init-sync-service">Init sync service</h3>
 			<p>Init sync service to start processing data.</p>
@@ -944,7 +942,7 @@ $fh.sync.init(options);
 			<h3 id="register-your-local-data-collections">Register your local data collections</h3>
 			<p>Sync introduces concept of <code>DataSets</code>. DataSets are form of local data collections
 				that will be managed and synchronized with server in sync loop.
-			In example bellow we register new <code>UserTasks</code> dataset.</p>
+			In the following exmaple, a new <code>UserTasks</code> dataset is registered.</p>
 			<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> datasetId = <span class="hljs-string">'UserTasks'</span>;
 <span class="hljs-comment">// Parameters for retrieving server data</span>
 <span class="hljs-keyword">const</span> queryParams = {};
@@ -955,7 +953,7 @@ $fh.sync.manage(datasetId, options, queryParams, metaData, <span class="hljs-fun
 });
 </code></pre>
 			<h3 id="perform-operations-on-datasets">Perform operations on datasets</h3>
-			<p>Sync provides set of methods to perform create, read, update and delete operations on datasets.</p>
+			<p>Sync provides a set of methods to perform create, read, update and delete operations on datasets.</p>
 			<pre><code class="lang-typescript"><span class="hljs-comment">// Example object to save</span>
 <span class="hljs-keyword">const</span> task: <span class="hljs-built_in">any</span> = {
   name: <span class="hljs-string">'test task'</span>,
