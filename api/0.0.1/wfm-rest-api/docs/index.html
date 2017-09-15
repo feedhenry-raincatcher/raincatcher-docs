@@ -912,79 +912,80 @@ img { max-width: 100%; }
 <div class="container container-main">
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
-			<h1 id="raincatcher-api-module">RainCatcher Api module</h1>
-			<p>Module used to expose express based api for WFM objects.</p>
+			<h1 id="raincatcher-api-module">The RainCatcher Api Module</h1>
+			<p>The RainCatcher Api Module is used to expose express based api for WFM objects.</p>
 			<h3 id="wfm-specific-implementations">WFM specific implementations</h3>
-			<p>Following api is being exposed:</p>
+			<p>The following api is being exposed:</p>
 			<ul>
 				<li><code>/workorders</code></li>
 				<li><code>/workflows</code></li>
 				<li><code>/results</code></li>
 			</ul>
-			<p>This api is being added to new express router and it can be applied to any existing express based application
-			as follows:</p>
+			<p>This api is being added to a new express router and it can be applied to any existing express based application:</p>
 			<pre><code class="lang-typescript"><span class="hljs-comment">// Create api</span>
 <span class="hljs-keyword">const</span> api = <span class="hljs-keyword">new</span> WfmRestApi();
 
 <span class="hljs-comment">// Mount api into path</span>
 app.use(<span class="hljs-string">'/api'</span>, api.createWFMRouter());
 </code></pre>
-			<p>Api requires mongodb connection that needs to be setup as separate step</p>
+			<p>The api requires a mongodb connection and this needs to be setup as separate step</p>
 			<pre><code class="lang-typescript">api.setDb(db);
 </code></pre>
-			<p>See demo application integration or <a href="./example">example application</a> for more details.</p>
+			<p>See the demo application integration or the <a href="./example">example application</a> for more details.</p>
 			<h3 id="custom-database-integrations">Custom database integrations</h3>
-			<p>Custom database integrations are possible thanks to <code>PagingDataRepository</code> interface.</p>
+			<p>The <code>PagingDataRepository</code> interface allows for custom database integrations.</p>
 			<h2 id="rest-api">Rest API</h2>
-			<p>Module provides a way to dynamically create API for different business objects.
-			Created api will use simplified implementations for typical create, read, delete and update operations. It&#39;s not recomended to use <code>wfm-rest-api</code> outside the WFM framework. Please use database driver or ORM framework or your choice.</p>
+			<p>The RainCatcher Api Module allows you to dynamically create API for different business objects.
+			A dynamically created api will use simplified implementations for create, read, update and delete (CRUD) operations.
+			It is recommended that you do not use <code>wfm-rest-api</code> outside the WFM framework.
+			Use a database driver, an ORM framework or your choice if you work outside the WFM framework.</p>
 			<h2 id="rest-api-structure">Rest API structure</h2>
-			<p>API produces and expects JSON objects.
-				Structure of payload will vary depending on the interface passed as generic parameter to <code>PagingDataRepository</code>
-			For example:</p>
+			<p>The RainCatcher Api produces JSON objects and consumes JSON objects.
+				The structure of the payload will vary depending on the interface passed as a generic parameter to <code>PagingDataRepository</code>. For example:</p>
 			<pre><code class="lang-typescript"><span class="hljs-keyword">interface</span> MyData{
   name:<span class="hljs-built_in">string</span>
   fieldNumber:<span class="hljs-number">1</span>
 }
 <span class="hljs-keyword">const</span> repository = <span class="hljs-keyword">new</span> PagingDataRepository&lt;MyData&gt;();
 </code></pre>
-			<h2 id="rest-api-definitions">Rest API definitions</h2>
-			<p>Definitions apply to every object exposed by this API. Placeholder <code>{object}</code> can be replaced by <code>workflow</code>, <code>workorder</code> and <code>result</code>.</p>
+			<h2 id="rest-api-definitions">Rest API Definitions</h2>
+			<p>Rest API Definitions apply to every object exposed by this API.
+				A placeholder <code>{object}</code> can be replaced by <code>workflow</code>, <code>workorder</code> and <code>result</code>.</p>
 			<h3 id="retrieve-list">Retrieve list</h3>
 			<blockquote>
 				<p>GET {object}/</p>
 			</blockquote>
 			<h5 id="pagination">Pagination</h5>
-			<p>Supports pagination and sorting by providing additional query parameters:</p>
+			<p>The RainCatcher Api Module supports pagination and sorting by providing additional query parameters:</p>
 			<ul>
 				<li><code>page</code> page number</li>
 				<li><code>size</code> number of elements to return</li>
 				<li><code>sortField</code> sorting field</li>
 				<li><code>order</code> -1 for DESC and 1 for ASC</li>
 			</ul>
-			<p>Example <code>/workorders?page=0&amp;size=5&amp;sortField=id&amp;order=-1</code></p>
 			<blockquote>
-				<p><strong>Note</strong> - sorting parameters are optional.  When missing default sorting values are applied (10 results)</p>
+				<p><strong>Note</strong> - the sorting parameter is optional and defaults to 10 results if a value is not supplied</p>
 			</blockquote>
+			<p>Example <code>/workorders?page=0&amp;size=5&amp;sortField=id&amp;order=-1</code></p>
 			<h5 id="filtering">Filtering</h5>
-			<p>List can be filtered by providing json as <code>filter</code> query parameter or <code>filter</code> as request body.</p>
+			<p>A list can be filtered by providing json as a <code>filter</code> query parameter or a <code>filter</code> as a request body.</p>
 			<p><code>filter</code> - json object with specific field</p>
 			<p>For example <code>filter = { &#39;reviewer&#39;: &#39;Paolo&#39;}</code></p>
 			<blockquote>
-				<p><strong>Note</strong> - Due to nature of the url filter needs to be encoded to be passed as url</p>
+				<p><strong>Note</strong> - due to the nature of the url, ensure the filter is encoded when passed as a url</p>
 			</blockquote>
 			<h3 id="retrieve-specific-object-by-id">Retrieve specific object by id</h3>
 			<blockquote>
 				<p>GET {object}/:objectId</p>
 			</blockquote>
-			<p>Retrieve specific object by id</p>
+			<p>Retrieve a specific object by id</p>
 			<p>Example <code>/workorders/B1r71fOBr</code></p>
 			<p>Return 204</p>
 			<h3 id="save-object">Save object</h3>
 			<blockquote>
 				<p>POST {object}/</p>
 			</blockquote>
-			<p>Paylod should contain at least <code>id</code> field that will be used as object id.</p>
+			<p>At a minimum, a payload should contain an <code>id</code> field that will be used as an object id.</p>
 			<h3 id="update-object">Update object</h3>
 			<blockquote>
 				<p>PUT {object}/:objectId</p>
@@ -996,21 +997,20 @@ app.use(<span class="hljs-string">'/api'</span>, api.createWFMRouter());
 			</blockquote>
 			<p>Where <code>:objectId</code> is an <code>id</code> field of the object.</p>
 			<h3 id="error-handling">Error handling</h3>
-			<p>In case of error express <code>next</code> callback is being called with <code>ApiError</code> instance.
+			<p>In the case of an error, an express <code>next</code> callback is being called with the <code>ApiError</code> instance.
 			Users should build their own middleware for global error handling in their application.</p>
-			<p>Api will returns non 200 status in case of error.</p>
+			<p>The api will returns a non 200 status in case of an error.</p>
 			<p><code>400</code> - For user input error (missing required field etc.)
 			<code>500</code> - For internal server errors</p>
-			<p>Api will return <code>204</code> status code if content is missing (for example invalid id was provided)</p>
-			<p>For every error <code>ApiError</code> object is being returned.
-			For example:</p>
+			<p>The api will return a <code>204</code> status code if the content is missing, for example, an invalid <code>id</code> was provided.</p>
+			<p>For every error, an <code>ApiError</code> object is being returned. For example:</p>
 			<pre><code class="lang-typescript">{
   <span class="hljs-string">"code"</span>: <span class="hljs-string">"InvalidID"</span>,
   <span class="hljs-string">"message"</span>: <span class="hljs-string">"Provided id is invalid"</span>,
   <span class="hljs-string">"statusCode"</span>: <span class="hljs-number">400</span>
 }
 </code></pre>
-			<p>Clients can adapt it to their preffered way of presenting errors to user (html,json etc.)</p>
+			<p>Clients can adapt it to their prefered way of presenting errors to user (html,json etc.)</p>
 			<blockquote>
 				<p><strong>Note:</strong> If you apply middleware security, additional  <code>401</code> and <code>403</code> statuses may be returned</p>
 			</blockquote>
