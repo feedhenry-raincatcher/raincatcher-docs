@@ -1,0 +1,60 @@
+= Workflow Step
+
+== Step Structure
+Steps are divided into to linked catergories the `module` and the `definition`.
+
+=== Module
+Modules can contain one or more angular directives for rendering steps in the portal and mobile applications. 
+{WFM-RC-NameShort} steps use Angular.js directives to build user interface features as part of workflows.
+Each step is divided into two types of directive:
+
+- **Edit Section (Form)**
+
+The Edit section is displayed when workflow is executed and allows users to edit information typically this would be a form.
+The Edit section consists of the html template and directive.
+
+- **Preview Section (View)**
+
+The Preview section is displayed as a summary when a workflow has been completed. The Preview section
+consists of the html template and directive.
+
+=== Definition 
+Definition contains the step definition which outlines the properties such as name and decription of a step for the workflow in the portal application.
+Each step requires a definition so the `definition.json` file can contain a single definition or 
+an array of definitions depending on the number of steps that are included in the step package.
+
+Example:
+[source,json]
+----
+[
+    {
+        "code": "base-form",
+        "name": "Base Form",
+        "description": "base form used to for steps",
+        "templates": {
+            "form": "<base-form></base-form>",
+            "view": "<base></base>"
+        }
+    }
+]
+----
+The module and the definition are exported to be visibile when step package is imported. 
+
+Example:
+[source,javascript]
+----
+module.exports = {
+  ngModule: require('./angular/base'),
+  // Definition for this step that is being used in portal
+  definition: require('./definition.json')
+};
+----
+
+== Development 
+To develope your own step package it is recommend that you clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and 
+modify it. See the link:https://github.com/feedhenry-raincatcher/step-template.git[README.md] for furhter information on modifying a step and importing it into 
+the portal and mobile applications.
+
+
+
+
