@@ -79,7 +79,7 @@ NOTE: The terminal is out of use while the Core Server is running. Open a new te
 [discrete]
 == Running the Mobile and Portal Demo Applications
 
-Open a new terminal and navigate to the folder containing _raincatcher-angularjs_ and execute:
+Open a new terminal and navigate to the folder containing _raincatcher-angularjs_, and execute:
 
 [source,bash]
 ----
