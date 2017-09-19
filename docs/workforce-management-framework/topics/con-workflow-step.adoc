@@ -1,11 +1,13 @@
-= Workflow Step
+= Building your first Workflow Step/Reusing template
+
+A basic knowledge of Angular.js is requried to build a Workflow Step.
 
 == Step Structure
 Steps are divided into to linked catergories the `module` and the `definition`.
 
 === Module
 Modules can contain one or more angular directives for rendering steps in the portal and mobile applications. 
-{WFM-RC-NameShort} steps use Angular.js directives to build user interface features as part of workflows.
+{WFM-RC-NameShort} steps use Angular.js directives to build user interface as part of workflows.
 Each step is divided into two types of directive:
 
 - **Edit Section (Form)**
@@ -51,7 +53,7 @@ module.exports = {
 ----
 
 == Development 
-To develope your own step package it is recommend that you clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and 
+When developing a custom Step package, it is recommend that you clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and 
 modify it. See the link:https://github.com/feedhenry-raincatcher/step-template.git[README.md] for furhter information on modifying a step and importing it into 
 the portal and mobile applications.
 
