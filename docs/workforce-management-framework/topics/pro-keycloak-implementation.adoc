@@ -50,7 +50,7 @@ See the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/index.ts[se
 [discrete]
 === Enabling {WFM-RC-KeycloakName} Route Protection
 
-The following code is an exmaple of how to protect routes:
+The following code is an example of how to protect routes:
 
 [source,typescript]
 ----
