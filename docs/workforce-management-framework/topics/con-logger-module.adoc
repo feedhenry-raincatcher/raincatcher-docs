@@ -1,5 +1,5 @@
 [id='con-logger-module-{chapter}']
-= Introducing the {WFM-RC-NameShort} Logging
+= Introducing {WFM-RC-NameShort} Logging
 
 *{WFM-RC-NameShort} Logging* is a facade for link:https://nodejs.org[Node.js] based applications and it is used by all {WFM-RC-NameShort} modules.
 *{WFM-RC-NameShort} Logging* is contained in the `{WFM-RC-NameShort}-core` module.
