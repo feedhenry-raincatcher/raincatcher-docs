@@ -9,6 +9,7 @@ NOTE: Steps 3 and 4 are valid for any instance of *{WFM-RC-KeycloakName}* provid
 . xref:pro-adding-keycloak-configuration-{chapter}[Importing the {WFM-RC-KeycloakName} Realm Settings]
 . xref:pro-adding-keycloak-configuration-{chapter}[Adding {WFM-RC-KeycloakName} Configuration]
 . xref:pro-enabling-keycloak-on-the-demo-server-{chapter}[Enabling {WFM-RC-KeycloakName} on the Demo Server]
+. xref:pro-logging-in-to-the-keycloak-admin-console-{chapter}[Logging in to the {WFM-RC-KeycloakName} Admin Console]
 
 IMPORTANT: Enabling *{WFM-RC-KeycloakName}* requires the disabling of *PassportAuth*.
 
@@ -94,9 +95,19 @@ NOTE: The `keycloakConfig` field is partially implemented in link:{WFM-RC-CoreUR
 . At this point, the _Routes_ are protected by *{WFM-RC-KeycloakName}*.
 
 
-== {WFM-RC-KeycloakName} Admin Credentials
+[id=pro-logging-in-to-the-keycloak-admin-console-{chapter}]
+[discrete]
+=== Logging in to the {WFM-RC-KeycloakName} Admin Console
 
-To login into *{WFM-RC-KeycloakName}* Admin Console, navigate to http://localhost:8080/auth/ and login as the admin user using the following credentials:
+. Navigate to _http://localhost:8080/auth/_
 
-    Username: admin
-    Password: admin
+. Login as the _admin_ user using the following credentials:
++
+.{WFM-RC-KeycloakName} Login Credentials
+|===
+|Username |Password
+
+|admin
+|admin
+
+|===
