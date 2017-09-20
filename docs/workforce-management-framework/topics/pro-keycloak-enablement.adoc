@@ -93,8 +93,8 @@ NOTE: The `keycloakConfig` field is partially implemented in link:{WFM-RC-CoreUR
 +
 . At this point, the _Routes_ are protected by *{WFM-RC-KeycloakName}*.
 
-<ENG: NOT SURE ABOUT THE NEXT TEXT APPEARING HERE>
-== Reference {WFM-RC-KeycloakName}
+
+== {WFM-RC-KeycloakName} Admin Credentials
 
 To login into *{WFM-RC-KeycloakName}* Admin Console, navigate to http://localhost:8080/auth/ and login as the admin user using the following credentials:
 
