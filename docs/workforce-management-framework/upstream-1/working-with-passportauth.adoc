@@ -9,7 +9,7 @@ include::topics/shared/attributes.adoc[]
 include::topics/con-passportauth-module.adoc[leveloffset=+1]
 
 //Procedures
-include::topics/pro-working-with-passportauth.adoc[leveloffset=+1]
+include::topics/pro-passportauth-pointing-to-a-datasource.adoc[leveloffset=+1]
 
 == PassportAuth Reference Material
 The security aspects of *PassportAuth* module are described in the Security Strategy and cover areas such as:

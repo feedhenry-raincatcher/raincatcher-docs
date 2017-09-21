@@ -1,5 +1,10 @@
-[id='{context}-pro-working-with-passportauth']
-= Introduction
+[id='{context}-pro-passportauth-pointing-to-a-datasource']
+= Pointing passportauth to a Datasource
+
+The module is an out of the box security solution for default integration.
+*PassportAuth* uses JSON files that contain user data.
+This user data contains sample users and access roles for demo purposes in the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[Demo Data].
+This section describes how to use a different user data source.
 
 This section includes:
 
@@ -7,13 +12,13 @@ This section includes:
 //. xref:{context}-enabling-passportauth[Enabling PassportAuth]
 . xref:{context}-pointing-passportauth-to-a-datasource[Pointing PassportAuth to a Datasource]
 
-= Prerequisites
+== Prerequisites
 
 You must have completed:
 
 . xref:getting-started[Getting Started]
 
-= Procedure
+== Procedure
 
 //[id='{context}-disabling-passportauth']
 //[discrete]
@@ -34,15 +39,10 @@ You must have completed:
 //----
 //<***TODO***>
 //----
-== Configuration of PassportAuth module
-The module is an out of the box security solution for default integration. PassportAuth uses JSON files that contain user data.
-This user data contains sample users and access roles for demo purposes in the
-link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[Demo Data].
-The following procedure describes how to use a different user data source.
 
 [id='{context}-pointing-passportauth-to-a-datasource']
 [discrete]
-== Pointing PassportAuth to a Datasource
+=== Pointing PassportAuth to a Datasource
 
 NOTE: _UserRepository_ requires user data containing a minimum of username and password to work.
 
