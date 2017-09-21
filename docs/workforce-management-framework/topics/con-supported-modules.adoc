@@ -1,5 +1,21 @@
 = {WFM-RC-NameLong} Supported Modules
 
-An uptodate list of supported modules can be found at https://www.npmjs.com/org/raincatcher/
+An up to date list of supported modules can be found at https://www.npmjs.com/org/raincatcher/
 
--
+- link:../../../api/{WFM-RC-Api-Version}[@raincatcher/example-base]
+- link:../../../api/{WFM-RC-Api-Version}[@raincatcher/express-auth]
+- link:../../../api/{WFM-RC-Api-Version}[@raincatcher/logger]
+- link:../../../api/{WFM-RC-Api-Version}/auth-passport/docs/index.html[@raincatcher/auth-passport]
+- link:../../../api/{WFM-RC-Api-Version}[@raincatcher/angularjs-auth-keycloak]
+- link:../../../api/{WFM-RC-Api-Version}[@raincatcher/angularjs-auth-passport]
+- link:../../../api/{WFM-RC-Api-Version}/datasync-cloud/docs/index.html[@raincatcher/datasync-cloud]
+- link:../../../api/{WFM-RC-Api-Version}[@raincatcher/step-signature]
+- link:../../../api/{WFM-RC-Api-Version}[@raincatcher/angularjs-auth]
+- link:../../../api/{WFM-RC-Api-Version}/datasync-client/docs/index.html[@raincatcher/datasync-client]
+- link:../../../api/{WFM-RC-Api-Version}/wfm/docs/index.html[@raincatcher/wfm]
+- link:../../../api/{WFM-RC-Api-Version}/wfm-rest-api/docs/index.html[@raincatcher/wfm-rest-api]
+- link:../../../api/{WFM-RC-Api-Version}/wfm-user/docs/index.html[@raincatcher/wfm-user]
+- link:../../../api/{WFM-RC-Api-Version}[@raincatcher/wfm-demo-data]
+- link:../../../api/{WFM-RC-Api-Version}[@raincatcher/angularjs-http]
+- link:../../../api/{WFM-RC-Api-Version}[@raincatcher/angularjs-workorder]
+- link:../../../api/{WFM-RC-Api-Version}[@raincatcher/angularjs-workflow]
