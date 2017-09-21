@@ -1,11 +1,11 @@
-[id='{chapter}-pro-working-with-passportauth']
+[id='{context}-pro-working-with-passportauth']
 = Introduction
 
 This section includes:
 
-//. xref:{chapter}-disabling-passportauth[Disabling PassportAuth]
-//. xref:{chapter}-enabling-passportauth[Enabling PassportAuth]
-. xref:{chapter}-pointing-passportauth-to-a-datasource[Pointing PassportAuth to a Datasource]
+//. xref:{context}-disabling-passportauth[Disabling PassportAuth]
+//. xref:{context}-enabling-passportauth[Enabling PassportAuth]
+. xref:{context}-pointing-passportauth-to-a-datasource[Pointing PassportAuth to a Datasource]
 
 = Prerequisites
 
@@ -15,7 +15,7 @@ You must have completed:
 
 = Procedure
 
-//[id='{chapter}-disabling-passportauth']
+//[id='{context}-disabling-passportauth']
 //[discrete]
 //== Disabling PassportAuth
 
@@ -25,7 +25,7 @@ You must have completed:
 //<***TODO***>
 //----
 
-//[id='{chapter}-enabling-passportauth']
+//[id='{context}-enabling-passportauth']
 //[discrete]
 //== Enabling PassportAuth
 
@@ -40,7 +40,7 @@ This user data contains sample users and access roles for demo purposes in the
 link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/wfm-user/users.json[Demo Data].
 The following procedure describes how to use a different user data source.
 
-[id='{chapter}-pointing-passportauth-to-a-datasource']
+[id='{context}-pointing-passportauth-to-a-datasource']
 [discrete]
 == Pointing PassportAuth to a Datasource
 

@@ -1,8 +1,8 @@
-[id='{chapter}-con-datasync-module']
+[id='{context}-con-datasync-module']
 = Introducing the {WFM-RC-NameShort} Datasync Module
 
 The {WFM-RC-NameShort} *Datasync* Module is an implementation of the {WFM-RC-NameShort} Sync Framework.
-*Datasync* is made up of two applications, the xref:{chapter}-datasync-cloud-app[Cloud App] and the xref:{chapter}-datasync-client-app[Client App].
+*Datasync* is made up of two applications, the xref:{context}-datasync-cloud-app[Cloud App] and the xref:{context}-datasync-client-app[Client App].
 The Cloud App is implemented in the *Datasync* cloud module and the Client App is implemented in the *Datasync* client module.
 The primary function of *Datasync* is to synchronize data, for example, a _workorder_, between the Client Apps (mobile) and the Cloud App (running on a backend server).
 
@@ -15,7 +15,7 @@ The primary function of *Datasync* is to synchronize data, for example, a _worko
 
 For advanced usage of the *Datasync* Module, see the link:{WFM-RC-SyncFrameworkURL}{WFM-RC-Branch}/docs[sync framework documentation].
 
-[id='{chapter}-datasync-cloud-app']
+[id='{context}-datasync-cloud-app']
 == Datasync Cloud App
 The *Datasync Cloud App* is a wrapper for the {WFM-RC-NameShort} link:https://github.com/feedhenry/fh-sync[Datasync server].
 The *Datasync Cloud App* creates a server side service that allows Client Apps (mobile) to synchronize offline data to a preferred back-end data store.
@@ -25,7 +25,7 @@ For instructions on how to implement the *Datasync Cloud App*, see the *Datasync
 
 To view an example, see the *Datasync Cloud App* link:{WFM-RC-CoreUrl}{WFM-RC-Branch}/cloud/datasync/example/index.ts[example].
 
-[id='{chapter}-datasync-client-app']
+[id='{context}-datasync-client-app']
 == Datasync Client App
 The *Datasync Client App* is based on the link:https://github.com/feedhenry/fh-sync-js[sync.js client].
 In order to work, the *Datasync Client App* requires the *Datasync Cloud App* to be running on an _Express_ web server.

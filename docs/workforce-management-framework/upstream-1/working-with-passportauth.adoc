@@ -1,7 +1,7 @@
 include::topics/shared/attributes.adoc[]
 
-//':chapter:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
-:chapter: working-with-passportjs
+//':context:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:context: working-with-passportjs
 
 = Working With PassportAuth
 

@@ -1,14 +1,14 @@
-[id='{chapter}-ref-introducing-raincatcher']
+[id='{context}-ref-introducing-raincatcher']
 = {WFM-RC-NameShort} Reference Material
 
 This section includes:
 
-. xref:{chapter}-highlighting-raincatcher-areas-of-focus[Highlighting {WFM-RC-NameShort} Areas of Focus]
-. xref:{chapter}-raincatcher-at-a-technical-level[{WFM-RC-NameShort} at a Technical Level]
-. xref:{chapter}-identifying-raincatcher-repositories[Identifying {WFM-RC-NameShort} Repositories]
-. xref:{chapter}-differentiating-raincatcher-from-tech-preview[Differentiating {WFM-RC-NameShort} from 'Tech Preview']
+. xref:{context}-highlighting-raincatcher-areas-of-focus[Highlighting {WFM-RC-NameShort} Areas of Focus]
+. xref:{context}-raincatcher-at-a-technical-level[{WFM-RC-NameShort} at a Technical Level]
+. xref:{context}-identifying-raincatcher-repositories[Identifying {WFM-RC-NameShort} Repositories]
+. xref:{context}-differentiating-raincatcher-from-tech-preview[Differentiating {WFM-RC-NameShort} from 'Tech Preview']
 
-[id='{chapter}-highlighting-raincatcher-areas-of-focus']
+[id='{context}-highlighting-raincatcher-areas-of-focus']
 == Highlighting {WFM-RC-NameShort} Areas of Focus
 
 .Areas of Focus
@@ -28,7 +28,7 @@ This section includes:
 |Graphical User Interfaces are implemented in AngularJS and Angular
 |===
 
-[id='{chapter}-raincatcher-at-a-technical-level']
+[id='{context}-raincatcher-at-a-technical-level']
 == {WFM-RC-NameShort} at a Technical Level
 
 * link:https://nodejs.org/en/[Node.js] used for server side code
@@ -37,7 +37,7 @@ This section includes:
 * Focus on module reuse and flexibility
 * Incorporates open-source technologies, for example: MongoDb, Keycloak, Passport.js
 
-[id='{chapter}-identifying-raincatcher-repositories']
+[id='{context}-identifying-raincatcher-repositories']
 == Identifying {WFM-RC-NameShort} Repositories
 
 The {WFM-RC-NameShort} is available in three github repositories:
@@ -56,7 +56,7 @@ The {WFM-RC-NameShort} is available in three github repositories:
 |Repository contains {WFM-RC-NameShort} documentation
 |===
 
-[id='{chapter}-differentiating-raincatcher-from-tech-preview']
+[id='{context}-differentiating-raincatcher-from-tech-preview']
 == Differentiating {WFM-RC-NameShort} from 'Tech Preview'
 
 The {WFM-RC-NameShort} project was originally called *Tech Preview*.

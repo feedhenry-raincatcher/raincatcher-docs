@@ -1,13 +1,13 @@
-[id='{chapter}-pro-keycloak-implementation']
+[id='{context}-pro-keycloak-implementation']
 = Implementing {WFM-RC-KeycloakName}
 
 This section includes:
 
-. xref:{chapter}-initializing-keycloak[Initializing {WFM-RC-KeycloakName}]
-. xref:{chapter}-importing-the-endpointsecurity-interface[Importing the EndpointSecurity Interface]
-. xref:{chapter}-importing-keycloak-init[Importing {WFM-RC-KeycloakName} _init_]
-. xref:{chapter}-applying-keycloak-init[Applying {WFM-RC-KeycloakName} _init_ ]
-. xref:{chapter}-enabling-keycloak-route-protection[Enabling {WFM-RC-KeycloakName} Route Protection]
+. xref:{context}-initializing-keycloak[Initializing {WFM-RC-KeycloakName}]
+. xref:{context}-importing-the-endpointsecurity-interface[Importing the EndpointSecurity Interface]
+. xref:{context}-importing-keycloak-init[Importing {WFM-RC-KeycloakName} _init_]
+. xref:{context}-applying-keycloak-init[Applying {WFM-RC-KeycloakName} _init_ ]
+. xref:{context}-enabling-keycloak-route-protection[Enabling {WFM-RC-KeycloakName} Route Protection]
 
 == Prerequisites
 
@@ -16,19 +16,19 @@ This section includes:
 
 == Using {WFM-RC-KeycloakName} to secure endpoints
 
-[id='{chapter}-initializing-keycloak']
+[id='{context}-initializing-keycloak']
 [discrete]
 === Initializing {WFM-RC-KeycloakName}
 
 See the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/keycloak/index.ts[Keycloak code] for reference.
 
-[id='{chapter}-importing-the-endpointsecurity-interface']
+[id='{context}-importing-the-endpointsecurity-interface']
 [discrete]
 === Importing The EndpointSecurity Interface
 
 Import the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/cloud/auth/src/EndpointSecurity.ts[EndpointSecurity Interface] and implement it.
 
-[id='{chapter}-importing-keycloak-init']
+[id='{context}-importing-keycloak-init']
 [discrete]
 === Importing {WFM-RC-KeycloakName} _init_
 
@@ -39,14 +39,14 @@ Import *{WFM-RC-KeycloakName}* _init_ from link:{WFM-RC-CoreURL}{WFM-RC-Branch}/
 import { init as initKeycloak } from './keycloak';
 ----
 
-[id='{chapter}-applying-keycloak-init']
+[id='{context}-applying-keycloak-init']
 [discrete]
 === Applying {WFM-RC-KeycloakName} _init_
 
 Apply *{WFM-RC-KeycloakName}* _init_ to the security Middleware to enable *{WFM-RC-KeycloakName}* for route protection.
 See the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/index.ts[securitySetup] code for more information.
 
-[id='{chapter}-enabling-keycloak-route-protection']
+[id='{context}-enabling-keycloak-route-protection']
 [discrete]
 === Enabling {WFM-RC-KeycloakName} Route Protection
 

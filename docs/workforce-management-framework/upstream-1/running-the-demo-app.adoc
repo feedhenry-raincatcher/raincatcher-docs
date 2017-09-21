@@ -1,8 +1,8 @@
 include::topics/shared/attributes.adoc[]
 
-:chapter: running-the-demo-app
+//':context:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:context: running-the-demo-app
 
-[id='{chapter}-running-the-demo-app']
 = Running the Demo App
 //Concepts
 The {WFM-RC-NameShort} demo app comprises of three applications *Mobile*, *Portal* and a *Node.js Server*.

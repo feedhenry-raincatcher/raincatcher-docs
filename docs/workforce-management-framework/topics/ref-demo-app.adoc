@@ -1,11 +1,11 @@
-[id='{chapter}-ref-demo-app']
+[id='{context}-ref-demo-app']
 = {WFM-RC-NameShort} Demo Application Reference Material
 
 This section includes:
 
-. xref:{chapter}-credentials-for-the-demo-application[Credentials for the Demo Application]
+. xref:{context}-credentials-for-the-demo-application[Credentials for the Demo Application]
 
-[id='{chapter}-credentials-for-the-demo-application']
+[id='{context}-credentials-for-the-demo-application']
 == Credentials for the Demo Application
 
 Login using the following credentials:
