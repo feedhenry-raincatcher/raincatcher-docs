@@ -1,0 +1,5 @@
+= {WFM-RC-NameLong} Supported Modules
+
+An uptodate list of supported modules can be found at https://www.npmjs.com/org/raincatcher/
+
+-
