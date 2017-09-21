@@ -1,7 +1,7 @@
 include::topics/shared/attributes.adoc[]
 
 //':context:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
-:context: working-with-passportjs
+:context: working-with-passportauth
 
 = Working With PassportAuth
 
