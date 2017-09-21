@@ -54,7 +54,7 @@ module.exports = {
 
 == Development 
 When developing a custom Step package, it is recommend that you clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and 
-modify it. Alternatively you can use the community based link:https://www.npmjs.com/package/generator-rcstep[generator-rcstep] npm to create a step. 
+modify it. Alternatively you can use the community based link:https://www.npmjs.com/package/generator-rcstep[generator-rcstep] npm package to create a step. 
 See the link:https://github.com/feedhenry-raincatcher/step-template.git[README.md] for furhter information on modifying a step and importing it into 
 the portal and mobile applications.
 
