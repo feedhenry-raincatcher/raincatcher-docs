@@ -5,11 +5,11 @@ This section includes:
 
 NOTE: Steps 3 and 4 are valid for any instance of *{WFM-RC-KeycloakName}* provided you implement the _Realm settings_.
 
-. xref:pro-run-keycloak-docker-image-{chapter}[Running the {WFM-RC-KeycloakName} Docker Image]
-. xref:pro-adding-keycloak-configuration-{chapter}[Importing the {WFM-RC-KeycloakName} Realm Settings]
-. xref:pro-adding-keycloak-configuration-{chapter}[Adding {WFM-RC-KeycloakName} Configuration]
-. xref:pro-enabling-keycloak-on-the-demo-server-{chapter}[Enabling {WFM-RC-KeycloakName} on the Demo Server]
-. xref:pro-logging-in-to-the-keycloak-admin-console-{chapter}[Logging in to the {WFM-RC-KeycloakName} Admin Console]
+. xref:run-keycloak-docker-image-{chapter}[Running the {WFM-RC-KeycloakName} Docker Image]
+. xref:adding-keycloak-configuration-{chapter}[Importing the {WFM-RC-KeycloakName} Realm Settings]
+. xref:adding-keycloak-configuration-{chapter}[Adding {WFM-RC-KeycloakName} Configuration]
+. xref:enabling-keycloak-on-the-demo-server-{chapter}[Enabling {WFM-RC-KeycloakName} on the Demo Server]
+. xref:logging-in-to-the-keycloak-admin-console-{chapter}[Logging in to the {WFM-RC-KeycloakName} Admin Console]
 
 IMPORTANT: Enabling *{WFM-RC-KeycloakName}* requires the disabling of *PassportAuth*.
 
@@ -18,7 +18,7 @@ IMPORTANT: Enabling *{WFM-RC-KeycloakName}* requires the disabling of *PassportA
 . Ensure you have completed xref:getting-started[Getting Started]
 . Docker (tested with version: {WFM-RC-DockerVersion})
 
-[id='pro-run-keycloak-docker-image-{chapter}']
+[id='run-keycloak-docker-image-{chapter}']
 [discrete]
 === Running the {WFM-RC-KeycloakName} Docker Image
 
@@ -31,7 +31,7 @@ docker run -p 8080:8080 feedhenry/raincatcher-keycloak
 
 For more information about the *{WFM-RC-KeycloakName}* Docker Image, see the *{WFM-RC-KeycloakName}* link:{WFM-RC-KeycloakDockerURL}{WFM-RC-Branch}/README.md[README.md].
 
-[id=pro-adding-keycloak-configuration-{chapter}]
+[id=adding-keycloak-configuration-{chapter}]
 [discrete]
 === Adding {WFM-RC-KeycloakName} Configuration
 
@@ -68,7 +68,7 @@ NOTE: The `keycloakConfig` field is partially implemented in link:{WFM-RC-CoreUR
 ----
 
 
-[id=pro-enabling-keycloak-on-the-demo-server-{chapter}]
+[id=enabling-keycloak-on-the-demo-server-{chapter}]
 [discrete]
 === Enabling {WFM-RC-KeycloakName} on the Demo Server
 
@@ -95,7 +95,7 @@ NOTE: The `keycloakConfig` field is partially implemented in link:{WFM-RC-CoreUR
 . At this point, the _Routes_ are protected by *{WFM-RC-KeycloakName}*.
 
 
-[id=pro-logging-in-to-the-keycloak-admin-console-{chapter}]
+[id=logging-in-to-the-keycloak-admin-console-{chapter}]
 [discrete]
 === Logging in to the {WFM-RC-KeycloakName} Admin Console
 

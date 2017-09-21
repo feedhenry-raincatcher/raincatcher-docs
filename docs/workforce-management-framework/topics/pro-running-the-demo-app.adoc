@@ -3,12 +3,12 @@
 
 This section includes:
 
-. xref:pro-cloning-the-git-repository-{chapter}[Cloning the Git Repository]
-. xref:pro-installing-angular-dependencies-{chapter}[Installing Angular Dependencies]
-. xref:pro-installing-core-dependencies-{chapter}[Installing Core Dependencies]
-. xref:pro-starting-mongodb-and-redis-{chapter}[Starting MongoDB and Redis]
-. xref:pro-starting-the-core-server-{chapter}[Starting the Core Server]
-. xref:pro-running-the-mobile-and-portal-demo-applications-{chapter}[Running the Mobile and Portal Demo Applications]
+. xref:cloning-the-git-repository-{chapter}[Cloning the Git Repository]
+. xref:installing-angular-dependencies-{chapter}[Installing Angular Dependencies]
+. xref:installing-core-dependencies-{chapter}[Installing Core Dependencies]
+. xref:starting-mongodb-and-redis-{chapter}[Starting MongoDB and Redis]
+. xref:starting-the-core-server-{chapter}[Starting the Core Server]
+. xref:running-the-mobile-and-portal-demo-applications-{chapter}[Running the Mobile and Portal Demo Applications]
 
 = Prerequisites
 
@@ -22,7 +22,7 @@ This section includes:
 
 This procedure will install the latest master branch.
 
-[id='pro-cloning-the-git-repository-{chapter}']
+[id='cloning-the-git-repository-{chapter}']
 [discrete]
 == Cloning the Git Repository
 
@@ -33,7 +33,7 @@ git clone git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git
 cd raincatcher-angularjs
 ----
 
-[id='pro-installing-angular-dependencies-{chapter}']
+[id='installing-angular-dependencies-{chapter}']
 [discrete]
 == Installing Repository Dependencies
 
@@ -43,7 +43,7 @@ npm install
 npm run bootstrap
 ----
 
-[id='pro-installing-core-dependencies-{chapter}']
+[id='installing-core-dependencies-{chapter}']
 [discrete]
 == Installing Core Dependencies
 
@@ -56,7 +56,7 @@ npm run bootstrap
 
 NOTE: The Core repository is automatically cloned by the command `npm run bootstrap`.
 
-[id='pro-starting-mongodb-and-redis-{chapter}']
+[id='starting-mongodb-and-redis-{chapter}']
 [discrete]
 == Starting MongoDB and Redis
 
@@ -64,7 +64,7 @@ NOTE: The Core repository is automatically cloned by the command `npm run bootst
 
 . Start Redis. For more information, see link:https://redis.io/topics/quickstart#starting-redis[Starting Redis].
 
-[id='pro-starting-the-core-server-{chapter}']
+[id='starting-the-core-server-{chapter}']
 [discrete]
 == Starting the Core Server
 
@@ -75,7 +75,7 @@ npm run start
 
 NOTE: The terminal is out of use while the Core Server is running. Open a new terminal to run additional commands.
 
-[id='pro-running-the-mobile-and-portal-demo-applications-{chapter}']
+[id='running-the-mobile-and-portal-demo-applications-{chapter}']
 [discrete]
 == Running the Mobile and Portal Demo Applications
 

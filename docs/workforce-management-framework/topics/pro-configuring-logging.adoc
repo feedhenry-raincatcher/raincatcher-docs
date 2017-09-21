@@ -3,7 +3,7 @@
 
 This section includes:
 
-//. xref:pro-cloning-the-git-repository-{chapter}[Cloning the Git Repository]
+//. xref:cloning-the-git-repository-{chapter}[Cloning the Git Repository]
 
 = Prerequisites
 
