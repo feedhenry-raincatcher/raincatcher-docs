@@ -1,5 +1,8 @@
 include::topics/shared/attributes.adoc[]
 
+//This variable is used to display :downstream: specific content only
+:downstream:
+
 [[WFM-RC-NameLong]]
 = {WFM-RC-NameLong}
 

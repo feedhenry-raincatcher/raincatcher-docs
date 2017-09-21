@@ -1,5 +1,8 @@
 include::topics/shared/attributes.adoc[]
 
+//This variable is used to display :upstream: specific content only
+:upstream:
+
 :sectnums:
 :toc: left
 :toclevels: 5
