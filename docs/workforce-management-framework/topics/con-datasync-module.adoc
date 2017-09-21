@@ -1,9 +1,9 @@
-[id='con-datasync-module-{chapter}']
+[id='{chapter}-con-datasync-module']
 = Introducing the {WFM-RC-NameShort} Datasync Module
 
 The {WFM-RC-NameShort} *Datasync* Module is an implementation of the {WFM-RC-NameShort} Sync Framework.
-*Datasync* is made up of two applications, the xref:datasync-cloud-app-{chapter}[Cloud App] and the xref:datasync-client-app-{chapter}[Client App].
-The Cloud App is implemented in the *Datasync* cloud module and the Client App is implemented in the *Datasync* client module. 
+*Datasync* is made up of two applications, the xref:{chapter}-datasync-cloud-app[Cloud App] and the xref:{chapter}-datasync-client-app[Client App].
+The Cloud App is implemented in the *Datasync* cloud module and the Client App is implemented in the *Datasync* client module.
 The primary function of *Datasync* is to synchronize data, for example, a _workorder_, between the Client Apps (mobile) and the Cloud App (running on a backend server).
 
 *Datasync* key features:
@@ -13,19 +13,19 @@ The primary function of *Datasync* is to synchronize data, for example, a _worko
 - Allows data updates (that is, deltas) to be distributed from the Cloud App to connected clients
 - Provides facilities for managing data collisions from multiple updates in the cloud
 
-For advanced usage of the *Datasync* Module, see the link:{WFM-RC-SyncFrameworkURL}{WFM-RC-Branch}/docs[sync framework documentation]. 
+For advanced usage of the *Datasync* Module, see the link:{WFM-RC-SyncFrameworkURL}{WFM-RC-Branch}/docs[sync framework documentation].
 
-[id='datasync-cloud-app-{chapter}']
+[id='{chapter}-datasync-cloud-app']
 == Datasync Cloud App
 The *Datasync Cloud App* is a wrapper for the {WFM-RC-NameShort} link:https://github.com/feedhenry/fh-sync[Datasync server].
 The *Datasync Cloud App* creates a server side service that allows Client Apps (mobile) to synchronize offline data to a preferred back-end data store.
-By default, the server connects to a backend mongodb database and stores all client data here. 
+By default, the server connects to a backend mongodb database and stores all client data here.
 
 For instructions on how to implement the *Datasync Cloud App*, see the *Datasync Cloud App* link:{WFM-RC-CoreURL}{WFM-RC-Branch}/cloud/datasync/README.md[README.MD]
 
 To view an example, see the *Datasync Cloud App* link:{WFM-RC-CoreUrl}{WFM-RC-Branch}/cloud/datasync/example/index.ts[example].
 
-[id='datasync-client-app-{chapter}']
+[id='{chapter}-datasync-client-app']
 == Datasync Client App
 The *Datasync Client App* is based on the link:https://github.com/feedhenry/fh-sync-js[sync.js client].
 In order to work, the *Datasync Client App* requires the *Datasync Cloud App* to be running on an _Express_ web server.

@@ -1,4 +1,4 @@
-[id='con-introducing-raincatcher-{chapter}']
+[id='{chapter}-con-introducing-raincatcher']
 = Introducing {WFM-RC-NameLong}
 
 ifdef::downstream[]

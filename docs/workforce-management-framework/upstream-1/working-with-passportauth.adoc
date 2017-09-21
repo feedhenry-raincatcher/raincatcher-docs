@@ -22,4 +22,4 @@ The security aspects of *PassportAuth* module are described in the Security Stra
 * Customizing a Strategy
 * PassportAuth Demo Users and Access Roles
 
-For more information, see xref:ref-passportauth-securitystrategy-defining-raincatcher-security[Defining the Security Strategy for {WFM-RC-NameShort} PassportAuth].
+For more information, see xref:defining-raincatcher-security-ref-passportauth-securitystrategy[Defining the Security Strategy for {WFM-RC-NameShort} PassportAuth].
