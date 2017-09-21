@@ -6,11 +6,7 @@ include::topics/shared/attributes.adoc[]
 = Working With {WFM-RC-KeycloakName}
 
 //Concepts
-The {WFM-RC-NameShort} Demo Application allows for authentication and access management using link:http://www.keycloak.org/index.html[{WFM-RC-KeycloakName}]
-however, {WFM-RC-KeycloakName} is not the default authorization and authentication module for {WFM-RC-NameShort}.
-{WFM-RC-KeycloakName} integration is configured within the Demo Application.
-
-NOTE: To configure your own instance of {WFM-RC-KeycloakName}, see the link:{WFM-RC-KeycloakURL}getting_started/topics/first-boot.html[{WFM-RC-KeycloakName} Getting Started Guide].
+include::topics/con-keycloak.adoc[leveloffset=+1]
 
 //Procedures
 include::topics/pro-keycloak-implementation.adoc[leveloffset=+1]

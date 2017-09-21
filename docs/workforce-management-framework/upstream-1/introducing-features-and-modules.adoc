@@ -10,6 +10,8 @@ ifdef::downstream[]
 include::topics/con-logging.adoc[leveloffset=+1]
 endif::downstream[]
 
+include::topics/con-keycloak.adoc[leveloffset=+1]
+
 = {WFM-RC-NameLong} Modules
 include::topics/con-passportauth-module.adoc[leveloffset=+1]
 include::topics/con-datasync-module.adoc[leveloffset=+1]
