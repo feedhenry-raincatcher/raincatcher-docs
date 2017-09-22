@@ -8,14 +8,14 @@ Steps are divided into to linked catergories the `module` and the `definition`.
 === Module
 Modules can contain one or more angular directives for rendering steps in the portal and mobile applications. 
 {WFM-RC-NameShort} steps use Angular.js directives to build user interface as part of workflows.
-Each step is divided into two types of directive:
+Each step is divided into two directives:
 
-- **Edit Section (Form)**
+- **Edit Section directive (Form)**
 
 The Edit section is displayed when workflow is executed and allows users to edit information typically this would be a form.
 The Edit section consists of the html template and directive.
 
-- **Preview Section (View)**
+- **Preview Section directive (View)**
 
 The Preview section is displayed as a summary when a workflow has been completed. The Preview section
 consists of the html template and directive.
