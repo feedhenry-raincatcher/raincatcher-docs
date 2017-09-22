@@ -914,7 +914,10 @@ img { max-width: 100%; }
 					<a href="_src_auth_passportauth_.passportauth.html#constructor" class="tsd-kind-icon">constructor</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a href="_src_auth_passportauth_.passportauth.html#loginroute" class="tsd-kind-icon">login<wbr>Route</a>
+					<a href="_src_auth_passportauth_.passportauth.html#jwtopts" class="tsd-kind-icon">jwt<wbr>Opts</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a href="_src_auth_passportauth_.passportauth.html#passport" class="tsd-kind-icon">passport</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a href="_src_auth_passportauth_.passportauth.html#userrepo" class="tsd-kind-icon">user<wbr>Repo</a>
@@ -929,6 +932,9 @@ img { max-width: 100%; }
 					<a href="_src_auth_passportauth_.passportauth.html#authenticate" class="tsd-kind-icon">authenticate</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="_src_auth_passportauth_.passportauth.html#authenticatewithtoken" class="tsd-kind-icon">authenticate<wbr>With<wbr>Token</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="_src_auth_passportauth_.passportauth.html#init" class="tsd-kind-icon">init</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -938,12 +944,12 @@ img { max-width: 100%; }
 					<a href="_src_auth_passportauth_.passportauth.html#setreturntourl" class="tsd-kind-icon">set<wbr>Return<wbr>ToUrl</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a href="_src_auth_passportauth_.passportauth.html#setup" class="tsd-kind-icon">setup</a>
+					<a href="_src_auth_passportauth_.passportauth.html#setupcookie" class="tsd-kind-icon">setup<wbr>Cookie</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a href="_src_auth_passportauth_.passportauth.html#setuptoken" class="tsd-kind-icon">setup<wbr>Token</a>
 				</li>
 			</ul>
-		</li>
-		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-			<a href="../interfaces/_src_auth_passportauth_.endpointsecurity.html" class="tsd-kind-icon">Endpoint<wbr>Security</a>
 		</li>
 	</ul>
 </nav>
@@ -967,7 +973,7 @@ img { max-width: 100%; }
 		<section class="tsd-panel">
 			<h3>Implements</h3>
 			<ul class="tsd-hierarchy">
-				<li><a href="../interfaces/_src_auth_passportauth_.endpointsecurity.html" class="tsd-signature-type">EndpointSecurity</a></li>
+				<li><span class="tsd-signature-type">EndpointSecurity</span></li>
 			</ul>
 		</section>
 		<section class="tsd-panel-group tsd-index-group">
@@ -983,7 +989,8 @@ img { max-width: 100%; }
 					<section class="tsd-index-section tsd-is-private-protected">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_src_auth_passportauth_.passportauth.html#loginroute" class="tsd-kind-icon">login<wbr>Route</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_src_auth_passportauth_.passportauth.html#jwtopts" class="tsd-kind-icon">jwt<wbr>Opts</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_src_auth_passportauth_.passportauth.html#passport" class="tsd-kind-icon">passport</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_src_auth_passportauth_.passportauth.html#userrepo" class="tsd-kind-icon">user<wbr>Repo</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_src_auth_passportauth_.passportauth.html#userservice" class="tsd-kind-icon">user<wbr>Service</a></li>
 						</ul>
@@ -993,10 +1000,12 @@ img { max-width: 100%; }
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_src_auth_passportauth_.passportauth.html#accessdenied" class="tsd-kind-icon">access<wbr>Denied</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_auth_passportauth_.passportauth.html#authenticate" class="tsd-kind-icon">authenticate</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_auth_passportauth_.passportauth.html#authenticatewithtoken" class="tsd-kind-icon">authenticate<wbr>With<wbr>Token</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_auth_passportauth_.passportauth.html#init" class="tsd-kind-icon">init</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_auth_passportauth_.passportauth.html#protect" class="tsd-kind-icon">protect</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_src_auth_passportauth_.passportauth.html#setreturntourl" class="tsd-kind-icon">set<wbr>Return<wbr>ToUrl</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_src_auth_passportauth_.passportauth.html#setup" class="tsd-kind-icon">setup</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_src_auth_passportauth_.passportauth.html#setupcookie" class="tsd-kind-icon">setup<wbr>Cookie</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_src_auth_passportauth_.passportauth.html#setuptoken" class="tsd-kind-icon">setup<wbr>Token</a></li>
 						</ul>
 					</section>
 				</div>
@@ -1008,13 +1017,13 @@ img { max-width: 100%; }
 				<a name="constructor" class="tsd-anchor"></a>
 				<h3>constructor</h3>
 				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">new <wbr>Passport<wbr>Auth<span class="tsd-signature-symbol">(</span>userRepo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_src_user_userrepository_.userrepository.html" class="tsd-signature-type">UserRepository</a>, userService<span class="tsd-signature-symbol">: </span><a href="../interfaces/_src_user_userservice_.userservice.html" class="tsd-signature-type">UserService</a>, loginRoute<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_src_auth_passportauth_.passportauth.html" class="tsd-signature-type">PassportAuth</a></li>
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Passport<wbr>Auth<span class="tsd-signature-symbol">(</span>userRepo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_src_user_userrepository_.userrepository.html" class="tsd-signature-type">UserRepository</a>, userService<span class="tsd-signature-symbol">: </span><a href="../interfaces/_src_user_userservice_.userservice.html" class="tsd-signature-type">UserService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_src_auth_passportauth_.passportauth.html" class="tsd-signature-type">PassportAuth</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/passportauth/src/auth/PassportAuth.ts#L50">src/auth/PassportAuth.ts:50</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L22">src/auth/PassportAuth.ts:22</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1025,9 +1034,6 @@ img { max-width: 100%; }
 							<li>
 								<h5>userService: <a href="../interfaces/_src_user_userservice_.userservice.html" class="tsd-signature-type">UserService</a></h5>
 							</li>
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> loginRoute: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <a href="_src_auth_passportauth_.passportauth.html" class="tsd-signature-type">PassportAuth</a></h4>
 					</li>
@@ -1037,12 +1043,22 @@ img { max-width: 100%; }
 		<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-				<a name="loginroute" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagProtected">Protected</span> login<wbr>Route</h3>
-				<div class="tsd-signature tsd-kind-icon">login<wbr>Route<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<a name="jwtopts" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> jwt<wbr>Opts</h3>
+				<div class="tsd-signature tsd-kind-icon">jwt<wbr>Opts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">JwtOptions</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/passportauth/src/auth/PassportAuth.ts#L50">src/auth/PassportAuth.ts:50</a></li>
+						<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L22">src/auth/PassportAuth.ts:22</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+				<a name="passport" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> passport</h3>
+				<div class="tsd-signature tsd-kind-icon">passport<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Passport</span><span class="tsd-signature-symbol"> =&nbsp;new passport.Passport()</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L21">src/auth/PassportAuth.ts:21</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1052,7 +1068,7 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">user<wbr>Repo<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_src_user_userrepository_.userrepository.html" class="tsd-signature-type">UserRepository</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/passportauth/src/auth/PassportAuth.ts#L53">src/auth/PassportAuth.ts:53</a></li>
+						<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L25">src/auth/PassportAuth.ts:25</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1062,7 +1078,7 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">user<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_src_user_userservice_.userservice.html" class="tsd-signature-type">UserService</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/passportauth/src/auth/PassportAuth.ts#L53">src/auth/PassportAuth.ts:53</a></li>
+						<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L25">src/auth/PassportAuth.ts:25</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1079,7 +1095,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/passportauth/src/auth/PassportAuth.ts#L123">src/auth/PassportAuth.ts:123</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L152">src/auth/PassportAuth.ts:152</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1105,13 +1121,13 @@ img { max-width: 100%; }
 				<a name="authenticate" class="tsd-anchor"></a>
 				<h3>authenticate</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">authenticate<span class="tsd-signature-symbol">(</span>defaultRedirect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, errorRedirect<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					<li class="tsd-signature tsd-kind-icon">authenticate<span class="tsd-signature-symbol">(</span>strategy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">AuthenticateOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/passportauth/src/auth/PassportAuth.ts#L106">src/auth/PassportAuth.ts:106</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L105">src/auth/PassportAuth.ts:105</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1126,16 +1142,55 @@ img { max-width: 100%; }
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>defaultRedirect: <span class="tsd-signature-type">string</span></h5>
+								<h5>strategy: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>location to redirect after successful authentication
-									when login page was loaded directly (without redirect)</p>
+									<p>Strategy to be used by Passport&#39;s authenticate function</p>
 								</div>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> errorRedirect: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">AuthenticateOptions</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="authenticatewithtoken" class="tsd-anchor"></a>
+				<h3>authenticate<wbr>With<wbr>Token</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">authenticate<wbr>With<wbr>Token<span class="tsd-signature-symbol">(</span>secret<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, userService<span class="tsd-signature-symbol">: </span><a href="../interfaces/_src_user_userservice_.userservice.html" class="tsd-signature-type">UserService</a>, userRepo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_src_user_userrepository_.userrepository.html" class="tsd-signature-type">UserRepository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L130">src/auth/PassportAuth.ts:130</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p> Creates a middleware for authentication purposes that will base on JWT tokens</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>secret: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>location to redirect after unsuccessful authentication</p>
+									<p>JWT token secret used to create token</p>
+								</div>
+							</li>
+							<li>
+								<h5>userService: <a href="../interfaces/_src_user_userservice_.userservice.html" class="tsd-signature-type">UserService</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>UserService custom implementation</p>
+								</div>
+							</li>
+							<li>
+								<h5>userRepo: <a href="../interfaces/_src_user_userrepository_.userrepository.html" class="tsd-signature-type">UserRepository</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>UserRepository custom implementation</p>
 								</div>
 							</li>
 						</ul>
@@ -1147,33 +1202,39 @@ img { max-width: 100%; }
 				<a name="init" class="tsd-anchor"></a>
 				<h3>init</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Express</span>, sessionOpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SessionOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Router</span>, sessionOpts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">SessionOptions</span>, secret<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Implementation of <a href="../interfaces/_src_auth_passportauth_.endpointsecurity.html">EndpointSecurity</a>.<a href="../interfaces/_src_auth_passportauth_.endpointsecurity.html#init">init</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/passportauth/src/auth/PassportAuth.ts#L63">src/auth/PassportAuth.ts:63</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L36">src/auth/PassportAuth.ts:36</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Initializes an Express application to use passport and express-session</p>
+								<p>Initializes an Express application to use passport.
+								Note: If the session options are not defined, session based authentication will not be used.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>app: <span class="tsd-signature-type">express.Express</span></h5>
+								<h5>app: <span class="tsd-signature-type">express.Router</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<p>An express application</p>
 								</div>
 							</li>
 							<li>
-								<h5>sessionOpts: <span class="tsd-signature-type">SessionOptions</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> sessionOpts: <span class="tsd-signature-type">SessionOptions</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<p>Session options to be used by express-session</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> secret: <span class="tsd-signature-type">any</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Secret to be used for Passport&#39;s JWT strategy</p>
 								</div>
 							</li>
 						</ul>
@@ -1190,15 +1251,14 @@ img { max-width: 100%; }
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Implementation of <a href="../interfaces/_src_auth_passportauth_.endpointsecurity.html">EndpointSecurity</a>.<a href="../interfaces/_src_auth_passportauth_.endpointsecurity.html#protect">protect</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/passportauth/src/auth/PassportAuth.ts#L78">src/auth/PassportAuth.ts:78</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L63">src/auth/PassportAuth.ts:63</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
 								<p>Function which checks if the user requesting access to the resource is authenticated and authorized to
-									access the resource. Redirects to the login page if user is not authenticated or returns a status of 403
+									access the resource. Returns a status of 401 if the user is not authenticated and returns a status of 403
 								if the user does not have the required role.</p>
 							</div>
 						</div>
@@ -1225,7 +1285,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/passportauth/src/auth/PassportAuth.ts#L131">src/auth/PassportAuth.ts:131</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L160">src/auth/PassportAuth.ts:160</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1248,21 +1308,22 @@ img { max-width: 100%; }
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-				<a name="setup" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagProtected">Protected</span> setup</h3>
+				<a name="setupcookie" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> setup<wbr>Cookie</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<li class="tsd-signature tsd-kind-icon">setup<span class="tsd-signature-symbol">(</span>passportApi<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Passport</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">setup<wbr>Cookie<span class="tsd-signature-symbol">(</span>passportApi<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Passport</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/passportauth/src/auth/PassportAuth.ts#L145">src/auth/PassportAuth.ts:145</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L174">src/auth/PassportAuth.ts:174</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Initialized passport configuration.
+								<p>Sets up the local strategy, serializer and deserializer to be used by Passport&#39;s cookie
+									based authentication.
 								Method can be overridden to provide custom passport setup</p>
 							</div>
 						</div>
@@ -1272,6 +1333,45 @@ img { max-width: 100%; }
 								<h5>passportApi: <span class="tsd-signature-type">Passport</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<p>passport.js instance</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<a name="setuptoken" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> setup<wbr>Token</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<li class="tsd-signature tsd-kind-icon">setup<wbr>Token<span class="tsd-signature-symbol">(</span>passportApi<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Passport</span>, jwtOpts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JwtOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/passportauth/src/auth/PassportAuth.ts#L189">src/auth/PassportAuth.ts:189</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Sets up the JWT strategy, serializer and deserializer to be used by Passport&#39;s token
+									based authentication.
+								Method can be overridden to provide custom passport setup</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>passportApi: <span class="tsd-signature-type">Passport</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>passport.js instance</p>
+								</div>
+							</li>
+							<li>
+								<h5>jwtOpts: <span class="tsd-signature-type">JwtOptions</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Options used for Passport&#39;s JWT strategy</p>
 								</div>
 							</li>
 						</ul>

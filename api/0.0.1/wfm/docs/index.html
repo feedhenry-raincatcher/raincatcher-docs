@@ -913,22 +913,22 @@ img { max-width: 100%; }
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
 			<h2 id="raincatcher-wfm">RainCatcher WFM</h2>
-			<p>RainCatcher <strong>W</strong>ork<strong>F</strong>low <strong>M</strong>anagement module is an TypeScript implementation for an equivalent subset of the <a href="http://www.bpmn.org/">BPMN specification</a>.</p>
-			<p>This module allows users to map business process into an organized set of tasks that can be built by developers to suit business needs.</p>
+			<p>RainCatcher <strong>W</strong>ork<strong>F</strong>low <strong>M</strong>anagement module is an TypeScript implementation for an equivalent subset of the <a href="http://www.bpmn.org/">Business Process Model and Notation (BPMN) specification</a>.</p>
+			<p>This module allows users to map a business process into an organized set of tasks that can be built by developers to suit business needs.</p>
 			<h2 id="concepts">Concepts</h2>
-			<p>The WFM module consists of a set of TypeScript interfaces and implementations for Process Management. The main entities are described bellow:</p>
+			<p>The WFM module consists of a set of TypeScript interfaces and implementations for Process Management. The module&#39;s main entities are:</p>
 			<ul>
-				<li><code>WorkFlow</code>: contain an ordered set of definitions of <code>Step</code>s, to be instantiated into a <code>WorkOrder</code> for execution</li>
+				<li><code>WorkFlow</code>: contains an ordered set of definitions of <code>Step</code>s than are instantiated into a <code>WorkOrder</code> for execution</li>
 				<li><code>WorkOrder</code>: instance of a <code>WorkFlow</code> to be executed</li>
-				<li><code>Step</code>: defines single unit of work</li>
+				<li><code>Step</code>: defines a single unit of work</li>
 				<li><code>StepResult</code>: the output of the execution of a <code>Step</code></li>
-				<li><code>WorkOrderResult</code>: The tracking of the progress of a <code>WorkOrder</code></li>
+				<li><code>WorkOrderResult</code>: Tracks the progress of a <code>WorkOrder</code></li>
 			</ul>
-			<p>The classes are framework-agnostic, allowing developers to focus on the implementation of Business Process on top of any new or existing solution.</p>
+			<p>The classes are framework-agnostic which allows a developer to focus on the implementation of Business Processes on top of any new or existing solution.</p>
 			<h2 id="getting-started">Getting Started</h2>
-			<p>In order to use this module, begin by installing all dependencies:</p>
+			<p>1) install all dependencies:</p>
 			<p>If inside the <a href="http://lernajs.io">lerna</a>-based mono repo: <code>lerna bootstrap --scope=@raincatcher/wfm --include-filtered-dependencies</code></p>
-			<p>For standalone usage: <code>npm install</code></p>
+			<p>2) For standalone usage: <code>npm install</code></p>
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
@@ -939,22 +939,19 @@ img { max-width: 100%; }
 						<h3>External modules</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-external-module"><a href="modules/_src_index_.html" class="tsd-kind-icon">"src/index"</a></li>
-							<li class="tsd-kind-external-module"><a href="modules/_src_result_stepresult_.html" class="tsd-kind-icon">"src/result/<wbr>Step<wbr>Result"</a></li>
-							<li class="tsd-kind-external-module"><a href="modules/_src_result_workorderresult_.html" class="tsd-kind-icon">"src/result/<wbr>Work<wbr>Order<wbr>Result"</a></li>
+							<li class="tsd-kind-external-module"><a href="modules/_src_model_step_.html" class="tsd-kind-icon">"src/model/<wbr>Step"</a></li>
+							<li class="tsd-kind-external-module"><a href="modules/_src_model_stepresult_.html" class="tsd-kind-icon">"src/model/<wbr>Step<wbr>Result"</a></li>
+							<li class="tsd-kind-external-module"><a href="modules/_src_model_workflow_.html" class="tsd-kind-icon">"src/model/<wbr>Work<wbr>Flow"</a></li>
+							<li class="tsd-kind-external-module"><a href="modules/_src_model_workorder_.html" class="tsd-kind-icon">"src/model/<wbr>Work<wbr>Order"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_service_dataservice_.html" class="tsd-kind-icon">"src/service/<wbr>Data<wbr>Service"</a></li>
-							<li class="tsd-kind-external-module"><a href="modules/_src_service_resultservice_.html" class="tsd-kind-icon">"src/service/<wbr>Result<wbr>Service"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_service_userservice_.html" class="tsd-kind-icon">"src/service/<wbr>User<wbr>Service"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_service_wfmservice_.html" class="tsd-kind-icon">"src/service/<wbr>Wfm<wbr>Service"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_status_.html" class="tsd-kind-icon">"src/status"</a></li>
-							<li class="tsd-kind-external-module"><a href="modules/_src_step_step_.html" class="tsd-kind-icon">"src/step/<wbr>Step"</a></li>
-							<li class="tsd-kind-external-module"><a href="modules/_src_workflow_workflow_.html" class="tsd-kind-icon">"src/workflow/<wbr>Work<wbr>Flow"</a></li>
-							<li class="tsd-kind-external-module"><a href="modules/_src_workorder_workorder_.html" class="tsd-kind-icon">"src/workorder/<wbr>Work<wbr>Order"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_test_mocks_mockdataservice_.html" class="tsd-kind-icon">"test/mocks/<wbr>Mock<wbr>Data<wbr>Service"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_test_mocks_mockstepdata_.html" class="tsd-kind-icon">"test/mocks/<wbr>Mock<wbr>Step<wbr>Data"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_test_mocks_mockuserservice_.html" class="tsd-kind-icon">"test/mocks/<wbr>Mock<wbr>User<wbr>Service"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_test_mocks_mockworkflow_.html" class="tsd-kind-icon">"test/mocks/<wbr>Mock<wbr>Work<wbr>Flow"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_test_mocks_mockworkorder_.html" class="tsd-kind-icon">"test/mocks/<wbr>Mock<wbr>Work<wbr>Order"</a></li>
-							<li class="tsd-kind-external-module"><a href="modules/_test_mocks_mockworkorderresult_.html" class="tsd-kind-icon">"test/mocks/<wbr>Mock<wbr>Workorder<wbr>Result"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_test_service_wfmservice_spec_.html" class="tsd-kind-icon">"test/service/<wbr>Wfm<wbr>Service-<wbr>spec"</a></li>
 						</ul>
 					</section>

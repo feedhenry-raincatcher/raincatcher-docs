@@ -912,35 +912,40 @@ img { max-width: 100%; }
 <div class="container container-main">
 	<div class="content-wrap">
 		<div class="tsd-panel tsd-typography">
-			<h1 id="raincatcher-passport-auth">RainCatcher Passport Auth</h1>
-			<p>Raincatcher authentication and authorization module using <a href="http://passportjs.org/">PassportJS</a>.
-			This module allows the:</p>
+			<h1 id="raincatcher-passportauth">RainCatcher PassportAuth</h1>
+			<p>The PassportAuth module is RainCatcher&#39;s implementation of  <a href="http://passportjs.org/">PassportJS</a> and is the default authentication and authorization module for RainCatcher..
+			PassportAuth provides:</p>
 			<ul>
-				<li>Creation and initialization of a Passport authentication service using Passport&#39;s local strategy.</li>
-				<li>Protection of express routes from requests by user authentication and authorization.</li>
-				<li>Usage of persistent login sessions using <a href="https://github.com/expressjs/session">express-session</a>.</li>
+				<li>Creation and initialization of a Passport authentication service using Passport&#39;s local strategy</li>
+				<li>Protection of express routes from requests by user authentication and authorization</li>
+				<li>Usage of persistent login sessions using <a href="https://github.com/expressjs/session">express-session</a></li>
 			</ul>
 			<h2 id="quick-start">Quick Start</h2>
 			<h4 id="setup">Setup</h4>
-			<pre><code class="lang-typescript">...
-<span class="hljs-keyword">import</span> { PassportAuth, UserRepository, UserService }  <span class="hljs-keyword">from</span> <span class="hljs-string">'@raincatcher/auth-passport'</span>
+			<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { PassportAuth, UserRepository, UserService }  <span class="hljs-keyword">from</span> <span class="hljs-string">'@raincatcher/auth-passport'</span>
 
 <span class="hljs-comment">// Initialize user data repository, user service and passport</span>
 <span class="hljs-keyword">const</span> userRepo: UserRepository = <span class="hljs-keyword">new</span> YourUserRepository();
 <span class="hljs-keyword">const</span> userService: UserService = <span class="hljs-keyword">new</span> YourUserService();
 <span class="hljs-keyword">const</span> authService: PassportAuth = <span class="hljs-keyword">new</span> PassportAuth(userRepo, userService);
 ...
-authService.init(app, sessionOptions); <span class="hljs-comment">// Initializes express app to use passport and express-session</span>
+authService.init(router, sessionOptions);
+  or
+authService.init(router, <span class="hljs-literal">undefined</span>, secret);
+
 ...
 </code></pre>
-			<p>Visit <a href="https://github.com/expressjs/session">express-session</a> to find more information about the available express
-			session options.</p>
+			<p>In order to use cookie-based authentication, specify the sessionOptions.</p>
+			<ul>
+				<li>For more information about the available express session options, see  <a href="https://github.com/expressjs/session">express-session</a>.</li>
+			</ul>
+			<p>Without the sessionOptions, Passport will use token-based authentication using Passport&#39;s JWT strategy by default.</p>
 			<h4 id="usage">Usage</h4>
 			<pre><code class="lang-typescript">app.get(<span class="hljs-string">'/secureEndpoint'</span>, authService.protect(<span class="hljs-string">'admin'</span>), <span class="hljs-function">(<span class="hljs-params">req: express.Request, res: express.Response</span>) =&gt;</span> {
     res.json({routeName: <span class="hljs-string">'/secureEndpoint'</span>, msg: <span class="hljs-string">'authenticated and authorized to access secure resource'</span>});
 });
 </code></pre>
-			<p>See <a href="./example/index.ts">./example</a> for a sample implementation</p>
+			<p>To view a sample implementation, see <a href="./example/index.ts">./example</a> sample example</p>
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
@@ -950,13 +955,14 @@ authService.init(app, sessionOptions); <span class="hljs-comment">// Initializes
 					<section class="tsd-index-section ">
 						<h3>External modules</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-external-module"><a href="modules/_src_auth_defaultstrategy_.html" class="tsd-kind-icon">"src/auth/<wbr>Default<wbr>Strategy"</a></li>
+							<li class="tsd-kind-external-module"><a href="modules/_src_auth_defaultstrategies_.html" class="tsd-kind-icon">"src/auth/<wbr>Default<wbr>Strategies"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_auth_passportauth_.html" class="tsd-kind-icon">"src/auth/<wbr>Passport<wbr>Auth"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_auth_userserializer_.html" class="tsd-kind-icon">"src/auth/<wbr>User<wbr>Serializer"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_index_.html" class="tsd-kind-icon">"src/index"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_user_userrepository_.html" class="tsd-kind-icon">"src/user/<wbr>User<wbr>Repository"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_user_userservice_.html" class="tsd-kind-icon">"src/user/<wbr>User<wbr>Service"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_test_passportauthtest_.html" class="tsd-kind-icon">"test/<wbr>Passport<wbr>Auth<wbr>Test"</a></li>
+							<li class="tsd-kind-external-module"><a href="modules/_test_passporttokenauthtest_.html" class="tsd-kind-icon">"test/<wbr>Passport<wbr>Token<wbr>Auth<wbr>Test"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_test_userserializertest_.html" class="tsd-kind-icon">"test/<wbr>User<wbr>Serializer<wbr>Test"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_test_mocks_mockuserrepo_.html" class="tsd-kind-icon">"test/mocks/<wbr>Mock<wbr>User<wbr>Repo"</a></li>
 						</ul>

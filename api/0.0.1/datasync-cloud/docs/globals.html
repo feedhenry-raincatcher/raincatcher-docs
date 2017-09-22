@@ -956,7 +956,7 @@ app.use(cors());
 <span class="hljs-keyword">const</span> router = middleware.createSyncExpressRouter();
 app.use(<span class="hljs-string">'/'</span>, router);
 </code></pre>
-			<p>See <a href="./integration">integration</a> for complete runnable example.</p>
+			<p>See <a href="https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/datasync/example">example app</a> for complete runnable example.</p>
 			<h2 id="accessing-underlying-sync-library">Accessing underlying sync library</h2>
 			<p>For advanced use cases developers can access sync library using <code>sync</code> namespace.
 			Library is shipped with their own typings. You can import this directly into your application as below:</p>
@@ -965,7 +965,10 @@ sync.anyapicall(...) ;
 </code></pre>
 			<p>Where <code>anyapicall</code> is one of the types defined in:
 			<a href="https://github.com/feedhenry/fh-sync/blob/master/types/fh-sync.d.ts">https://github.com/feedhenry/fh-sync/blob/master/types/fh-sync.d.ts</a></p>
-			<p>For more advanced usages please follow <a href="https://github.com/feedhenry/fh-sync/tree/master/docs">FeedHenry sync documentation</a></p>
+			<p>For more advanced usages please follow <a href="https://access.redhat.com/documentation/en-us/red_hat_mobile_application_platform_hosted/3/html/client_api/fh-sync">FeedHenry sync documentation</a></p>
+			<h2 id="overriding-sync-filter-on-server">Overriding sync filter on server</h2>
+			<p>By default sync clients can specify any type of filter and efectivelly get access to
+			every record for dataset. If you wish to disable user query_filters for certain datasets for security reasons <code>userMapperMiddleware</code> should be used, before mounting sync express router.</p>
 		</div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
@@ -979,7 +982,9 @@ sync.anyapicall(...) ;
 							<li class="tsd-kind-external-module"><a href="modules/_src_index_.html" class="tsd-kind-icon">"src/index"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_options_syncdatasetoptions_.html" class="tsd-kind-icon">"src/options/<wbr>Sync<wbr>Dataset<wbr>Options"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_options_syncglobaloptions_.html" class="tsd-kind-icon">"src/options/<wbr>Sync<wbr>Global<wbr>Options"</a></li>
+							<li class="tsd-kind-external-module"><a href="modules/_src_web_syncmappermiddleware_.html" class="tsd-kind-icon">"src/web/<wbr>Sync<wbr>Mapper<wbr>Middleware"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_src_web_syncwebexpress_.html" class="tsd-kind-icon">"src/web/<wbr>Sync<wbr>Web<wbr>Express"</a></li>
+							<li class="tsd-kind-external-module"><a href="modules/_test_syncmappermiddleware_.html" class="tsd-kind-icon">"test/<wbr>Sync<wbr>Mapper<wbr>Middleware"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_test_syncservertest_.html" class="tsd-kind-icon">"test/<wbr>Sync<wbr>Server<wbr>Test"</a></li>
 							<li class="tsd-kind-external-module"><a href="modules/_test_syncwebexpresstests_.html" class="tsd-kind-icon">"test/<wbr>Sync<wbr>Web<wbr>Express<wbr>Tests"</a></li>
 						</ul>
