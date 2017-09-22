@@ -27,12 +27,7 @@
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body>
-  <script>
-    ((window.gitter = {}).chat = {}).options = {
-      room: 'FeedhenryRaincatcher/Lobby'
-    };
-  </script>
-  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  
 
   <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -54,7 +49,7 @@
   <div class="jumbotron">
     <div class="container" style="max-width: 850px;">
       <h2><img src="https://avatars2.githubusercontent.com/u/19932793?v=4&s=70"></img>RainCatcher</h2>
-      <p>RainCatcher delivers high quality mobile enabled Workforce Managment platform.</p>
+      <p>Mobile enabled Workforce Managment platform.</p>
 
       RainCatcher is shipped as set of the applications that help developers to build Workforce Management solutions. Functionality
       of applications can be modified by applying various RainCatcher modules.
@@ -68,11 +63,13 @@
           <li class="list-group-item"> <span class="glyphicon glyphicon-user"></span>
             <b>Administrator Portal</b> - Administration portal for creating and scheduling operator workorders</li>
           <li class="list-group-item"> <span class="glyphicon glyphicon-tasks"></span>
-            <b>Server</b> - Node.js application based server that is used as backend by mobile and portal applications</li>
+            <b>Server</b> - Node.js application based server that is being used as backend by mobile and portal applications</li>
         </ul>
       </div>
 
-      <p><a class="btn btn-primary btn-lg" href="/docs/" role="button">View Documentation &raquo;</a></p>
+      <p><a class="btn btn-primary btn-lg" href="/docs/" role="button">View Documentation &raquo;</a>
+      <a class="btn btn-success btn-lg" href="https://gitter.im/FeedhenryRaincatcher" role="button">Access Chat &raquo;</a>
+      <a class="btn btn-info btn-lg" href="https://www.redhat.com/mailman/listinfo/feedhenry-raincatcher" role="button">Subscribe to Mail List &raquo;</a></p>
     </div>
   </div>
 
@@ -90,23 +87,35 @@
         </p>
       </div>
       <div class="col-md-3">
-        <h2>Object oriented JavaScript</h2>
-        <p>The Api is built using TypeScript, this provides set of the interfaces and classes that can be referenced in separate modules.
+        <h2>Object oriented</h2>
+        <p>Api build using TypeScript provides set of the interfaces and classes that can be referenced in separate modules.
           Focus on documentation and extendability</p>
       </div>
       <div class="col-md-3">
         <h2>Open Source</h2>
-        <p>RainCatcher is fully OpenSource licensed using Apache License 2.0. Source code is hosted on Github.</p>
-        <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core" data-icon="octicon-star" aria-label="Star or Fork RainCatcher on GitHub">Star</a>
-        <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core/fork" data-icon="octicon-repo-forked"
-          aria-label="Fork RainCatcher on GitHub">Fork</a>
-        <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core/issues" data-icon="octicon-issue-opened"
-          aria-label="Create Issue for RainCatcher on GitHub">Create issue</a>
+        <p>RainCatcher is fully OpenSource licensed using MIT Licensed Source code is hosted on Github.</p>
       </div>
     </div>
     <hr>
     <footer>
-      <p>&copy; RedHat Inc 2016</p>
+      <div class="container">
+        <div class="row">
+          <p id="copyright" class="col-md-7 mb-0">
+            <span>© FeedHenry 2016 • Project sponsored by </span>
+            <a id="redhat" href="http://community.redhat.com/software/"></img></a>
+          </p>
+          <p class="col-md-5 text-md-right mb-0">
+            <a href="https://www.redhat.com/en/about/privacy-policy">Privacy Policy</a>
+            •
+            <a href="https://github.com/feedhenry/feedhenry.github.io">Edit site on GitHub</a>
+            <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core" data-icon="octicon-star" aria-label="Star or Fork RainCatcher on GitHub">Star</a>
+            <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core/fork" data-icon="octicon-repo-forked"
+              aria-label="Fork RainCatcher on GitHub">Fork</a>
+            <a class="github-button" href="https://github.com/feedhenry-raincatcher/raincatcher-core/issues" data-icon="octicon-issue-opened"
+              aria-label="Create Issue for RainCatcher on GitHub">Issue</a>
+          </p>
+        </div>
+      </div>
     </footer>
   </div>
   <!-- /container -->
