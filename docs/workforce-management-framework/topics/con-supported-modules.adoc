@@ -21,7 +21,7 @@ The {WFM-RC-NameShort} Work Flow Management module which allows developers to ma
 The {WFM-RC-NameShort} Work Flow Management API module exposes express API endpoints for Work Flow Management Objects. 
 
 == link:../../../api/{WFM-RC-Api-Version}/wfm-user/docs/index.html[@raincatcher/wfm-user]
-The {WFM-RC-NameShort} Work Flow Management module used for user operations.
+The {WFM-RC-NameShort} Aggregates all user operations for WFM modules
 
 == link:../../../api/{WFM-RC-Api-Version}/wfm-demo-data/docs/index.html[@raincatcher/wfm-demo-data]
 This is a sample module containing static data definitions to seed an example {WFM-RC-NameShort} demo project.
