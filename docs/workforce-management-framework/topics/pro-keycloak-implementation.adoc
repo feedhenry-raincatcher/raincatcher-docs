@@ -18,19 +18,19 @@ This section includes:
 
 [id='{context}-initializing-keycloak']
 [discrete]
-=== Initializing {WFM-RC-KeycloakName}
+== Initializing {WFM-RC-KeycloakName}
 
 See the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/keycloak/index.ts[Keycloak code] for reference.
 
 [id='{context}-importing-the-endpointsecurity-interface']
 [discrete]
-=== Importing The EndpointSecurity Interface
+== Importing The EndpointSecurity Interface
 
 Import the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/cloud/auth/src/EndpointSecurity.ts[EndpointSecurity Interface] and implement it.
 
 [id='{context}-importing-keycloak-init']
 [discrete]
-=== Importing {WFM-RC-KeycloakName} _init_
+== Importing {WFM-RC-KeycloakName} _init_
 
 Import *{WFM-RC-KeycloakName}* _init_ from link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/keycloak/index.ts[Keycloak]. For example:
 
@@ -41,14 +41,14 @@ import { init as initKeycloak } from './keycloak';
 
 [id='{context}-applying-keycloak-init']
 [discrete]
-=== Applying {WFM-RC-KeycloakName} _init_
+== Applying {WFM-RC-KeycloakName} _init_
 
 Apply *{WFM-RC-KeycloakName}* _init_ to the security Middleware to enable *{WFM-RC-KeycloakName}* for route protection.
 See the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/index.ts[securitySetup] code for more information.
 
 [id='{context}-enabling-keycloak-route-protection']
 [discrete]
-=== Enabling {WFM-RC-KeycloakName} Route Protection
+== Enabling {WFM-RC-KeycloakName} Route Protection
 
 The following code is an example of how to protect routes:
 

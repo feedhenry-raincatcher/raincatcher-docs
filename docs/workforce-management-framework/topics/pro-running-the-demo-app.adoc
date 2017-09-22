@@ -14,6 +14,8 @@ This section includes:
 
 == Prerequisites
 
+Ensure you have:
+
 * Node and npm installed (tested on Node {WFM-RC-NodeVersion})
 * git
 * access to `git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git`
@@ -22,7 +24,7 @@ This section includes:
 
 [id='{context}-cloning-the-git-repository']
 [discrete]
-=== Cloning the Git Repository
+== Cloning the Git Repository
 
 [source,bash]
 ----
@@ -33,7 +35,7 @@ cd raincatcher-angularjs
 
 [id='{context}-installing-angular-dependencies']
 [discrete]
-=== Installing Repository Dependencies
+== Installing Repository Dependencies
 
 [source,bash]
 ----
@@ -43,7 +45,7 @@ npm run bootstrap
 
 [id='{context}-installing-core-dependencies']
 [discrete]
-=== Installing Core Dependencies
+== Installing Core Dependencies
 
 [source,bash]
 ----
@@ -56,7 +58,7 @@ NOTE: The Core repository is automatically cloned by the command `npm run bootst
 
 [id='{context}-starting-mongodb-and-redis']
 [discrete]
-=== Starting MongoDB and Redis
+== Starting MongoDB and Redis
 
 . Start MongoDB. For more information, see link:https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#start-mongod-processes[Start MongoDB Processes].
 
@@ -64,7 +66,7 @@ NOTE: The Core repository is automatically cloned by the command `npm run bootst
 
 [id='{context}-starting-the-core-server']
 [discrete]
-=== Starting the Core Server
+== Starting the Core Server
 
 [source,bash]
 ----
@@ -75,7 +77,7 @@ NOTE: The terminal is out of use while the Core Server is running. Open a new te
 
 [id='{context}-running-the-mobile-and-portal-demo-applications']
 [discrete]
-=== Running the Mobile and Portal Demo Applications
+== Running the Mobile and Portal Demo Applications
 
 Open a new terminal and navigate to the folder containing _raincatcher-angularjs_, and execute:
 

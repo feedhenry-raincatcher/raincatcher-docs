@@ -14,7 +14,7 @@ This section includes:
 
 == Prerequisites
 
-You must have completed:
+Ensure you have completed:
 
 . xref:getting-started[Getting Started]
 
@@ -42,7 +42,7 @@ You must have completed:
 
 [id='{context}-pointing-passportauth-to-a-datasource']
 [discrete]
-=== Pointing PassportAuth to a Datasource
+== Pointing PassportAuth to a Datasource
 
 NOTE: _UserRepository_ requires user data containing a minimum of username and password to work.
 

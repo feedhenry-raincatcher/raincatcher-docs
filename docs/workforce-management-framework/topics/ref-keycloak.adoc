@@ -1,0 +1,34 @@
+[id='{context}-ref-demo-app']
+= {WFM-RC-KeycloakName} Reference Material
+
+This section includes:
+
+. xref:{context}-credentials-for-the-demo-application[Credentials for the {WFM-RC-KeycloakName} Admin Console]
+. xref:{context}-keycloak-security-strategy-overview[{WFM-RC-KeycloakName} Security Strategy Overview]
+
+[id='{context}-credentials-for-the-demo-application']
+== Credentials for the {WFM-RC-KeycloakName} Admin Console
+
+. Login as the _admin_ user using the following credentials:
+
+.{WFM-RC-KeycloakName} Admin Console Credentials
+|===
+|Username |Password
+
+|admin
+|admin
+
+|===
+
+[id='{context}-keycloak-security-strategy-overview']
+== {WFM-RC-KeycloakName} Security Strategy Overview
+
+The security aspects of *{WFM-RC-KeycloakName}* are described in the Security Strategy and cover areas such as:
+
+* Understanding {WFM-RC-KeycloakName} Session Management
+* Defining {WFM-RC-KeycloakName} Access Control
+* Defining {WFM-RC-KeycloakName} Password Storage
+* {WFM-RC-KeycloakName} Authentication
+* {WFM-RC-KeycloakName} Authorization
+
+For more information, see xref:defining-raincatcher-security-ref-keycloak-securitystrategy[Defining the Security Strategy for {WFM-RC-NameShort} {WFM-RC-KeycloakName}].
