@@ -995,6 +995,13 @@ app.use(<span class="hljs-string">'/api'</span>, api.createWFMRouter());
 				<p>DELETE {object}/:objectId</p>
 			</blockquote>
 			<p>Where <code>:objectId</code> is an <code>id</code> field of the object.</p>
+			<h3 id="search-for-objects">Search for objects</h3>
+			<p>Retrieves a list of objects that matches a user query.</p>
+			<blockquote>
+				<p>GET {object}/search</p>
+			</blockquote>
+			<p>A query can be made by providing a json <code>filter</code> query parameter</p>
+			<p>For example <code>filter = {&#39;title&#39;: &#39;Example&#39;}</code></p>
 			<h3 id="error-handling">Error handling</h3>
 			<p>In case of error express <code>next</code> callback is being called with <code>ApiError</code> instance.
 			Users should build their own middleware for global error handling in their application.</p>

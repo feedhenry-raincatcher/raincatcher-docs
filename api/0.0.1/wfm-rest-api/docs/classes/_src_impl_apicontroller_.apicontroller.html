@@ -923,6 +923,9 @@ img { max-width: 100%; }
 					<a href="_src_impl_apicontroller_.apicontroller.html#gethandler" class="tsd-kind-icon">get<wbr>Handler</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="_src_impl_apicontroller_.apicontroller.html#listbyfilterhandler" class="tsd-kind-icon">list<wbr>ByFilter<wbr>Handler</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="_src_impl_apicontroller_.apicontroller.html#listhandler" class="tsd-kind-icon">list<wbr>Handler</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -976,6 +979,7 @@ img { max-width: 100%; }
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_impl_apicontroller_.apicontroller.html#buildrouter" class="tsd-kind-icon">build<wbr>Router</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_impl_apicontroller_.apicontroller.html#deletehandler" class="tsd-kind-icon">delete<wbr>Handler</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_impl_apicontroller_.apicontroller.html#gethandler" class="tsd-kind-icon">get<wbr>Handler</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_impl_apicontroller_.apicontroller.html#listbyfilterhandler" class="tsd-kind-icon">list<wbr>ByFilter<wbr>Handler</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_impl_apicontroller_.apicontroller.html#listhandler" class="tsd-kind-icon">list<wbr>Handler</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_impl_apicontroller_.apicontroller.html#posthandler" class="tsd-kind-icon">post<wbr>Handler</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_src_impl_apicontroller_.apicontroller.html#puthandler" class="tsd-kind-icon">put<wbr>Handler</a></li>
@@ -996,7 +1000,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/wfm-rest-api/src/impl/ApiController.ts#L13">src/impl/ApiController.ts:13</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/wfm-rest-api/src/impl/ApiController.ts#L13">src/impl/ApiController.ts:13</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1022,7 +1026,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/wfm-rest-api/src/impl/ApiController.ts#L115">src/impl/ApiController.ts:115</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/wfm-rest-api/src/impl/ApiController.ts#L160">src/impl/ApiController.ts:160</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1045,7 +1049,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/wfm-rest-api/src/impl/ApiController.ts#L73">src/impl/ApiController.ts:73</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/wfm-rest-api/src/impl/ApiController.ts#L73">src/impl/ApiController.ts:73</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1074,12 +1078,41 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/wfm-rest-api/src/impl/ApiController.ts#L43">src/impl/ApiController.ts:43</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/wfm-rest-api/src/impl/ApiController.ts#L43">src/impl/ApiController.ts:43</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
 								<p>Handler for get method
+								Can be reused by developers that wish to mount handler directly on router</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>req: <span class="tsd-signature-type">Request</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="listbyfilterhandler" class="tsd-anchor"></a>
+				<h3>list<wbr>ByFilter<wbr>Handler</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">list<wbr>ByFilter<wbr>Handler<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/wfm-rest-api/src/impl/ApiController.ts#L114">src/impl/ApiController.ts:114</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Handler for list by filter method
 								Can be reused by developers that wish to mount handler directly on router</p>
 							</div>
 						</div>
@@ -1103,7 +1136,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/wfm-rest-api/src/impl/ApiController.ts#L21">src/impl/ApiController.ts:21</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/wfm-rest-api/src/impl/ApiController.ts#L21">src/impl/ApiController.ts:21</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1132,7 +1165,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/wfm-rest-api/src/impl/ApiController.ts#L58">src/impl/ApiController.ts:58</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/wfm-rest-api/src/impl/ApiController.ts#L58">src/impl/ApiController.ts:58</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1161,7 +1194,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/7c77e5f/cloud/wfm-rest-api/src/impl/ApiController.ts#L90">src/impl/ApiController.ts:90</a></li>
+								<li>Defined in <a href="https://github.com/austincunningham/raincatcher-core/blob/8971139/cloud/wfm-rest-api/src/impl/ApiController.ts#L90">src/impl/ApiController.ts:90</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
