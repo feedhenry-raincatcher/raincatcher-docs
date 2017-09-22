@@ -20,14 +20,14 @@ For more information on _express-session_, see link:https://github.com/expressjs
 *{WFM-RC-KeycloakName}* provides role based access control and is configured on the *{WFM-RC-KeycloakName}* server.
 For more information about role based access control, see link:{WFM-RC-KeycloakURL}server_admin/topics/roles.html[*{WFM-RC-KeycloakName}* Roles].
 
-To see an example of how roles are protected, see the *{WFM-RC-KeycloakName}* link:./pro-Keycloak-implementaion.adoc[documentation].
+For more information on how roles are protected, see the *{WFM-RC-KeycloakName}* link:./pro-Keycloak-implementaion.adoc[documentation].
 
 [id='{context}-defining-keycloak-password-storage']
 == Defining {WFM-RC-KeycloakName} Password Storage
 *{WFM-RC-KeycloakName}* uses the link:https://en.wikipedia.org/wiki/PBKDF2[BKDF2 algorithm] for password hashing by default.
 *{WFM-RC-KeycloakName}* also provides enforced link:{WFM-RC-KeycloakURL}server_admin/topics/authentication/password-policies.html[password policies] from the server.
 
-For further reading, see link:{WFM-RC-KeycloakURL}server_admin/topics/identity-broker.html[identity-broker.html] and link:{WFM-RC-KeycloakURL}server_admin/topics/user-federation.html[user federation.html].
+For more information on server administration topics, see link:{WFM-RC-KeycloakURL}server_admin/topics/identity-broker.html[identity-broker] and link:{WFM-RC-KeycloakURL}server_admin/topics/user-federation.html[user federation].
 
 [id='{context}-keycloak-authentication']
 == *{WFM-RC-KeycloakName}* Authentication

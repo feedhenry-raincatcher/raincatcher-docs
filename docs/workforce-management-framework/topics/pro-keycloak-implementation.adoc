@@ -44,7 +44,8 @@ import { init as initKeycloak } from './keycloak';
 == Applying {WFM-RC-KeycloakName} _init_
 
 Apply *{WFM-RC-KeycloakName}* _init_ to the security Middleware to enable *{WFM-RC-KeycloakName}* for route protection.
-See the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/index.ts[securitySetup] code for more information.
+
+For more security information, see the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server/src/modules/index.ts[Security Setup].
 
 [id='{context}-enabling-keycloak-route-protection']
 [discrete]

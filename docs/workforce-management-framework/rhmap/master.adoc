@@ -11,14 +11,14 @@ include::topics/shared/attributes.adoc[]
 include::introducing-raincatcher.adoc[leveloffset=+2]
 
 [[introducing-raincatcher-features]]
-== Introducing {WFM-RC-NameLong} Features and Modules
+== Introducing {WFM-RC-NameShort} Features and Modules
 include::introducing-features-and-modules.adoc[leveloffset=+2]
 
 //[[preparing-the-local-development-environment]]
 //== Preparing the Local Development Environment
 
 [[getting-started]]
-== Getting Started with {WFM-RC-NameLong}
+== Getting Started with {WFM-RC-NameShort}
 include::running-the-demo-app.adoc[leveloffset=+2]
 
 [[programming-a-raincatcher-project]]
