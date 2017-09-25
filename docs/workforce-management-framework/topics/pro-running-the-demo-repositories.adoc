@@ -63,7 +63,6 @@ ifdef::upstream[]
 endif::upstream[]
 == Running the Mobile and Portal Demo Applications
 
-Open a new terminal and navigate to the folder containing _raincatcher-angularjs_, and execute:
 In new terminal windows, run the following commands on the `raincatcher-portal/` and `raincatcher-mobile/` folders.
 
 [source,bash]
