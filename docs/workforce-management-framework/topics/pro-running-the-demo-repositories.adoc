@@ -1,13 +1,9 @@
 [id='pro-running-the-published-repositories-{chapter}']
 = Introduction
 
-This section includes:
+The {WFM-RC-NameShort} demo applications are also available in separate repositories in GitHub, that require their dependencies from the public NPM Registry instead of requiring compilation via the TypeScript compiler and linking via Lerna.js.
 
-. xref:pro-cloning-separate-repositories-{chapter}[Cloning the Git Repository]
-. xref:pro-installing-repository-npm-dependencies-{chapter}[Installing Core Dependencies]
-. xref:pro-starting-mongodb-and-redis-{chapter}[Starting MongoDB and Redis]
-. xref:pro-starting-the-core-server-{chapter}[Starting the Core Server]
-. xref:pro-running-the-mobile-and-portal-demo-applications-{chapter}[Running the Mobile and Portal Demo Applications]
+This allows for a simpler setup for users that only require running the applications in a quick fashion, and will not engage in development for contribution to the project.
 
 = Prerequisites
 
@@ -23,8 +19,9 @@ This section includes:
 
 This procedure will install the latest published version of {WFM-RC-NameShort} from the separate, per-demo-app GitHub repositories.
 
-[id='pro-cloning-separate-repositories-{chapter}']
+ifdef::upstream[]
 [discrete]
+endif::upstream[]
 == Cloning the Git Repositories
 
 [source,bash]
@@ -34,22 +31,25 @@ git clone git@github.com:feedhenry-raincatcher/raincatcher-mobile.git
 git clone git@github.com:feedhenry-raincatcher/raincatcher-portal.git
 ----
 
-[id='pro-installing-repository-npm-dependencies-{chapter}']
+ifdef::upstream[]
 [discrete]
+endif::upstream[]
 == Installing Dependencies on the Repositories
 
 For each repository cloned previously, run `npm install` so regular NPM dependencies are downloaded.
 
-[id='pro-starting-mongodb-and-redis-{chapter}']
+ifdef::upstream[]
 [discrete]
+endif::upstream[]
 == Starting MongoDB and Redis
 
 . Start MongoDB. For more information, see link:https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#start-mongod-processes[Start MongoDB Processes].
 
 . Start Redis. For more information, see link:https://redis.io/topics/quickstart#starting-redis[Starting Redis].
 
-[id='pro-starting-the-core-server-{chapter}']
+ifdef::upstream[]
 [discrete]
+endif::upstream[]
 == Starting the Core Server
 
 [source,bash]
@@ -58,8 +58,9 @@ cd raincatcher-server/
 npm run start
 ----
 
-[id='pro-running-the-mobile-and-portal-demo-applications-{chapter}']
+ifdef::upstream[]
 [discrete]
+endif::upstream[]
 == Running the Mobile and Portal Demo Applications
 
 Open a new terminal and navigate to the folder containing _raincatcher-angularjs_, and execute:
