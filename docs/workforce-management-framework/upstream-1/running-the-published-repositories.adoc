@@ -2,7 +2,9 @@ include::topics/shared/attributes.adoc[]
 
 :chapter: running-the-published-repositories
 
-[id='running-the-published-repositories-{chapter}']
+ifdef::upstream[]
+discrete
+endif::upstream[]
 = Running the Published Repositories for the Demo App
 //Concepts
 The {WFM-RC-NameShort} demo app comprises of three applications *Mobile*, *Portal* and a *Node.js Server*.
