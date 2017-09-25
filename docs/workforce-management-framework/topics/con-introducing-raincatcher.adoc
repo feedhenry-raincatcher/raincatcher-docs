@@ -1,21 +1,41 @@
-[id='con-introducing-raincatcher-{chapter}']
+[id='{context}-con-introducing-raincatcher']
 = Introducing {WFM-RC-NameLong}
 
-//downstream == {WFM-RC-NameLong} is a Workforce Management Platform and is also referred to as {WFM-RC-NameShort}.
+ifdef::downstream[]
+{WFM-RC-NameLong} is a Workforce Management Platform and is also referred to as {WFM-RC-NameShort}.
+endif::downstream[]
+
+ifdef::upstream[]
 {WFM-RC-NameLong} is a Workforce Management Platform.
+endif::upstream[]
+
 The latest version of {WFM-RC-NameShort} is {WFM-RC-Version}.
 
-The primary goal of {WFM-RC-NameShort} is to produce a set of modules for developers to integrate {WFM-RC-NameShort} features into their applications.
+{WFM-RC-NameShort} connects a business’ back-office with its fleet of mobilized employees.
+{WFM-RC-NameShort} leverages commoditized mobile hardware, making use of each employee’s mobile phone.
 
-The following features are on the {WFM-RC-NameShort} roadmap:
+The primary goal of {WFM-RC-NameShort} is to ease mobile enablement efforts.
+It achieves that by providing set of modules that can be integrated into existing applications additionally
+{WFM-RC-NameShort} allows developers to leverage existing demo-solution by extending it to suit their business needs.
+
+Main features in the latest {WFM-RC-Version}:
 
 * Workflow Management
-* Geolocation
+* Real-time Data Access
+* Data Synchronization
+
+Roadmap:
+
+* Plugable authentication
 * Image capture
+* Geolocation
 * Internal Messaging and 3rd party Messaging
 * Mobile Forms
 * Real-time Data Access
-* Data Synchronization
 * Integration of sensor data
 
-//Features included in {WFM-RC-NameShort} {WFM-RC-Version} are:
+{WFM-RC-NameShort} {WFM-RC-Version} features:
+
+* Security
+* Logging
+* Data Synchronization
