@@ -5,7 +5,7 @@
 This procedure will install the latest master branch.
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Prerequisites
 
@@ -19,7 +19,7 @@ Ensure you have:
 
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Cloning the Git Repository
 
@@ -32,7 +32,7 @@ cd raincatcher-angularjs
 
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Installing Repository Dependencies
 
@@ -44,7 +44,7 @@ npm run bootstrap
 
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Installing Core Dependencies
 
@@ -59,7 +59,7 @@ NOTE: The Core repository is automatically cloned by the command `npm run bootst
 
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Starting MongoDB and Redis
 
@@ -69,7 +69,7 @@ endif::upstream[]
 
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Starting the Core Server
 
@@ -82,7 +82,7 @@ NOTE: The terminal is out of use while the Core Server is running.
 
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Running the Mobile and Portal Demo Applications
 

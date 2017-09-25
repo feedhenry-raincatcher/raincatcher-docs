@@ -20,7 +20,7 @@ If you choose to build a custom security implementation, you will need to:
 NOTE: All link:https://expressjs.com/[express] routes outside of {WFM-RC-NameShort} modules must implement the link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}[EndpointSecurity] Security Interface.
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Introducing Passport.js
 
@@ -32,7 +32,7 @@ For more information, see link:http://passportjs.org/[passportjs.org].
 The *link:{WFM-RC-CoreTreeURL}{WFM-RC-Branch}/cloud/passportauth[PassportAuth Module]* is *{WFM-RC-NameShort}'s* implementation of *Passport.js* and is the default authentication and authorization module for *{WFM-RC-NameShort}*.
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Introducing Keycloak
 
@@ -51,7 +51,7 @@ NOTE: *Keycloak* is _not_ available by default when running the default {WFM-RC-
 
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Choosing Passport.js or Keycloak
 *Passport.js*:

@@ -3,7 +3,7 @@ include::topics/shared/attributes.adoc[]
 :chapter: running-the-published-repositories
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 = Running the Published Repositories for the Demo App
 //Concepts

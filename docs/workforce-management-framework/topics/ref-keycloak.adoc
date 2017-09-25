@@ -8,7 +8,7 @@ This section includes:
 
 [id='{context}-credentials-for-the-demo-application']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Credentials for the {WFM-RC-KeycloakName} Admin Console
 

@@ -6,7 +6,7 @@ This section includes:
 //. xref:{context}-cloning-the-git-repository[Cloning the Git Repository]
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 = Prerequisites
 
