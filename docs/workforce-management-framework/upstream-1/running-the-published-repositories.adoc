@@ -1,22 +1,25 @@
 include::topics/shared/attributes.adoc[]
 
-:chapter: running-the-published-repositories
+//':context:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
+:context: running-the-published-repositories
 
-ifdef::upstream[]
-discrete
-endif::upstream[]
+= Running the {WFM-RC-AppType1} Applications on a Local Machine
+
 = Running the Published Repositories for the Demo App
 //Concepts
-The {WFM-RC-NameShort} demo app comprises of three applications *Mobile*, *Portal* and a *Node.js Server*.
-For testing and demo purposes, *Mobile* and *Portal* are launched in the browser.
-*Mobile* can be built to run on a mobile phone.
+The *{WFM-RC-NameShort}* {WFM-RC-AppType1} Apps from the _Published Repositories_ comprise of three applications:
+
+* _Mobile_
+* _Portal_
+* _Node.js Server_
 
 These applications are also available in standalone repositories that point to published versions of the {WFM-RC-NameShort} packages.
-Running the demo applications this ways provides a simpler and more stable alternative to users that only wish to test them locally in their machines,
+Running the demo applications as described in this section provides a simpler and more stable alternative to users that only wish to test them locally on their machines,
 without the extra concerns required only for a development setup.
 
 // Procedure
 include::topics/pro-running-the-demo-repositories.adoc[leveloffset=+1]
+For login details, refer to the xref:{context}-credentials-for-the-mobile-and-portal-application[Credentials for the Mobile and Portal Application] section of xref:{context}-ref-demo-app[{WFM-RC-NameShort} Application Reference Material].
 
 // Related Information
 include::topics/ref-demo-app.adoc[leveloffset=+1]

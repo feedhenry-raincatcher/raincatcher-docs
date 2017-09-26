@@ -17,6 +17,7 @@ include::introducing-features-and-modules.adoc[leveloffset=+2]
 [[getting-started]]
 == Getting Started with {PROJECT_NAME}
 include::running-the-demo-app.adoc[leveloffset=+2]
+include::running-the-published-repositories.adoc[leveloffset=+2]
 
 [[programming-a-wfm-project]]
 == Programming a {PROJECT_NAME} Project

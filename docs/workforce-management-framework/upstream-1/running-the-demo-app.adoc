@@ -3,7 +3,8 @@ include::topics/shared/attributes.adoc[]
 //':context:' is a vital parameter. See: http://asciidoctor.org/docs/user-manual/#include-multiple
 :context: running-the-demo-app
 
-= Running the Demo App
+= Running the {PROJECT_NAME} Applications
+
 //Concepts
 The *{PROJECT_NAME}* demo app comprises of three applications:
 
