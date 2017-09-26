@@ -13,7 +13,7 @@ This section includes:
 
 [id='{context}-understanding-passportauth-session-management']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Understanding PassportAuth Session Management
 
@@ -22,7 +22,7 @@ For more information, see link:https://github.com/expressjs/session[express-sess
 
 [id='{context}-defining-passportauth-access-control']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Defining PassportAuth Access Control
 _Routes_ are protected by *PassportAuth* which provides role based access control.
@@ -40,7 +40,7 @@ NOTE: Demo roles are defined in link:{WFM-RC-CoreURL}{WFM-RC-Branch}/demo/server
 
 [id='{context}-defining-passportauth-password-storage']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Defining PassportAuth Password Storage
 The *PassportAuth* user data is stored in link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-User-Repository}#getuserbylogin[User Repository Interface].
@@ -48,7 +48,7 @@ Make sure that the _User Repository Interface_ is implemented in order to point 
 
 [id='{context}-passportauth-authentication']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == PassportAuth Authentication
 {WFM-RC-NameShort} authentication is handled by the cloud server using users unique username and password combination.
@@ -66,14 +66,14 @@ For more information, see the link:{WFM-RC-Github-Core}{WFM-RC-Branch}{WFM-RC-Pa
 
 [id='{context}-passportauth-authorization']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == PassportAuth Authorization
 Authorization is supported by link:../../../api/{WFM-RC-Api-Version}{WFM-RC-Api-Endpoint-Security}[protect middleware] that validates a _user session id_ against session.
 
 [id='{context}-customizing-a-strategy']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Customizing a Strategy
 The link:default strategy for the *PassportAuth* module implements the *Passport.js* local strategy.

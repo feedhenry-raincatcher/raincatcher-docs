@@ -10,7 +10,7 @@ This section includes:
 . xref:{context}-enabling-keycloak-route-protection[Enabling {WFM-RC-KeycloakName} Route Protection]
 
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Prerequisites
 

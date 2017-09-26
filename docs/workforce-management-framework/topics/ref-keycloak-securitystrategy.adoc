@@ -11,7 +11,7 @@ This section includes:
 
 [id='{context}-understanding-keycloak-session-management']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Understanding {WFM-RC-KeycloakName} Session Management
 The _express-session_ module provides session management functionality and
@@ -20,7 +20,7 @@ For more information on _express-session_, see link:https://github.com/expressjs
 
 [id='{context}-defining-keycloak-access-control']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Defining {WFM-RC-KeycloakName} Access Control
 *{WFM-RC-KeycloakName}* provides role based access control and is configured on the *{WFM-RC-KeycloakName}* server.
@@ -30,7 +30,7 @@ For more information on how roles are protected, see the *{WFM-RC-KeycloakName}*
 
 [id='{context}-defining-keycloak-password-storage']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Defining {WFM-RC-KeycloakName} Password Storage
 *{WFM-RC-KeycloakName}* uses the link:https://en.wikipedia.org/wiki/PBKDF2[BKDF2 algorithm] for password hashing by default.
@@ -40,14 +40,14 @@ For more information on server administration topics, see link:{WFM-RC-KeycloakU
 
 [id='{context}-keycloak-authentication']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == *{WFM-RC-KeycloakName}* Authentication
 *{WFM-RC-KeycloakName}* has a wide variety of authentication mechanisms available. For more information, see the link:{WFM-RC-KeycloakURL}server_admin/topics/authentication.html[*{WFM-RC-KeycloakName}* Authentication Documentation].
 
 [id='{context}-keycloak-authorization']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == *{WFM-RC-KeycloakName}* Authorization
 Authorization is fully documented in the link:{WFM-RC-KeycloakURL}authorization_services/index.html[*{WFM-RC-KeycloakName}* Authorization Documentation].

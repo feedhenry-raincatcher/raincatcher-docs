@@ -7,7 +7,7 @@ This section includes:
 
 [id='{context}-credentials-for-the-mobile-and-portal-demo-application']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Credentials for the Mobile and Portal Demo Application
 

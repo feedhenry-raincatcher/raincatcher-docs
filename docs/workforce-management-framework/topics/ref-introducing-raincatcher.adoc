@@ -10,7 +10,7 @@ This section includes:
 
 [id='{context}-highlighting-raincatcher-areas-of-focus']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Highlighting {WFM-RC-NameShort} Areas of Focus
 
@@ -33,7 +33,7 @@ endif::upstream[]
 
 [id='{context}-raincatcher-at-a-technical-level']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == {WFM-RC-NameShort} at a Technical Level
 
@@ -45,7 +45,7 @@ endif::upstream[]
 
 [id='{context}-identifying-raincatcher-repositories']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Identifying {WFM-RC-NameShort} Repositories
 
@@ -67,7 +67,7 @@ endif::upstream[]
 
 [id='{context}-differentiating-raincatcher-from-tech-preview']
 ifdef::upstream[]
-discrete
+[discrete]
 endif::upstream[]
 == Differentiating {WFM-RC-NameShort} from 'Tech Preview'
 
