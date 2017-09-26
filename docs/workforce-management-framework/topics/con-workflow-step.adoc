@@ -1,0 +1,64 @@
+= Building your first Workflow Step/Reusing template
+
+A basic knowledge of Angular.js is requried to build a Workflow Step in {WFM-RC-NameLong}.
+
+== Step Structure
+Steps are divided into to linked catergories the `module` and the `definition`.
+
+=== Module
+Modules can contain one or more angular directives for rendering steps in the portal and mobile applications. 
+{WFM-RC-NameShort} steps use Angular.js directives to build user interface as part of workflows.
+Each step is divided into two directives:
+
+- **Edit Section directive (Form)**
+
+The Edit section is displayed when workflow is executed and allows users to edit information typically this would be a form.
+The Edit section consists of the html template and directive.
+
+- **Preview Section directive (View)**
+
+The Preview section is displayed as a summary when a workflow has been completed. The Preview section
+consists of the html template and directive.
+
+=== Definition 
+
+Definition contains the step definition which outlines the properties such as name and decription of a step for the workflow in the portal application.
+Each step requires a definition, the `definition.json` file can contain a definition of a single step or an array of definitions with the size corresponding 
+to the number of steps in the step package.
+
+Example:
+[source,json]
+----
+[
+    {
+        "code": "base-form",
+        "name": "Base Form",
+        "description": "base form used to for steps",
+        "templates": {
+            "form": "<base-form></base-form>",
+            "view": "<base></base>"
+        }
+    }
+]
+----
+The module and the definition are exported to be visibile when step package is imported. 
+
+Example:
+[source,javascript]
+----
+module.exports = {
+  ngModule: require('./angular/base'),
+  // Definition for this step that is being used in portal
+  definition: require('./definition.json')
+};
+----
+
+== Development 
+When developing a custom Step package, it is recommend that you clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and 
+modify it. Alternatively you can use link:https://www.npmjs.com/package/generator-rcstep[generator-rcstep] npm package to create a step. 
+See the link:https://github.com/feedhenry-raincatcher/step-template.git[README.md] for furhter information on modifying a step and importing it into 
+the portal and mobile applications.
+
+
+
+
