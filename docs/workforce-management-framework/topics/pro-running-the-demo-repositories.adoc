@@ -1,7 +1,7 @@
 [id='{context}-pro-running-the-demo-repositories']
-= Running the Demo App from the Published Repositories
+= Running the {WFM-RC-AppType1} Applications on a Local Machine
 
-The {WFM-RC-NameShort} demo applications in this section are dependent on the _public NPM Registry_ and, do not require compilation via the TypeScript compiler and linking via Lerna.js.
+The {WFM-RC-NameShort} {WFM-RC-AppType1} applications in this section are dependent on the _public NPM Registry_.
 
 This allows for a simpler setup of the {WFM-RC-NameShort} demo applications for users that only require the application to run, and will not engage in development.
 
@@ -10,7 +10,7 @@ This section includes:
 . xref:{context}-published-repositories-installing-repository-dependencies[Installing Repository Dependencies]
 . xref:{context}-published-repositories-starting-mongodb-and-redis[Starting MongoDB and Redis]
 . xref:{context}-published-repositories-starting-the-core-server[Starting the Core Server]
-. xref:{context}-published-repositories-running-the-mobile-and-portal-demo-applications[Running the Mobile and Portal Demo Applications]
+. xref:{context}-published-repositories-running-the-mobile-and-portal-applications[Running the Mobile and Portal {WFM-RC-AppType1} Applications]
 
 [discrete]
 == Prerequisites
@@ -73,9 +73,9 @@ npm run start
 
 NOTE: The terminal is out of use while the Core Server is running.
 
-[id='{context}-published-repositories-running-the-mobile-and-portal-demo-applications']
+[id='{context}-published-repositories-running-the-mobile-and-portal-applications']
 [discrete]
-== Running the Mobile and Portal Demo Applications
+== Running the Mobile and Portal {WFM-RC-AppType1} Applications
 
 Open a new terminal and execute the following command in folder `raincatcher-portal/` and also in folder `raincatcher-mobile/`:
 

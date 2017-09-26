@@ -1,5 +1,5 @@
 [id='{context}-pro-running-the-demo-app']
-= Running the Demo App
+= Running the {WFM-RC-AppType2} Applications
 
 This procedure will install the latest master branch.
 
@@ -10,7 +10,7 @@ This section includes:
 . xref:{context}-installing-core-dependencies[Installing Core Dependencies]
 . xref:{context}-starting-mongodb-and-redis[Starting MongoDB and Redis]
 . xref:{context}-starting-the-core-server[Starting the Core Server]
-. xref:{context}-running-the-mobile-and-portal-demo-applications[Running the Mobile and Portal Demo Applications]
+. xref:{context}-running-the-mobile-and-portal-applications[Running the Mobile and Portal {WFM-RC-AppType2} Applications]
 
 [discrete]
 == Prerequisites
@@ -76,9 +76,9 @@ npm run start
 
 NOTE: The terminal is out of use while the Core Server is running.
 
-[id='{context}-running-the-mobile-and-portal-demo-applications']
+[id='{context}-running-the-mobile-and-portal-applications']
 [discrete]
-== Running the Mobile and Portal Demo Applications
+== Running the Mobile and Portal {WFM-RC-AppType2} Applications
 
 Open a new terminal and navigate to the folder containing _raincatcher-angularjs_, and execute:
 
