@@ -1,7 +1,7 @@
 = {WFM-RC-NameShort} Supported Modules
 
 This section describes *{WFM-RC-NameShort}'s* _core_ list of modules.
-The latest list of modules is found at link:https://www.npmjs.com/org/raincatcher/[{WFM-RC-NameShort} Supported Modules].
+The latest list of modules is found at link:https://www.npmjs.com/org/raincatcher/[{WFM-RC-NameShort} Modules].
 
 .{WFM-RC-NameShort} Supported Modules
 |===
