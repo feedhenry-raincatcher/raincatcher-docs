@@ -26,7 +26,7 @@ The latest list of modules is found at link:https://www.npmjs.com/org/raincatche
 |The {WFM-RC-NameShort} Work Flow Management API module exposes express API endpoints for Work Flow Management Objects.
 
 |link:../../../api/{WFM-RC-Api-Version}/wfm-user/docs/index.html[@raincatcher/wfm-user]
-|The {WFM-RC-NameShort} Aggregates all user operations for {WFM-RC-NameShort} modules
+|The {WFM-RC-NameShort} Aggregates all user operations for {WFM-RC-NameShort} modules.
 
 |link:../../../api/{WFM-RC-Api-Version}/wfm-demo-data/docs/index.html[@raincatcher/wfm-demo-data]
 |This is a sample module containing static data definitions and when running, it allows the user to see the {WFM-RC-NameShort} demo project example.
