@@ -10,15 +10,15 @@ The *{WFM-RC-NameShort} Framework* includes three concepts:
 
 |Step Definition
 |A _Step Definition_ is a predefined piece of functionality, for example, functionality that allows the user to capture a signature
-|A Developer will typically works with a _Step Definition_
+|A Developer will typically work with a _Step Definition_
 
 |Step Workflow
 |A _Step Workflow_ can contain one to many _Step Definitions_. It defines the order the _Step Definitions_ are executed and contains the logic for executing the _Step Definition_
-|A user using the Portal Application typically works with a _Step Workflow_
+|A user using the Portal Application typically work with a _Step Workflow_
 
 |WorkOrder
 |A _WorkOrder_ is an instantiation of a _Step Workflow_ . Each time a user creates a new _Step Workflow_, it is instantiated as a new _Step Workflow_.
-|A user using the Portal Application assigns a _WorkOrder_ and a user using the Mobile Application typically works with a _WorkOrder_
+|A user using the Portal Application assigns a _WorkOrder_ and a user using the Mobile Application typically work with a _WorkOrder_
 
 |===
 
