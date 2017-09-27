@@ -1,13 +1,13 @@
-= Using the demo application user interface
+= Using the application user interface
 
-The {WFM-RC-LongName} demo application consists of three components:
+The {WFM-RC-LongName} application consists of three components:
 
 - A mobile application for end users
 - A portal application for administrator users on a web browser
 - A cloud application for backend server functionality (No user interface)
 
-The demo application has demo users and demo data to show off the functionality of {WFM-RC-LongName}.
-The demo application can define business process or procedure via a custome Workflow and assign these workflows as jobs to
+The application has demo users and demo data to show off the functionality of {WFM-RC-LongName}.
+The application can define business process or procedure via a custome Workflow and assign these Workflows as jobs to
 individual workers as Workorders. Workers can view their Workorder via a mobile applicaion and administrators
 can manage workorders via the web portal.
 
@@ -28,7 +28,7 @@ Once logged in you will be presented with sections for Workorder and Workflow.
 
 - Create,Read, Update,Delete and List operations on Workorder
 - Manage Workorders by assigning them to individuals
-- You can't reassign completed workorders
+- Once a Workorder is created Workflows remains static and unchangeable   
 
 
 === Create Workflow
@@ -37,16 +37,18 @@ Once logged in you will be presented with sections for Workorder and Workflow.
 - 2. To create a workflow click on the `NEW WORKFLOW` button. This will bring you to the create workflow screen where you can add a title.
 - 3. Click `CREATE WORKFLOW` button to continue.
 
-image::/shared/images/create-workflow.png[create workflow]
+image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/master/docs/shared/images/create-workflow.png[create workflow]
 
 - 4. Name your step and select a step types from a dropdown (Developed custom steps will appear in the dropdown). 
 
 - 5. Click `ADD STEP` to submit your new step as part of your Workflow. 
 
-image::/shared/images/workflow-nextstep.png[next step workflow]
+image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/master/docs/shared/images/workflow-nextstep.png[next step workflow]
 NOTE: The add step screen will allow you to add as many steps as your process requires.
 
 You have options to delete, update workflows in the top right hand side with the trash and pencil icons.
+Updating Workflows will bump the version of the Workflow.
+New Workorders can be created with new bumped version of Workflow , existing Workorders continue to use the older version of Workflow.
 Each step has options for edit and delete. 
 You can use the circle with the plus icon to create new workflows. This new Workflow 
 can be used to create or update workorders 
@@ -61,13 +63,13 @@ Workorders are individual instances of a Workflow that can be assigned to a work
 Click on Workorder in the left panel. Create new workorders by clicking the `NEW WORKORDER` button on the right panel. Once clicked
 it will render a form for creating a new Workorder. See example below
 
-image::/shared/images/create-workorder.png[create workorder]
+image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/master/docs/shared/images/create-workorder.png[create workorder]
 
 Fill out the form and click `CREATE WORKORDER` and a new Workorder will appear in the list on middle panel after a refresh. 
 Once the Workorder is created it will sync to the individual workers account to be accessed on a mobile. To edit individual Workorders
 click the Workorder from the center panel list see an example in the .
 
-image::/shared/images/portal-viewWorkorder.png[view workorder]
+image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/master/docs/shared/images/portal-viewWorkorder.png[view workorder]
 
 The pencil icon this allows you to update a workorder's title,assignee and select a workflow, as with creating a workorder these changes will sync to 
 the workers mobile application after the `UPDATE WORKORDER` is clicked. In the bottom right hand side there is an circle with a plus icon , this gives access to the 
@@ -78,25 +80,25 @@ Once logged in you will be presented with the workorders screen.
 To log out click on the menu icon in the top left hand side of the screen this will open a sidebar with options to Logout or return
 to the Workorders screen.
 
-image::/shared/images/sidebar.png[Workorders]
+image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/master/docs/shared/images/sidebar.png[Sidebar]
 
 
 === Complete Workorder
 The mobile application is used by a end user to interact with Workorders that have been assigned to them.
 The Workorders screen shows the Workorders assigned to the logged in user.
 
-- 1. On the Workorders screen and click on an one of the Workorders. A screen similar to below will render
+- 1. On the Workorders screen and select one of the Workorders to view an individual Workorder see example below
 
-image::/shared/images/workorder-overview.png[overview]
+image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/master/docs/shared/images/workorder-overview.png[overview]
 
 - 2. Select on `BEGIN WORKFLOW` to proceed with data entry for the Workflow steps in question.
 
 - 3. Select on `CONTINUE` on the bottom of the screen to proceed between steps. 
 
-- 4. Once all steps in the form are completed click on `CONTINUE` on the bottom of the screen to proceed to the 
+- 4. Once all steps in the form are completed select `CONTINUE` on the bottom of the screen to proceed to the 
 `Summary` which shows the status of the workorder. See an sample example below
 
-image::/shared/images/workorder-summary.png[summary]
+image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/master/docs/shared/images/workorder-summary.png[summary]
 
 Once on the summary screen you have finished your submission . To proceed click on the menu icon in the top left hand side of the screen this will open a sidebar with options to Logout or return
 to the Workorders screen. On the Workorders screen you will see that the workorder is now marked with a green tick to so completion. 
