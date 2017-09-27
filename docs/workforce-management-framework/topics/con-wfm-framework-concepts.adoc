@@ -1,0 +1,31 @@
+[id='{context}-con-wfm-framework-concepts']
+= Introducing the {WFM-RC-NameShort} Framework Concepts
+
+The *{WFM-RC-NameShort} Framework* includes three concepts:
+
+.{WFM-RC-NameShort} Framework Concepts
+|===
+
+|Concept |Overview |User Role
+
+|Step Definition
+|A _Step Definition_ is a predefined piece of functionality, for example, functionality that allows the user to capture a signature
+|A Developer will typically works with a _Step Definition_
+
+|Step Workflow
+|A _Step Workflow_ can contain one to many _Step Definitions_. It defines the order the _Step Definitions_ are executed and contains the logic for executing the _Step Definition_
+|A user using the Portal Application typically works with a _Step Workflow_
+
+|WorkOrder
+|A _WorkOrder_ is an instantiation of a _Step Workflow_ . Each time a user creates a new _Step Workflow_, it is instantiated as a new _Step Workflow_.
+|A user using the Portal Application assigns a _WorkOrder_ and a user using the Mobile Application typically works with a _WorkOrder_
+
+|===
+
+== Typical Use Case defining how the Framework Concepts are used
+
+. A developer creates a _Step Definition_ and packages it as part of a {WFM-RC-NameShort} Framework library.
+. A portal user using the Portal Application creates a _Step Workflow_ and chooses what _Step Definitions_ they want to includes in the _Step Workflow_.
+. The portal user creates a _WorkOrder_ based on the _Step Workflow_ and assigns it to a mobile user using the Mobile Application.
+. The mobile user receives the _WorkOrder_ on their Mobile Application and starts to complete the _Step Workflows_.
+. Once the mobile user completes all the _Step Workflows_, the portal user receives notification that the _WorkOrder_ is complete.
