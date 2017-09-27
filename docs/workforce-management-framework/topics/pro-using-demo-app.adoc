@@ -13,38 +13,47 @@ can manage workorders via the web portal.
 
 == Portal application
 
-The Portal appliction is used by a administrator to view , edit and assign Workorder and to create new Workflows.
-The Portal application is a web application. The view of workorders is restricted to administrators. 
-Onced logged in you will be presented with the following screen for admistration of Workorders and Workflows.
+The Portal application is used by a administrator to view , edit and assign Workorder and to create new Workflows.
+Once logged in you will be presented with sections for Workorder and Workflow.
 
-image::/shared/images/portal.png[portal]
+=== Portal Functionality
+**Workflow**
+
+- Create,Read, Update, Delete and List operations on Workflow
+- Manage Workflows and add steps to existing Workflows 
+- Changing existing Workflow will not effect Workorders already created _i.e. the Workflow will remain unchanged in existing Workorders._
+- Workflows will version bump when changed
+
+**Workorder**
+
+- Create,Read, Update,Delete and List operations on Workorder
+- Manage Workorders by assigning them to individuals
+- You can't reassign completed workorders
+
 
 === Create Workflow
 
-Click on Workflow in the left panel. To create a workflow click on the `CREATE WORKFLOW` button. This will bring you to the create workflow screen where you can add a title.
-Click `CREATE WORKFLOW` button to continue.
+- 1. Select on Workflow in the navigation panel on the left. 
+- 2. To create a workflow click on the `NEW WORKFLOW` button. This will bring you to the create workflow screen where you can add a title.
+- 3. Click `CREATE WORKFLOW` button to continue.
 
 image::/shared/images/create-workflow.png[create workflow]
 
-The add step screen will render and will allow you to name your step and select a one of the example step types from a dropdown (Developed custom steps will appear in the dropdown). 
-Click `ADD STEP` to submit your new step as part of your Workflow. 
+- 4. Name your step and select a step types from a dropdown (Developed custom steps will appear in the dropdown). 
+
+- 5. Click `ADD STEP` to submit your new step as part of your Workflow. 
 
 image::/shared/images/workflow-nextstep.png[next step workflow]
+NOTE: The add step screen will allow you to add as many steps as your process requires.
 
-You have options to delete, update workflows in the top right hand side with the trash and pencil icons. You also can use the circle with the plus icon to create new workflows. This new Workflow 
-can be used to create or update workorders from the workorders screen as shown in the image below. 
+You have options to delete, update workflows in the top right hand side with the trash and pencil icons.
+Each step has options for edit and delete. 
+You can use the circle with the plus icon to create new workflows. This new Workflow 
+can be used to create or update workorders 
 
-image::/shared/images/new-workflow.png[select new workflow]
-
-The new workflow will appear in the list in the center panel after a refresh.
-You can access existing you can access existing workflows by clicking on them in the list in the center panel. Options to edit the workflow are the same 
-as the create.
-
-The portal is the `Workflow` functionality this allows you to create or modify a workflow.
-Workflows are made up of steps, there are a couple of example steps implemented in the demo application. Click Workflow on the 
-left panel to access the the Workflow screens .
-
-image::/shared/images/workflows.png[workflows]
+The new Workflow will appear in the list in the center panel after a refresh.
+You can access existing you can access existing workflows by selecting them in the list in the center panel. 
+Options to edit the workflow are the same as the create.
 
 === Create Workorder
 
@@ -73,31 +82,25 @@ image::/shared/images/sidebar.png[Workorders]
 
 
 === Complete Workorder
-The mobile application is used by a end user to interact with workorders that have been assigned to them.
-The workorders screen shows the workorders assigned to the logged in user.
-In the example below workorders are accident reports to be filled out at the seen of an accident.
+The mobile application is used by a end user to interact with Workorders that have been assigned to them.
+The Workorders screen shows the Workorders assigned to the logged in user.
 
-image::/shared/images/Workorder-mobile.png[Workorders]
-
-
-Return to the Workorders screen and click on an one of the workorders. A screen similar to below will render
+- 1. On the Workorders screen and click on an one of the Workorders. A screen similar to below will render
 
 image::/shared/images/workorder-overview.png[overview]
 
-Click on `BEGIN WORKFLOW` to proceed with data entry for the Workflow steps in question.
+- 2. Select on `BEGIN WORKFLOW` to proceed with data entry for the Workflow steps in question.
 
-Click on `CONTINUE` on the bottom of the screen to proceed between steps. See the example below
+- 3. Select on `CONTINUE` on the bottom of the screen to proceed between steps. 
 
-image::/shared/images/workorder-vehicleInspection.png[vehicle inspection]
-
-Once all steps in the form are completed click on `CONTINUE` on the bottom of the screen to proceed to the 
+- 4. Once all steps in the form are completed click on `CONTINUE` on the bottom of the screen to proceed to the 
 `Summary` which shows the status of the workorder. See an sample example below
 
 image::/shared/images/workorder-summary.png[summary]
 
 Once on the summary screen you have finished your submission . To proceed click on the menu icon in the top left hand side of the screen this will open a sidebar with options to Logout or return
 to the Workorders screen. On the Workorders screen you will see that the workorder is now marked with a green tick to so completion. 
-The Portal application will update when the sync is completed and a full summary of the Workorder can be viewed.
+The Portal application will update when the sync is completed and a full summary of the Workorder can be viewed there also.
 
 
 
