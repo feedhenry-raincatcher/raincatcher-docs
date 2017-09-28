@@ -14,7 +14,6 @@
 :ProductVersion: 1.0
 
 //***NEW START***
-:WFM-RC-NameLong: RainCatcher
 :Feature: RainCatcher
 :WFM-RC-Version: 1.0
 :WFM-RC-NodeVersion: 6 LTS
