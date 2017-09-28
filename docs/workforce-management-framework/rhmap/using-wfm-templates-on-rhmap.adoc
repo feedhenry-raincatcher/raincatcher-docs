@@ -13,7 +13,7 @@ NOTE: You can apply different names to the individual appication within the Proj
 
 - 5. Once the Project is created click `Finish` and the Project will render with the three application
 
-== Setting up the WFM Cloud App
+== Setting up the WFM Server App
 
 - 1. Select the `WFM Server App` 
 - 2. If the database needs updating select `Data Browser` on the left navigation bar
