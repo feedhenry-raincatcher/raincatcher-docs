@@ -15,7 +15,7 @@ NOTE: You can apply different names to the individual appication within the Proj
 
 == Setting up the WFM Cloud App
 
-- 1. Select the `WFM Cloud App` 
+- 1. Select the `WFM Server App` 
 - 2. If the database needs updating select `Data Browser` on the left navigation bar
 - 3. Click `Upgrade database`
 - 4. You will recive a warning, click on `Upgrade now` to proceed 
@@ -25,7 +25,7 @@ NOTE: You can apply different names to the individual appication within the Proj
 - 8. Click on the `Deploy Cloud App`
 - 9· Once deployed return to the Project screen by clicking on `Apps, Cloud Apps & Services`
 
-NOTE: New changes to the WFM Cloud App code base to be deployed
+NOTE: Everytime you change content of the app your application needs to be deployed
 
 == Setting up the WFM Portal App
 
@@ -35,7 +35,7 @@ NOTE: New changes to the WFM Cloud App code base to be deployed
 - 4. Click on the `Deploy Portal App`
 - 5· Once deployed return to the Project screen by clicking on `Apps, Cloud Apps & Services`
 
-NOTE: New changes to the WFM Portal App code base to be deployed
+NOTE: Everytime you change content of the app your application needs to be deployed
 
 == Setting up the WFM Mobile App
 
@@ -43,4 +43,4 @@ NOTE: New changes to the WFM Portal App code base to be deployed
 - 2. Click on `Build` and use the RHMAP link:https://access.redhat.com/documentation/en-us/red_hat_mobile_application_platform/4.5/html-single/getting_started/#run-the-client-app-on-a-mobile-device[guide] for building a mobile binary on the platform.
 Alternively you can build your binarys from  the link:https://access.redhat.com/documentation/en-us/red_hat_mobile_application_platform/4.5/html-single/local_development_guide/#building-an-app-binary[CLI]
 
-NOTE: New changes to the WFM Mobile App code base need to be applied to the `www` directory updated with the `grunt wfmTemplate:build` command
+NOTE: Everytime you change the content of  WFM Mobile App you need to apply them to the `www` directory with the `grunt ` command
