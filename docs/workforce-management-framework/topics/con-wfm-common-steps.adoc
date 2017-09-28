@@ -1,0 +1,19 @@
+= WFM Common Steps
+
+Common steps are the default steps that are available for usage for any Workflow. 
+Common steps generally should do one thing well and should be generic enough to be added to any type of Workflow.
+Developement of future common steps in is in the Roadmap.
+
+Roadmap:
+
+* Plugable authentication
+* Image capture
+* Geolocation
+* Internal Messaging and 3rd party Messaging
+* Mobile Forms
+* Real-time Data Access
+* Integration of sensor data 
+
+{Feature} is shiped with the link:{WFM-RC-AngularJsURL}{WFM-RC-Branch}/steps/step-signature/[signature common step]. 
+
+
