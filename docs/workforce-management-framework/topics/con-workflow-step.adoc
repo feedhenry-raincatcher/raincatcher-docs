@@ -63,14 +63,6 @@ module.exports = {
 ----
 
 == Development
-ifdef::downstream[]
-When developing a custom _Step Package_, Red Hat recommends that you clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and modify it.
-endif::downstream[]
-
-ifdef::upstream[]
-When developing a custom _Step Package_, it is recommended that you clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and modify it.
-endif::upstream[]
-
-Alternatively, use the link:https://www.npmjs.com/package/generator-rcstep[generator-rcstep] npm package to create a step.
+When developing a custom _Step Package_, clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and make modifications to the cloned repository or alternatively, use the link:https://www.npmjs.com/package/generator-rcstep[generator-rcstep] npm package to create a _Step_.
 
 For more information about modifying a _Step_ and importing a _Step_ into the Portal and Mobile applications, see the link:https://github.com/feedhenry-raincatcher/step-template.git[README.md]
