@@ -1,30 +1,37 @@
-= Building your first Workflow Step/Reusing template
+[id='{context}-con-workflow-step']
+= Building your first Workflow Step by Reusing a Template
 
-A basic knowledge of Angular.js is requried to build a Workflow Step in {WFM-RC-NameLong}.
+A basic knowledge of Angular.js is required to build a *Workflow Step* in {WFM-RC-NameLong}.
 
-== Step Structure
-Steps are divided into to linked catergories the `module` and the `definition`.
+== Structure of a Step
+Steps are divided into two linked categories, the `module` and the `definition`.
 
 === Module
-Modules can contain one or more angular directives for rendering steps in the portal and mobile applications. 
-{WFM-RC-NameShort} steps use Angular.js directives to build user interface as part of workflows.
-Each step is divided into two directives:
+Modules can contain one or more Angular.js directives for rendering _Steps_ in the Portal and Mobile applications.
+{WFM-RC-NameShort} _Steps_ use Angular.js directives to build a user interface as part of workflows.
+Each _Step_ is divided into two directives:
 
-- **Edit Section directive (Form)**
+.A Step's Directive
+|===
+|Directive |Description
 
-The Edit section is displayed when workflow is executed and allows users to edit information typically this would be a form.
-The Edit section consists of the html template and directive.
+|Edit Section directive (Form)
+|The Edit Section is displayed when a workflow is executed and allows users to edit information - typically this would be a form.
 
-- **Preview Section directive (View)**
+The Edit Section consists of the a html template and a directive.
 
-The Preview section is displayed as a summary when a workflow has been completed. The Preview section
-consists of the html template and directive.
+|Preview Section directive (View)
+|The Preview Section is displayed as a summary when a workflow has been completed.
 
-=== Definition 
+The Preview Section consists of a html template and a directive.
 
-Definition contains the step definition which outlines the properties such as name and decription of a step for the workflow in the portal application.
-Each step requires a definition, the `definition.json` file can contain a definition of a single step or an array of definitions with the size corresponding 
-to the number of steps in the step package.
+|===
+
+=== Definition
+
+A Definition contains the _Step Definition_ which outlines the properties such as, the name and the description of a _Step_, for the workflow in the Portal application.
+Each _Step_ requires a *Definition* and the `definition.json` file can contain a *Definition* of a single _Step_ or an array of *Definitions* with the size corresponding to the number of _Steps_ in the _Step Package_.
+The following is an example of a *Definition*:
 
 Example:
 [source,json]
@@ -41,7 +48,9 @@ Example:
     }
 ]
 ----
-The module and the definition are exported to be visibile when step package is imported. 
+
+The *Module* and the *Definition* are exported to be visibile when a _Step Package_ is imported.
+The following is an example of a *Module*:
 
 Example:
 [source,javascript]
@@ -53,12 +62,15 @@ module.exports = {
 };
 ----
 
-== Development 
-When developing a custom Step package, it is recommend that you clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and 
-modify it. Alternatively you can use link:https://www.npmjs.com/package/generator-rcstep[generator-rcstep] npm package to create a step. 
-See the link:https://github.com/feedhenry-raincatcher/step-template.git[README.md] for furhter information on modifying a step and importing it into 
-the portal and mobile applications.
+== Development
+ifdef::downstream[]
+When developing a custom _Step Package_, Red Hat recommends that you clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and modify it.
+endif::downstream[]
 
+ifdef::upstream[]
+When developing a custom _Step Package_, it is recommended that you clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository and modify it.
+endif::upstream[]
 
+Alternatively, use the link:https://www.npmjs.com/package/generator-rcstep[generator-rcstep] npm package to create a step.
 
-
+For more information about modifying a _Step_ and importing a _Step_ into the Portal and Mobile applications, see the link:https://github.com/feedhenry-raincatcher/step-template.git[README.md]
