@@ -1,0 +1,63 @@
+[id='{context}-ref-ui-customization']
+= {WFM-RC-NameShort} UI Starter App Customization
+
+Follow these procedures to start applying changes to the Mobile and Portal Starter Apps. Refer to the xref:{context}-ref-demo-app[{WFM-RC-NameShort} Starter Application Reference Material] for more information about their overall structure.
+
+== Adding UI elements
+
+=== Creating your own AngularJS module with routing
+
+In order to add new elements to the {WFM-RC-NameShort} UI, you must create your own AngularJS module and add it to the array of dependencies of the main application module.
+
+{WFM-RC-NameShort} utilizes link:https://ui-router.github.io/ng1/[UI-Router for AngularJS] to modularize the user interface components in separate routes that can be referenced by navigation links.
+
+The Starter Applications follow a 2-column module in the case of the Portal App, and a single column plus an optional toolbar section in the case of the Mobile App. The applications can provide the HTML ids of these container elements to the individual modules, allowing them to insert views into these container through the UI-Router.
+
+The following is a tiny example of how a module can be structured:
+
+[source,javascript]
+----
+module.exports = function(config) {
+  var moduleName = 'my-module';
+  angular.module(moduleName, [])
+  .config(['$stateProvider', function($stateProvider) {
+    var views = {};
+    views[config.mainColumnViewId] = {
+      template: '<p>Hello from the custom module</p>'
+    };
+    # optional for use in the mobile app
+    views[config.listColumnViewId] = {
+      template: '<p>Hello from the list view for this route</p>'
+    };
+    $stateProvider.state('app.custom', {
+      url: '/custom',
+      views: views
+    });
+  }]);
+
+  return moduleName;
+};
+----
+
+Your module should contain:
+
+. A function that receives a configuration object and returns the name of the module for convenience.
+. Utilize the UI-Router's `$stateProvider` to include any new routes
+. These new routes should be child routes to `app.`, since otherwise the views in the custom route will replace the application's entire interface instead of inserting their content in the containers
+
+Refer to the link:https://docs.angularjs.org/api/ng/function/angular.module[AngularJS Module documentation] for further information on creating new modules.
+
+=== Adding the new module to the main application config
+
+[source,javascript]
+---
+---
+
+At this point, running the Starter App and navigating to `/custom` should display the messages above.
+
+=== New navigation option on the navigation sidebar
+
+
+
+== Customizing SASS and Themes
+
