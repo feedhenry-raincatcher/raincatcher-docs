@@ -24,9 +24,6 @@ Login using the following credentials:
 |===
 
 [id=-'{context}-structure-for-the-mobile-and-portal-starter-applications']
-ifdef::upstream[]
-discrete
-endif::upstream[]
 == Structure for the Mobile and Portal Starter Applications
 
 The UI Starter Applications present a consistent directory structure that can serve as a sensible base for customizations.
