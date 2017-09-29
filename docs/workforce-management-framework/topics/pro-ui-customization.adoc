@@ -1,17 +1,19 @@
-[id='{context}-ref-ui-customization']
-= {WFM-RC-NameShort} UI Starter App Customization
+[id='{context}-pro-ui-customization']
+= {Feature} UI Starter App Customization
 
-Follow these procedures to start applying changes to the Mobile and Portal Starter Apps. Refer to the xref:{context}-ref-demo-app[{WFM-RC-NameShort} Starter Application Reference Material] for more information about their overall structure.
+Follow these procedures to start applying changes to the Mobile and Portal Starter Apps. Refer to the xref:{context}-ref-demo-app[{Feature} Starter Application Reference Material] for more information about their overall structure.
 
+[id='{context}-ref-ui-technology']
 == Adding UI elements
 
+[id='{context}-create-angularjs-module']
 === Creating your own AngularJS module with routing
 
-In order to add new elements to the {WFM-RC-NameShort} UI, you must create your own AngularJS module and add it to the array of dependencies of the main application module.
+In order to add new elements to the {Feature} UI, you must create your own AngularJS module and add it to the array of dependencies of the main application module.
 
-{WFM-RC-NameShort} utilizes link:https://ui-router.github.io/ng1/[UI-Router for AngularJS] to modularize the user interface components in separate routes that can be referenced by navigation links.
+{Feature} utilizes link:https://ui-router.github.io/ng1/[UI-Router for AngularJS] to modularize the user interface components in separate routes that can be referenced by navigation links.
 
-The Starter Applications follow a 2-column module in the case of the Portal App, and a single column plus an optional toolbar section in the case of the Mobile App. The applications can provide the HTML ids of these container elements to the individual modules, allowing them to insert views into these container through the UI-Router.
+The Starter Applications follow a 2-column module in the case of the Portal App, and a single column plus an optional toolbar section in the case of the Mobile App. The applications can provide the HTML ids of these container elements to the individual modules, allowing them to insert views into them through the UI-Router.
 
 The following is a tiny example of how a module can be structured:
 
@@ -23,12 +25,23 @@ module.exports = function(config) {
   .config(['$stateProvider', function($stateProvider) {
     var views = {};
     views[config.mainColumnViewId] = {
-      template: '<p>Hello from the custom module</p>'
+      template: '<p>Hello from the custom module!</p>'
     };
-    # optional for use in the mobile app
-    views[config.listColumnViewId] = {
-      template: '<p>Hello from the list view for this route</p>'
-    };
+
+    if (config.listColumnViewId) {
+      // optional for use in the portal app
+      views[config.listColumnViewId] = {
+        template: '<p>Hello from the list view for this route!</p>'
+      };
+    }
+    
+    if (config.toolbarViewId) {
+      // optional for use in the mobile app
+      views[config.toolbarViewId] = {
+        template: '<p>Hello from a toolbar for this route!</p>'
+      };
+    }
+    
     $stateProvider.state('app.custom', {
       url: '/custom',
       views: views
@@ -39,21 +52,37 @@ module.exports = function(config) {
 };
 ----
 
-Your module should contain:
+Your module should:
 
-. A function that receives a configuration object and returns the name of the module for convenience.
+. Export a function that receives a configuration object and returns the name of the module for convenience.
 . Utilize the UI-Router's `$stateProvider` to include any new routes
-. These new routes should be child routes to `app.`, since otherwise the views in the custom route will replace the application's entire interface instead of inserting their content in the containers
+. Define states that are nested states of `app`, since otherwise the views in the custom state will replace the application's entire interface instead of inserting their content in the containers. See link:https://github.com/angular-ui/ui-router/wiki/Nested-States-&-Nested-Views[Nested States & Nested Views] for more information.
 
 Refer to the link:https://docs.angularjs.org/api/ng/function/angular.module[AngularJS Module documentation] for further information on creating new modules.
 
+[id='{context}-add-custom-module']
 === Adding the new module to the main application config
 
-[source,javascript]
----
----
+To configure the Starter Apps to utilize your module, add it to the array of dependencies of the main `app` module for the Starter App:
 
-At this point, running the Starter App and navigating to `/custom` should display the messages above.
+[source,javascript]
+----
+angular.module('app', [
+  //...
+  require('./my-module')({
+    listColumnViewId: "column2",
+    mainColumnViewId: "content@app",
+  }),
+  //...
+]);
+----
+
+For the Mobile App, this is located at `src/app/app.js`.
+
+For the Portal App, this is located at `src/app/main.js`
+
+
+At this point, running the Starter App and navigating to `/custom` should navigate to the custom route and display the messages defined in the `template` keys in the xref:{context}-create-angularjs-module[previous section].
 
 === New navigation option on the navigation sidebar
 
