@@ -14,7 +14,7 @@ This Module contains the example directives that are used for demo purposes and 
 By default, {Feature} provides a minimal set of defined fields for a _workorder_.
 Depending on the needs of the business, a developer can add additional data and UI elements, for example, gps location, an address or a description UI element.
 
-=== Building
+=== Building directives
 To extend a _workorder_, implement two Angular Directives:
 
 .Angular Directives for Extending a _workorder_
