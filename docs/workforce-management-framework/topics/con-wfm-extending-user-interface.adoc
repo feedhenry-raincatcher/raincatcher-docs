@@ -3,7 +3,7 @@
 
 {Feature} framework provides a set of extension points which allows a developer to modify an Angular User Interface (UI).
 All modifications are done by supplying additional modules which provide a set of the Angular.js directives and are used to extend the Mobile and Portal UI.
-The {Feature} Application is shipped with the example `angularjs-extensions` example that extends the Demo UI:
+The {Feature} Application is shipped with the `angularjs-extensions` example that extends the Mobile and Portal Applications:
 
  * https://github.com/feedhenry-raincatcher/raincatcher-angularjs/tree/master/packages/angularjs-extensions
 
@@ -14,7 +14,7 @@ This Module contains the example directives that are used for demo purposes and 
 By default, {Feature} provides a minimal set of defined fields for a _workorder_.
 Depending on the needs of the business, a developer can add additional data and UI elements, for example, gps location, an address or a description UI element.
 
-=== Building Workorders
+=== Building
 To extend a _workorder_, implement two Angular Directives:
 
 .Angular Directives for Extending a _workorder_
