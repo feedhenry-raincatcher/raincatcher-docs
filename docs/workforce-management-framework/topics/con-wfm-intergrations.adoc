@@ -1,24 +1,26 @@
 = {Feature} intergration
 
+An intergration is the use of existing opensource projects to solve specific needs for {Feature}. 
 {Feature} has a number of intergrations that leverage other opensource projects for there expertises in paticular fields.
 This enabled the inclusion of domain expertises in the areas of security and sync in the developement of {Feature}.
 
 == Security intergrations
 
-There are two security intergrations that come packaged with {Feature}. Authentication and Authorisation are the primary focus of these intergrations.
+There are two security intergrations that come packaged with {Feature}. 
+Authentication and Authorisation are the primary focus of these xref::{context}-con-introducing-securityfeatures[security intergrations].
 
 === Keycloak
 
-Keycloak is the premier security solution for {Feature}. It is a full identity management solution which runs on a seperate server. 
+Keycloak is a full identity management solution which runs on a seperate server. 
 For more information see xref::{context}-ref-keycloak-securitystrategy[Keycloak intergration].
 
 === Passport.js
 
-Passport.js is a lighter secrutiy solution that runs out of the box when {Feature} is installed.  
+Passport.js is a light weight secrutiy solution that runs by default when {Feature} is installed.  
 For more information see xref::{context}-ref-passportauth-securitystrategy[Passport.js intergration].
 
 == Sync intergration
 
-There is one sync intergration that comes packaged with {Feature}. This leverage the fh-sync 
-
-xref::{context}-con-datasync-module[Datasync]
+There is a sync intergration that comes packaged with {Feature}. This leverage the fh-sync framework. 
+Used to synchronise data between the mobile and portal applications. 
+For more information see xref::{context}-con-datasync-module[Datasync]
