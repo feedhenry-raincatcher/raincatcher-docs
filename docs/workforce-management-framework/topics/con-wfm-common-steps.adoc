@@ -17,64 +17,9 @@ Roadmap:
 == Signature Common Step
 
 {Feature} is shiped with the link:{WFM-RC-AngularJsURL}{WFM-RC-Branch}/steps/step-signature/[signature common step]. 
-This is a generic step for implementing signatures in a Workflow.
-This step is an extention of `fh-wfm-signature` FeedHenry WFM signature npm module for more information see the modules link:https://www.npmjs.com/package/fh-wfm-signature[documentation]. 
+This is a generic step for implementing signatures for a Workflow. 
+This step allow for the entry of a signature by a customer or employee.
+Users can use a finger or stylus on a mobile device touch screen to enter a signature. 
+Signatures are then stored as images. 
 Like all steps Signature Common Step is made up of a `module` and a `definition` for more information on step makeup and usage see
 xref:: {context}-con-workflow-step[Building your first Workflow Step].
-
-=== Add Signature Common Step to mobile application
-Add step to mobiles package.json as a package `/mobile/package.json`
-
-[source,javascript]
----- 
-    "@raincatcher/step-signature": "0.0.1",
-----
-
-Add step to mobiles `/mobile/src/app/app.js`
-[source,javascript]
----- 
-    // apply a variable name to the module
-    var variableName = require('@raincatcher/step-signature');
-
-    // add ngModule() for the module to angular.module array;
-    variableName.ngModule();
-----
-Import the step scss for step-signature into `/mobile/src/sass/app.scss`
-[source,javascript]
-----    
-    @import 'node_modules/@raincatcher/step-signaturebase/lib/signature.scss';
-----
-=== Add Signature Common Step to portal application
-
-Add step package to `/portal/package.json`  
-[source,javascript]
----- 
-    "@raincatcher/step-signature": "0.0.1",                
-----
-Add step to portal in angular.modules in `/portal/src/app/main.js`
-[source,javascript]
----- 
-    // apply a variable name to the module
-    var variableName = require(‘@raincatcher/step-signature);
-----
-Add step definition to angular.modules stepDefinitions array
-[source,javascript]
----- 
-    stepDefinitions: [
-                        variableName.definition 
-                     ]
-----
-
-Also add step ngModule() in angular.modules
-[source,javascript]
----- 
-    variableName.ngModule()
-----
-
-Import the step scss `/portal/src/sass/portal.scss`
-[source,javascript]
----- 
-    @import 'node_modules/@raincatcher/step-signature/lib/signature.scss';
-----
-
-
