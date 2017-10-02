@@ -1,3 +1,4 @@
+[id='{context}-con-wfm-supported-modules']
 = {RainCatcher} Supported Modules
 
 This section describes *{RainCatcher}'s* _core_ list of modules.

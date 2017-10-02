@@ -17,5 +17,6 @@ include::topics/con-keycloak-securitystrategy.adoc[leveloffset=+2]
 For more information, see xref:defining-raincatcher-security-ref-keycloak-securitystrategy[Defining the Security Strategy for {RainCatcher} {Keycloak}].
 
 = {RainCatcher} Modules
+include::topics/con-supported-modules.adoc[leveloffset=+1]
 include::topics/con-passportauth-module.adoc[leveloffset=+1]
 include::topics/con-datasync-module.adoc[leveloffset=+1]

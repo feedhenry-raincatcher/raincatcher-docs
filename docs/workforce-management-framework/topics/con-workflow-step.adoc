@@ -1,5 +1,5 @@
 [id='{context}-con-workflow-step']
-= Building your first Workflow Step by Reusing a Template
+= Building Your First Workflow Step by Reusing a Template
 
 A basic knowledge of Angular.js is required to build a *Workflow Step* in {RainCatcher}.
 
