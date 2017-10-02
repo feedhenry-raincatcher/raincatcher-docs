@@ -1,12 +1,12 @@
 [id='{context}-pro-working-with-templates-on-rhmap']
-= Working with {RainCatcher} Templates in {ProductShortName}
+= Working with {PROJECT_NAME} Templates in {ProductShortName}
 
 This section includes:
 
-. xref:{context}-creating-a-new-wfm-project-in-rhmap[Creating a new {RainCatcher} Project in {ProductShortName}]
-. xref:{context}-setting-up-and-deploying-the-wfm-cloud-app[Setting Up and Deploying the {RainCatcher} Cloud App]
-. xref:{context}-setting-up-and-deploying-the-wfm-portal-app[Setting Up and Deploying the {RainCatcher} Portal App]
-. xref:{context}-setting-up-and-building-the-wfm-mobile-app[Setting Up and Building the {RainCatcher} Mobile App App]
+. xref:{context}-creating-a-new-wfm-project-in-rhmap[Creating a new {PROJECT_NAME} Project in {ProductShortName}]
+. xref:{context}-setting-up-and-deploying-the-wfm-cloud-app[Setting Up and Deploying the {PROJECT_NAME} Cloud App]
+. xref:{context}-setting-up-and-deploying-the-wfm-portal-app[Setting Up and Deploying the {PROJECT_NAME} Portal App]
+. xref:{context}-setting-up-and-building-the-wfm-mobile-app[Setting Up and Building the {PROJECT_NAME} Mobile App App]
 
 [discrete]
 == Prerequisites
@@ -17,7 +17,7 @@ Ensure you have:
 
 [id='{context}-creating-a-new-wfm-project-in-rhmap']
 [discrete]
-== Creating a new {RainCatcher} Project in {ProductShortName}
+== Creating a new {PROJECT_NAME} Project in {ProductShortName}
 
 . Log on to the {ProductShortName} Studio
 . On the top navigation bar, select *Projects*
@@ -30,7 +30,7 @@ Ensure you have:
 
 [id='{context}-setting-up-and-deploying-the-wfm-cloud-app']
 [discrete]
-== Setting Up and Deploying the {RainCatcher} Cloud App
+== Setting Up and Deploying the {PROJECT_NAME} Cloud App
 
 . On the _WFM Project_ homepage, click on the *WFM Cloud App*
 . In the left side navigation panel, click on *Data Browser*
@@ -46,7 +46,7 @@ NOTE: If you makes changes to the WFM Cloud App, ensure you redeployed the WFM C
 
 [id='{context}-setting-up-and-deploying-the-wfm-portal-app']
 [discrete]
-== Setting Up and Deploying the {RainCatcher} Portal App
+== Setting Up and Deploying the {PROJECT_NAME} Portal App
 
 . On the _WFM Project_ homepage, click on the *WFM Portal App*
 . In the left side navigation panel, click on *Deploy* to navigate to the deployment screen
@@ -58,7 +58,7 @@ NOTE: If you makes changes to the WFM Portal App, ensure you redeployed the WFM 
 
 [id='{context}-setting-up-and-building-the-wfm-mobile-app']
 [discrete]
-== Setting Up and Building the {RainCatcher} Mobile App App
+== Setting Up and Building the {PROJECT_NAME} Mobile App App
 
 . On the _WFM Project_ homepage, click on the *WFM Mobile App*
 . In the left side navigation panel, click on *Build* to navigate to the build screen

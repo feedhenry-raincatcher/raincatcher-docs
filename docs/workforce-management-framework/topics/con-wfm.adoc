@@ -1,7 +1,7 @@
 [id='{context}-con-wfm']
-= Understanding the *{RainCatcher}* Application
+= Understanding the *{PROJECT_NAME}* Application
 
-The *{RainCatcher}* Application consists of three components:
+The *{PROJECT_NAME}* Application consists of three components:
 
 - A *Mobile Application* for end users
 - A *Portal Application* for administrator users and accessed through a web browser
@@ -13,7 +13,7 @@ A _Workorder_ is an individual instance of a _Workflow_ and it (the _Workorder_)
 An end user can view their _Workorder_ via a *Mobile Application*.
 An administrator can manage the _Workorder_ via the *Portal Application*.
 
-NOTE: The *{RainCatcher}* Application is supplied with demo users and data, and both are used to assist a User when demonstrating *{RainCatcher}* functionality.
+NOTE: The *{PROJECT_NAME}* Application is supplied with demo users and data, and both are used to assist a User when demonstrating *{PROJECT_NAME}* functionality.
 
 The *Portal Application* is used by an administrator to essentially manage the _Workorder_.
 An administrator can view, edit and assign a _Workorder_ and also create a new _Workflow_.
