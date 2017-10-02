@@ -86,7 +86,22 @@ At this point, running the Starter App and navigating to `/custom` should naviga
 
 === New navigation option on the navigation sidebar
 
+To add a navigation link to the new custom route on the main navigation sidebar, edit the `main.tpl.html` file (present on both Apps), and add a new `md-list-item` that utilizes the `navigateTo()` method that's available on the main controllers.
 
+[source,html]
+----
+<md-list>
+  <!-- ... Other navigation items -->
+  <md-list-item ng-click="navigateTo('app.custom')" ng-class="{active: $state.includes('app.custom')}">
+    <md-icon md-font-set="material-icons">bookmark</md-icon>
+    <p>Custom link</p>
+  </md-list-item>
+  <md-divider></md-divider>
+  <!-- ... Other navigation items -->
+</md-list>
+----
+
+See the link:https://material.angularjs.org/latest/api/directive/mdIcon[mdIcon] documentation for the list of icons that you can utilize with the new navigation item.
 
 == Customizing SASS and Themes
 
