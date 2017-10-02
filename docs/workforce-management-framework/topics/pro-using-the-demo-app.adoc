@@ -1,6 +1,6 @@
-= Working with the *{Feature}* Application
+= Working with the *{RainCatcher}* Application
 
-The *{Feature}* Application consists of three components:
+The *{RainCatcher}* Application consists of three components:
 
 - A *Mobile Application* for end users
 - A *Portal Application* for administrator users and accessed through a web browser
@@ -12,7 +12,7 @@ A _Workorder_ is an individual instance of a _Workflow_ and it (the _Workorder_)
 An end user can view their _Workorder_ via a *Mobile Application*.
 An administrator can manage the _Workorder_ via the *Portal Application*.
 
-The *{Feature}* Application is supplied with demo users and data, and both are used to assist a User when demonstrating *{Feature}* functionality.
+The *{RainCatcher}* Application is supplied with demo users and data, and both are used to assist a User when demonstrating *{RainCatcher}* functionality.
 
 == Working with the Portal Application
 

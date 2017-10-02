@@ -1,5 +1,5 @@
 [id='{context}-ref-demo-app']
-= {Feature} Demo Application Reference Material
+= {RainCatcher} Demo Application Reference Material
 
 This section includes:
 

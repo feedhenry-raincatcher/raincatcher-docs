@@ -1,10 +1,10 @@
 [id='{context}-con-keycloak']
-= Introducing {Keycloak} within {Feature}
+= Introducing {Keycloak} within {RainCatcher}
 
 *{Keycloak}* is a complete identity management solution.
 
-The *{Feature}* demo application allows for authentication and access management using link:http://www.keycloak.org/index.html[*{Keycloak}*]
-however, *{Keycloak}* is not the default authorization and authentication module for *{Feature}*.
+The *{RainCatcher}* demo application allows for authentication and access management using link:http://www.keycloak.org/index.html[*{Keycloak}*]
+however, *{Keycloak}* is not the default authorization and authentication module for *{RainCatcher}*.
 
 The configuration for *{Keycloak}'s* integration is found within the demo application.
 

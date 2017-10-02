@@ -14,7 +14,7 @@
 :ProductVersion: 1.0
 
 //***NEW START***
-:Feature: RainCatcher
+:RainCatcher: RainCatcher
 :WFM-RC-Version: 1.0
 :WFM-RC-NodeVersion: 6 LTS
 :WFM-RC-MongoDBVersion: <latest version>

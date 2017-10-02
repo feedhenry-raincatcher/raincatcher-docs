@@ -1,34 +1,34 @@
-= {Feature} Supported Modules
+= {RainCatcher} Supported Modules
 
-This section describes *{Feature}'s* _core_ list of modules.
-The latest list of modules is found at link:https://www.npmjs.com/org/raincatcher/[{Feature} Modules].
+This section describes *{RainCatcher}'s* _core_ list of modules.
+The latest list of modules is found at link:https://www.npmjs.com/org/raincatcher/[{RainCatcher} Modules].
 
-.{Feature} Supported Modules
+.{RainCatcher} Supported Modules
 |===
 |Module |Description
 
 |link:../../../api/{WFM-RC-Api-Version}/express-auth/docs/index.html[@raincatcher/express-auth]
-|The {Feature} Security Interface is used to apply authentication and authorization, used in conjunction with a security provider chosen by you.
+|The {RainCatcher} Security Interface is used to apply authentication and authorization, used in conjunction with a security provider chosen by you.
 
 |link:../../../api/{WFM-RC-Api-Version}/auth-passport/docs/index.html[@raincatcher/auth-passport]
-|The {Feature} implementation of Passport.js which is the default security module for Mobile and Portal applications.
+|The {RainCatcher} implementation of Passport.js which is the default security module for Mobile and Portal applications.
 
 |link:../../../api/{WFM-RC-Api-Version}/datasync-cloud/docs/index.html[@raincatcher/datasync-cloud]
-|The {Feature} Cloud implementation of fh-sync used in conjunction with @raincatcher/datasync-client. This is used to sync data between the Cloud and Mobile applications.
+|The {RainCatcher} Cloud implementation of fh-sync used in conjunction with @raincatcher/datasync-client. This is used to sync data between the Cloud and Mobile applications.
 
 |link:../../../api/{WFM-RC-Api-Version}/datasync-client/docs/index.html[@raincatcher/datasync-client]
-|The {Feature} Client implementation of fh-sync used in conjunction with @raincathcer/datasync-cloud. This is used to sync data between the Cloud and Mobile applications.
+|The {RainCatcher} Client implementation of fh-sync used in conjunction with @raincathcer/datasync-cloud. This is used to sync data between the Cloud and Mobile applications.
 
 |link:../../../api/{WFM-RC-Api-Version}/wfm/docs/index.html[@raincatcher/wfm]
-|The {Feature} Work Flow Management module which allows developers to map a business process into an organized set of tasks to suit a businesses needs.
+|The {RainCatcher} Work Flow Management module which allows developers to map a business process into an organized set of tasks to suit a businesses needs.
 
 |link:../../../api/{WFM-RC-Api-Version}/wfm-rest-api/docs/index.html[@raincatcher/wfm-rest-api]
-|The {Feature} Work Flow Management API module exposes express API endpoints for Work Flow Management Objects.
+|The {RainCatcher} Work Flow Management API module exposes express API endpoints for Work Flow Management Objects.
 
 |link:../../../api/{WFM-RC-Api-Version}/wfm-user/docs/index.html[@raincatcher/wfm-user]
-|The {Feature} Aggregates all user operations for {Feature} modules.
+|The {RainCatcher} Aggregates all user operations for {RainCatcher} modules.
 
 |link:../../../api/{WFM-RC-Api-Version}/wfm-demo-data/docs/index.html[@raincatcher/wfm-demo-data]
-|This is a sample module containing static data definitions and when running, it allows the user to see the {Feature} demo project example.
+|This is a sample module containing static data definitions and when running, it allows the user to see the {RainCatcher} demo project example.
 
 |===

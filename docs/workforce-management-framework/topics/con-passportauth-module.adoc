@@ -1,8 +1,8 @@
 [id='{context}-con-passportauth-module']
-= Introducing the {Feature} PassportAuth Module
+= Introducing the {RainCatcher} PassportAuth Module
 
-The *{Feature} link:{WFM-RC-CoreTreeURL}{WFM-RC-Branch}/cloud/passportauth[PassportAuth]* module is *{Feature}'s* implementation of *Passport.js*.
-It is the default authentication and authorization module for *{Feature}*.
+The *{RainCatcher} link:{WFM-RC-CoreTreeURL}{WFM-RC-Branch}/cloud/passportauth[PassportAuth]* module is *{RainCatcher}'s* implementation of *Passport.js*.
+It is the default authentication and authorization module for *{RainCatcher}*.
 
 *PassportAuth* provides plugable authentication using link:http://passportjs.org/docs/configure[strategies].
 *PassportAuth* offers a comprehensive set of strategies that support authentication using a username and password, Facebook logon, Twitter logon, and more.
