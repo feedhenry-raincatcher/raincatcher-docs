@@ -20,9 +20,15 @@ include::topics/pro-working-with-templates-on-rhmap.adoc[leveloffset=+1]
 include::topics/pro-running-the-demo-app.adoc[leveloffset=+1]
 For login details, refer to the xref:{context}-credentials-for-the-mobile-and-portal-demo-application[Credentials for the Mobile and Portal Demo Application] section of xref:{context}-ref-demo-app[{RainCatcher} Demo Application Reference Material].
 
-// Related Information
-include::topics/ref-demo-app.adoc[leveloffset=+1]
+= Working with the Application
+//Concepts
+include::topics/con-wfm.adoc[leveloffset=+1]
+// Procedure
+include::topics/pro-using-the-demo-app.adoc[leveloffset=+1]
 
 = Building Your First Workflow
 // Procedure
 include::topics/con-workflow-step.adoc[leveloffset=+1]
+
+// Related Information
+include::topics/ref-demo-app.adoc[leveloffset=+1]
