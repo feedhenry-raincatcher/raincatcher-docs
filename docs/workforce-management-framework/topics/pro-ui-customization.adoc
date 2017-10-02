@@ -1,7 +1,7 @@
 [id='{context}-pro-ui-customization']
-= {Feature} UI Starter App Customization
+= {PROJECT_NAME} UI Starter App Customization
 
-Follow these procedures to start applying changes to the Mobile and Portal Starter Apps. Refer to the xref:{context}-ref-demo-app[{Feature} Starter Application Reference Material] for more information about their overall structure.
+Follow these procedures to start applying changes to the Mobile and Portal Starter Apps. Refer to the xref:{context}-ref-demo-app[{PROJECT_NAME} Starter Application Reference Material] for more information about their overall structure.
 
 [id='{context}-ref-ui-technology']
 == Adding UI elements
@@ -9,9 +9,9 @@ Follow these procedures to start applying changes to the Mobile and Portal Start
 [id='{context}-create-angularjs-module']
 === Creating your own AngularJS module with routing
 
-In order to add new elements to the {Feature} UI, you must create your own AngularJS module and add it to the array of dependencies of the main application module.
+In order to add new elements to the {PROJECT_NAME} UI, you must create your own AngularJS module and add it to the array of dependencies of the main application module.
 
-{Feature} utilizes link:https://ui-router.github.io/ng1/[UI-Router for AngularJS] to modularize the user interface components in separate routes that can be referenced by navigation links.
+{PROJECT_NAME} utilizes link:https://ui-router.github.io/ng1/[UI-Router for AngularJS] to modularize the user interface components in separate routes that can be referenced by navigation links.
 
 The Starter Applications follow a 2-column module in the case of the Portal App, and a single column plus an optional toolbar section in the case of the Mobile App. The applications can provide the HTML ids of these container elements to the individual modules, allowing them to insert views into them through the UI-Router.
 
