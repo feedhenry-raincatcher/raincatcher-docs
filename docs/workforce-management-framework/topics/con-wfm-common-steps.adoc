@@ -20,6 +20,6 @@ Roadmap:
 This is a generic step for implementing signatures for a Workflow. 
 This step allow for the entry of a signature by a customer or employee.
 Users can use a finger or stylus on a mobile device touch screen to enter a signature. 
-Signatures are then stored as images. 
+Signatures are then stored as images to viewed as part of a completed workorder. 
 Like all steps Signature Common Step is made up of a `module` and a `definition` for more information on step makeup and usage see
 xref:: {context}-con-workflow-step[Building your first Workflow Step].
