@@ -105,3 +105,49 @@ See the link:https://material.angularjs.org/latest/api/directive/mdIcon[mdIcon] 
 
 == Customizing SASS and Themes
 
+{PROJECT_NAME} utilizes link:http://sass-lang.com/[SASS] in order to supply extra features on top of standard CSS. These files are entry point to customizing and adding new styles to the App's interface.
+
+=== Adding extra Stylesheets
+
+In order to add new SASS files, simply include a new file in the `src/sass/` directory of your App and `@import` it from the App's main `.scss` file:
+
+[source,scss]
+----
+// In custom.scss
+.my-class {
+  color: #0000FF;
+}
+----
+
+[source,scss]
+----
+// In the main .scss file
+@import './custom.scss';
+----
+
+It's recommended to include custom rules in new files and even use namespaced or prefixed class names to avoid collisions with updates in the {PROJECT_NAME} codebase.
+
+=== Changing the theme of {PROJECT_NAME} components
+
+{PROJECT_NAME} components inherit their look and feel from global variables defined in the top section of main SASS file, by changing these values all elements will reflect the new values after the standard build process regenerates the compiled CSS files from them:
+
+[source,scss]
+----
+$secondary-text-color: rgba(0,0,0,.54);
+$divider-text-color: rgba(0,0,0,.12);
+
+$white-text-color: rgba(255,255,255,1);
+$white-secondary-text-color: rgba(255,255,255,.7);
+$white-divider-color: rgba(255,255,255,.3);
+
+$primary-color: #3F51B5;
+$secondary-color: #303F9F;
+
+$accent-color-1: #a63db8;
+$accent-color-2: #4d5bb3;
+$accent-color-3: #1aa094;
+$accent-color-4: #283593;
+
+$success: #388E3C;
+$danger: #F44336;
+----
