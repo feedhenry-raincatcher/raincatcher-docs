@@ -5,7 +5,7 @@ The User Interface of {PROJECT_NAME} consists of a series of modules made availa
 
 === UI Frameworks
 
-The {PROJECT_NAME} modules are intended to be used as part of a regular AngularJS application and used by it as link:https://docs.angularjs.org/guide/module[AngularJS modules] they are kept in a separate, framework-specific repository on link:https://github.com/feedhenry-raincatcher/raincatcher-angularjs/[GitHub]
+The {PROJECT_NAME} modules are intended to be used as part of a regular AngularJS application and used by it as link:https://docs.angularjs.org/guide/module[AngularJS modules].
 
 {PROJECT_NAME} also utilizes link:https://material.angularjs.org/latest/[Angular Material] extensive as both a set of widgets and for achieving a consistent design philosophy.
 

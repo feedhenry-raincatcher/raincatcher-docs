@@ -54,9 +54,9 @@ module.exports = function(config) {
 
 Your module should:
 
-. Export a function that receives a configuration object and returns the name of the module for convenience.
-. Utilize the UI-Router's `$stateProvider` to include any new routes
-. Define states that are nested states of `app`, since otherwise the views in the custom state will replace the application's entire interface instead of inserting their content in the containers. See link:https://github.com/angular-ui/ui-router/wiki/Nested-States-&-Nested-Views[Nested States & Nested Views] for more information.
+. Export a function that receives a configuration object and returns the name of the module for convenience;
+. Utilize the UI-Router's `$stateProvider` to include any new routes;
+. Define states that are nested states of `app` (`app.custom` in the above example), since otherwise the views in the custom state will replace the application's entire interface instead of inserting their content in the containers. See link:https://github.com/angular-ui/ui-router/wiki/Nested-States-&-Nested-Views[Nested States & Nested Views] for more information.
 
 Refer to the link:https://docs.angularjs.org/api/ng/function/angular.module[AngularJS Module documentation] for further information on creating new modules.
 
