@@ -1,0 +1,26 @@
+[id='{context}-con-basic-step']
+= {Feature}'s Basic-Steps.
+
+A _Basic-Step_ is a _Step_ with basic functionality and comes as standard with the {Feature} Application.
+A _Basic-Step_ is designed to be versatile so that it can be used with a wide range of _Workflows_.
+
+== The Signature Step
+
+The :{WFM-RC-AngularJsURL}{WFM-RC-Branch}/steps/step-signature/[Signature Step] is a _Basic-Step_ and it is used to capture a signature.
+A user inputs their signature through the UI and it is stored as an image.
+A user uses their finger or stylus, for example, to input their signature on a mobile device (the mobile device must have a touch screen).
+The captured signature is displayed as part of a completed _Workorder_.
+
+Like all _Steps_, a Signature Step is made up of a `module` and a `definition`.
+
+== Basic Step Roadmap
+
+The following list displays the _Basic-Steps_ that are on the {Feature} roadmap:
+
+* Plugable authentication
+* Image capture
+* Geolocation
+* Internal Messaging and 3rd party Messaging
+* Mobile Forms
+* Real-time Data Access
+* Integration of sensor data 
