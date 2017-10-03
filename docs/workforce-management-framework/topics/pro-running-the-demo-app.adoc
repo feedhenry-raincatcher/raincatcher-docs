@@ -10,7 +10,7 @@ This section includes:
 . xref:{context}-installing-core-dependencies[Installing Core Dependencies]
 . xref:{context}-starting-mongodb-and-redis[Starting MongoDB and Redis]
 . xref:{context}-starting-the-core-server[Starting the Core Server]
-. xref:{context}-running-the-mobile-and-portal-applications[Running the Mobile and Portal {WFM-RC-AppType2} Applications]
+. xref:{context}-running-the-mobile-and-portal-applications[Running the Mobile and Portal {PROJECT_NAME} Applications]
 
 [discrete]
 == Prerequisites

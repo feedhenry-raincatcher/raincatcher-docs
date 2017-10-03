@@ -21,7 +21,7 @@ image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/
 [[getting-started]]
 == Getting Started with {PROJECT_NAME}
 include::running-the-demo-app.adoc[leveloffset=+2]
-include::running-the-published-repositories[leveloffset=+2]
+include::running-the-published-repositories.adoc[leveloffset=+2]
 
 //[[programming-a-raincatcher-project]]
 //== Programming a {PROJECT_NAME} Project
