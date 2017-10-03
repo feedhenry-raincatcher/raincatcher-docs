@@ -1,0 +1,39 @@
+[id='{context}-ref-development-tools']
+= {PROJECT_NAME} Tools for Local development
+
+This section lists the tools required for developing {PROJECT_NAME} in your local machine. It includes:
+
+. xref:id='{context}-tool-list[List of tools required for local development]
+
+[id='{context}-tool-list]
+== List of tools required for local development
+
+.Development Tools
+|===
+|Name |Description |Links
+
+|*MongoDB*
+|The _MongoDB_ database is the main datastore for the {PROJECT_NAME} project.
+|link:https://www.mongodb.com/[Official Website]
+
+link:https://hub.docker.com/_/mongo/[Docker image]
+
+|*Redis*
+|An in-memory database used by {PROJECT_NAME} for caching.
+|link:https://redis.io/[Official Website]
+
+link:https://hub.docker.com/_/redis/[Docker image]
+
+|*Node.js*
+|The main runtime for the {PROJECT_NAME} project.
+|link:https://nodejs.org/[Official Website]
+
+|*Git*
+|Version Control System required to download and track updates to {PROJECT_NAME} code.
+|link:https://git-scm.com/[Official Website]
+
+|*Docker (Optional)*
+|A container platform to run software in an isolated and reproducible way.
+
+{PROJECT_NAME} recommends running _MongoDB_ and _Redis_ through _Docker_
+|link:https://www.docker.com[Official Website]

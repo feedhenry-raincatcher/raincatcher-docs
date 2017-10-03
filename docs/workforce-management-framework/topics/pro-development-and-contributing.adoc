@@ -1,0 +1,16 @@
+[id='{context}-pro-development-and-contributing']
+= Developing and Contributing to the {PROJECT_NAME} Project
+
+== Preparing the development environment
+
+In order to prepare your local environment to run and develop {PROJECT_NAME}, check the tools in the xref:{context}-ref-development-tools[Tools for Local development] reference and follow the links for installation instructions for the individual tools.
+
+== Retrieving the source code
+
+After cloning the `core` and `angularjs` repositories listed in xref:{context}-identifying-raincatcher-repositories[Identifying {PROJECT_NAME} Repositories] using Git, follow the individual repositories' _README_ files to install code dependencies and start local development.
+
+The individual packages that compose the {PROJECT_NAME} ecossystem are contained in the cloned repositories in a monorepo structure enabled by link:https://lernajs.io/[Lerna.js], see the link:https://github.com/lerna/lerna/[Lerna.js Documentation on GitHub] for more details.
+
+== Contributing changes to the {PROJECT_NAME} Project
+
+In order to deliver changes
