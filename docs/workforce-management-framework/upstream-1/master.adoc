@@ -34,7 +34,7 @@ image::https://raw.githubusercontent.com/feedhenry-raincatcher/raincatcher-docs/
 //== {PROJECT_NAME} Security
 //include::defining-raincatcher-security.adoc[leveloffset=+2]
 
-include::working-with-everything.adoc[leveloffset=+2]
+include::working-with-everything.adoc[leveloffset=+1]
 
 // **********************************
 // * Appendix: Revision Information *
