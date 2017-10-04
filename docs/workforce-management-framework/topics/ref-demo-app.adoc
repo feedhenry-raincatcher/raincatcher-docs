@@ -3,14 +3,14 @@
 
 This section includes:
 
-. xref:{context}-credentials-for-the-mobile-and-portal-application[Credentials for the Mobile and Portal Application]
+. xref:{context}-credentials-for-the-mobile-and-portal-demo-application[Credentials for the Mobile and Portal Demo Application]
 
 [id='{context}-credentials-for-the-mobile-and-portal-demo-application']
 == Credentials for the Mobile and Portal Demo Application
 
 Login using the following credentials:
 
-.Credentials for the _Mobile_ and _Portal_ Application
+.Credentials for the _Mobile_ and _Portal_ Demo Application
 |===
 |Application |Username |Password
 
