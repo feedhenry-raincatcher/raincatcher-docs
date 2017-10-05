@@ -1,16 +1,30 @@
 [id='{context}-pro-development-and-contributing']
 = Developing and Contributing to the {PROJECT_NAME} Project
 
-== Preparing the development environment
+== Preparing the Development Environment
 
 In order to prepare your local environment to run and develop {PROJECT_NAME}, check the tools in the xref:{context}-ref-development-tools[Tools for Local development] reference and follow the links for installation instructions for the individual tools.
 
-== Retrieving the source code
+== Retrieve the source code
 
 After cloning the `core` and `angularjs` repositories listed in xref:{context}-identifying-raincatcher-repositories[Identifying {PROJECT_NAME} Repositories] using Git, follow the individual repositories' _README_ files to install code dependencies and start local development.
 
 The individual packages that compose the {PROJECT_NAME} ecossystem are contained in the cloned repositories in a monorepo structure enabled by link:https://lernajs.io/[Lerna.js], see the link:https://github.com/lerna/lerna/[Lerna.js Documentation on GitHub] for more details.
 
+== Run the Applications in the Development Environment
+
+In order to run the applications in your local environment see the instructions in xref:{context}-pro-running-the-demo-app[Running the Demo App Locally].
+
+For changes in modules in the `angularjs` repository, the running applications are automatically updated and restarted. In the `core` repository, recompilation via `npm run build` is sometimes necessary. Refer to the `README.md` file in the root of each repository for additional details.
+
 == Contributing changes to the {PROJECT_NAME} Project
 
-In order to deliver changes
+=== Forking the repositories
+
+In order to contribute changes back to the main repository, create your own link:https://github.com/senai-sp/iot-projects[fork] of both repositories and include your changes in a new branch.
+
+=== Opening a Pull Request
+
+After your changes are present in your own forked copy of the {PROJECT_NAME} repositories, feel free to open a link:https://help.github.com/articles/about-pull-requests/[Pull Request] against the projects' main repositories. The members of the {PROJECT_NAME} team will be notified and act upon it.
+
+Other ways of reaching the team include link:https://gitter.im/FeedhenryRaincatcher/Lobby[Gitter Chat] via this link or through the Chat link in the documentation website's main page, and the link:mailto:feedhenry-raincatcher@redhat.com[{PROJECT_NAME} mailing list].
