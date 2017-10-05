@@ -21,7 +21,7 @@ include::topics/con-workflow-step.adoc[leveloffset=+1]
 
 == Procedures
 // Procedures
-include::topics/pro-configuring-logging.adoc[leveloffset=+1]
+//include::topics/pro-configuring-logging.adoc[leveloffset=+1]
 include::topics/pro-keycloak-enablement.adoc[leveloffset=+1]
 include::topics/pro-keycloak-implementation.adoc[leveloffset=+1]
 include::topics/pro-passportauth-pointing-to-a-datasource.adoc[leveloffset=+1]
