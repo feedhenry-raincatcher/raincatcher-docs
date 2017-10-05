@@ -68,9 +68,10 @@ image:diagrams/referenceFlow.png[referenceFlow]
 
 Developers can extend {PROJECT_NAME} solution by providing _Step Definitions_. Are provided as one more more npm modules that needs to be added to both mobile and portal applications. All included steps will be available as library that can be accessed and used to build workflows in end user applications.
 
-Portal administrators can build workflows which containing ordered `Steps` that each mobile operator needs to complete.
+Portal administrators can build `workflows` which containing ordered `Steps` that each mobile operator needs to complete.
 
-Workflows can be instanciated as `Workorders` which will contain specific details and be assigned one of the field operators.
+`Workflows` can be instanciated as `Workorders` which will contain specific details and be assigned one of the field operators.
 Once workorder is created it will be populated in the mobile field operator application.
 
 image:diagrams/overview.png[overview]
+
