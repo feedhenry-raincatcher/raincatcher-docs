@@ -21,10 +21,14 @@ include::topics/ref-introducing-raincatcher.adoc[leveloffset=+2]
 = Running the {PROJECT_NAME} Applications
 include::topics/pro-running-the-demo-repositories.adoc[leveloffset=+1]
 include::topics/pro-using-the-demo-app.adoc[leveloffset=+1]
+include::topics/ref-demo-app.adoc[leveloffset=+2]
 
 [[developer-getting-started]]
 = Developer Introduction
--
+
+include::topics/ref-mobile.adoc[leveloffset=+1]
+include::topics/ref-portal.adoc[leveloffset=+1]
+include::topics/ref-server.adoc[leveloffset=+1]
 
 [[top-level-apps-overview]]
 = Top Level Applications Overview
@@ -38,6 +42,8 @@ include::topics/con-packaged-step.adoc[leveloffset=+1]
 
 [[intergrations]]
 = {PROJECT_NAME} Intergrations
+include::topics/con-wfm-intergrations.adoc[leveloffset=+0]
+
 == Sync
 include::topics/con-datasync-module.adoc[leveloffset=+2]
 
@@ -58,7 +64,9 @@ include::topics/pro-passportauth-pointing-to-a-datasource.adoc[leveloffset=+2]
 
 [[ui]]
 = Modifying the UI
+include::topics/con-ui-technology.adoc[leveloffset=+1]
 include::topics/con-wfm-extending-user-interface.adoc[leveloffset=+1]
+include::topics/pro-ui-customization.adoc[leveloffset=+1]
 include::topics/con-angularjs-modules.adoc[leveloffset=+1]
 
 [[performance]]
