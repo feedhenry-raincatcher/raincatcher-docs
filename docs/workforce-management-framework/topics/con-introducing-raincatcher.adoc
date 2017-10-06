@@ -44,7 +44,7 @@ It allows developers to leverage production hardened applications by extending t
 * Example modules (@raincatcher-examples/*)
 * External modules build by RainCatcher users and custom code in reference applications
 
-image:diagrams/customSolution.png[customSolution]
+image::{WFM-RC-images}diagrams/customSolution.png[customSolution]
 
 == Process Management
 
@@ -62,7 +62,7 @@ Main features of the Process Managment modules:
 
 Process Managment framework can be extended by _Step Definitions_ which are responsible for wraping business processes into single reusable units. For more technical information about _Step Definitions_ please refer to the Process Managment Guide.
 
-image:diagrams/referenceFlow.png[referenceFlow]
+image::{WFM-RC-images}diagrams/referenceFlow.png[referenceFlow]
 
 === Process Management overview
 
@@ -73,5 +73,5 @@ Portal administrators can build `workflows` which containing ordered `Steps` tha
 `Workflows` can be instanciated as `Workorders` which will contain specific details and be assigned one of the field operators.
 Once workorder is created it will be populated in the mobile field operator application.
 
-image:diagrams/overview.png[overview]
+image::{WFM-RC-images}diagrams/overview.png[overview]
 
