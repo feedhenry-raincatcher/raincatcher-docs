@@ -3,14 +3,14 @@
 
 Steps are internal part of the {PROJECT_NAME}.
 Guide bellow describes structure of the step and some basic priciples required build it.
-A basic knowledge of Angular.js is required to build a Workflow Step.
+A basic knowledge of AngularJS is required to build a Workflow Step.
 
 == Structure of a Step
 Steps are divided into two linked categories, the `module` and the `definition`.
 
 === Module
-Modules can contain one or more Angular.js directives for rendering _Steps_ in the Portal and Mobile applications.
-{PROJECT_NAME} _Steps_ use Angular.js directives to build a user interface as part of workflows.
+Modules can contain one or more AngularJS directives for rendering _Steps_ in the Portal and Mobile applications.
+{PROJECT_NAME} _Steps_ use AngularJS directives to build a user interface as part of workflows.
 Each _Step_ is divided into two directives:
 
 .A Step's Directive
