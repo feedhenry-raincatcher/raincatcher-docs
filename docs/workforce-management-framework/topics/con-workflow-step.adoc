@@ -58,8 +58,7 @@ The following is an example of a `definition.json` file:
 
 To develop a new step:
 
-. Create a directory for your step code.
-. Populate the step directory using one of the following methods:
+. Create the step directory using one of the following methods:
 +
 * Clone the link:https://github.com/feedhenry-raincatcher/step-template.git[step-template] repository.
 +
