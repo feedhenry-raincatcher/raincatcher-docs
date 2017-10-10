@@ -2,7 +2,7 @@
 
 == Overview
 
-{PROJECT_NAME} allows you to move from paper based forms and processes into complete Workflow management mobile solution.
+{PROJECT_NAME} allows you to move from paper based forms and processes into complete mobile management solution.
 {PROJECT_NAME} connects a business back-office portal application with its fleet of mobilized employees via a mobile appliction. 
 Both mobile and portal applciations are fully customizable.
 
@@ -19,7 +19,6 @@ Workorder can be assigned via the portal to individual employees as a job for co
 
 === Step Generator
 Generates a step via cli, the step can be customised to meet a use case.
-This step
 
 === Packaged Step
 Providing predefined signature step that can be used for any business needs.
