@@ -1,0 +1,44 @@
+[id='{context}-ref-raincatcher-quickstart']
+= RainCatcher QuickStart
+
+== Requirements
+
+- Node.js
+- MongoDB
+- Redis
+
+== Getting started.
+
+1. Clone all required repositories
+
+[source,bash]
+----
+git clone git@github.com:feedhenry-raincatcher/raincatcher-mobile.git
+git clone git@github.com:feedhenry-raincatcher/raincatcher-portal.git
+git clone git@github.com:feedhenry-raincatcher/raincatcher-server.git
+----
+
+2. Install all required dependencies for each project
+
+[source,bash]
+----
+npm install
+----
+
+3. Install yeoman and rcstep generator
+
+[source,bash]
+----
+npm install -g yo
+npm install -g generator-rcstep
+----
+
+4. Create step
+
+[source,bash]
+----
+yo rcstep
+---
+
+
+
