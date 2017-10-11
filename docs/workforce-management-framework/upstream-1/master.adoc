@@ -41,10 +41,10 @@ include::topics/con-wfm-integrations.adoc[leveloffset=+0]
 == Sync
 include::topics/con-datasync-module.adoc[leveloffset=+2]
 
-== Security
+== Security introduction
 include::topics/con-introducing-securityfeatures.adoc[leveloffset=+2]
 
-== {Keycloak}
+== Using {Keycloak}
 include::topics/con-keycloak.adoc[leveloffset=+2]
 include::topics/ref-keycloak.adoc[leveloffset=+3]
 include::topics/con-keycloak-securitystrategy.adoc[leveloffset=+2]
@@ -52,12 +52,13 @@ include::topics/ref-keycloak-securitystrategy.adoc[leveloffset=+3]
 include::topics/pro-keycloak-enablement.adoc[leveloffset=+2]
 include::topics/pro-keycloak-implementation.adoc[leveloffset=+2]
 
-== Passport.js
+== Using Passport.js
 include::topics/con-passportauth-module.adoc[leveloffset=+2]
 include::topics/con-passportauth-securitystrategy.adoc[leveloffset=+2]
 include::topics/ref-passportauth-securitystrategy.adoc[leveloffset=+3]
 include::topics/pro-passportauth-pointing-to-a-datasource.adoc[leveloffset=+2]
 
+= Logging
 include::topics/con-logging.adoc[leveloffset=+1]
 
 [[ui]]
