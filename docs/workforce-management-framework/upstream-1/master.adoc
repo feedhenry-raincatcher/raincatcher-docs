@@ -21,22 +21,18 @@ include::topics/pro-running-the-demo-repositories.adoc[leveloffset=+1]
 include::topics/pro-using-the-demo-app.adoc[leveloffset=+1]
 include::topics/ref-demo-app.adoc[leveloffset=+2]
 
-[[developer-getting-started]]
-= Developer Introduction
-
-include::topics/ref-mobile.adoc[leveloffset=+1]
-include::topics/ref-portal.adoc[leveloffset=+1]
-include::topics/ref-server.adoc[leveloffset=+1]
+[[building-wfm-process]]
+= Building WFM Process in {PROJECT_NAME}
+include::topics/con-workflow-step.adoc[leveloffset=+1]
+include::topics/con-packaged-step.adoc[leveloffset=+1]
 
 [[top-level-apps-overview]]
 = Top Level Applications Overview
 include::topics/con-wfm.adoc[leveloffset=+1]
 include::topics/con-supported-modules.adoc[leveloffset=+1]
-
-[[building-wfm-process]]
-= Building WFM Process in {PROJECT_NAME}
-include::topics/con-workflow-step.adoc[leveloffset=+1]
-include::topics/con-packaged-step.adoc[leveloffset=+1]
+include::topics/ref-mobile.adoc[leveloffset=+1]
+include::topics/ref-portal.adoc[leveloffset=+1]
+include::topics/ref-server.adoc[leveloffset=+1]
 
 [[integrations]]
 = {PROJECT_NAME} Integrations
