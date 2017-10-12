@@ -28,7 +28,7 @@ For more information, see link:http://passportjs.org/[passportjs.org].
 
 The *link:{WFM-RC-CoreTreeURL}{WFM-RC-Branch}/cloud/passportauth[PassportAuth Module]* is *{PROJECT_NAME}'s* implementation of *Passport.js* and is the default authentication and authorization module for *{PROJECT_NAME}*.
 
-== Introducing Keycloak
+== Introducing {Keycloak}
 
 *Keycloak* is a complete identity management solution. It extends standard authorization and authentication functionality, and comes with all the overheads involved in running a separate server.
 Red Hat recommends using *Keycloak* in production to avail of the many features available for enterprise security including:

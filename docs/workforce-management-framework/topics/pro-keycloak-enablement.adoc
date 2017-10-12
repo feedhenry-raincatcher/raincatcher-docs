@@ -58,6 +58,8 @@ See xref:{context}-keycloak-configuration-production[{Keycloak} Configuration fo
 [discrete]
 === Creating your own {Keycloak} Realm
 
+WARNING: Creating your own {Keycloak} Realm requireds an advanced understanding of {Keycloak} and its Node.js and Javascript Adapters.
+
 See the {Keycloak} link:{WFM-RC-KeycloakURL}server_admin/topics/realms/create.html[realm] documentation for more information on how to create a new realm within a {Keycloak} instance.
 
 The realm must adhere to the following configurations in order to use it with the {PROJECT_NAME} applications:
