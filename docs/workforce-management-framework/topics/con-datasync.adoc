@@ -16,7 +16,7 @@ For advanced usage of the *Datasync* module, see the link:https://access.redhat.
 
 [id='{context}-datasync-cloud-module']
 == Datasync Cloud
-The *Datasync Cloud* is a wrapper for the link:https://github.com/feedhenry/fh-sync[FeedHenry datasync server]. The *Datasync Cloud* creates a server side service that allows clients to synchronize offline data to a preferred back-end data store. By default, the Cloud module utilizes a MongoDB database back-end for storing the client data.
+The *Datasync Cloud* is a wrapper for the link:https://github.com/feedhenry/fh-sync[{ProductShortName} datasync server]. The *Datasync Cloud* creates a server side service that allows clients to synchronize offline data to a preferred back-end data store. By default, the Cloud module utilizes a MongoDB database back-end for storing the client data.
 
 For instructions on how to implement the *Datasync Cloud*, see link:{WFM-RC-CoreURL}{WFM-RC-Branch}/cloud/datasync/README.md[README]
 
