@@ -11,6 +11,6 @@ The *{PROJECT_NAME}* demo application contains two implementations of the _logge
 Implements link:https://www.npmjs.com/package/bunyan[Bunyan]. Used for server side logging.
 
 - `ClientLogger`
-Implements link:Lhttps://github.com/pimterry/loglevel[LogLevel]. Used for client (web and mobile) logging.
+Implements link:https://github.com/pimterry/loglevel[LogLevel]. Used for client (web and mobile) logging.
 
 To see a logging example, see the link:{WFM-RC-CoreURL}{WFM-RC-Branch}/common/logger/example/index.ts[Cloud Logger example].
