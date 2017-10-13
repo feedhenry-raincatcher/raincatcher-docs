@@ -1,7 +1,7 @@
 [id='{context}-con-logging']
 
 *{PROJECT_NAME} Logger* creates logging facade for JavaScript based applications that
-are used by all RainCatcher modules. Developers can use their own loggers by wrapping their implementation into the provided logger interface.
+is used by all RainCatcher modules. Developers can use their own loggers by wrapping their implementation into the provided logger interface.
 
 For more information about the _logger interface_ structure, see link:../../../api/{WFM-RC-Api-Version}/logger/docs/index.html[logger api documentation]
 
