@@ -775,12 +775,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#_overview">21. Overview</a>
 <ul class="sectlevel2">
-<li><a href="#_about_1_0_0_release">21.1. About 1.0.0 Release</a>
+<li><a href="#_1_1_0_release">21.1. 1.1.0 Release</a>
 <ul class="sectlevel3">
-<li><a href="#_workflows">21.1.1. Workflows</a></li>
-<li><a href="#_workorders">21.1.2. Workorders</a></li>
-<li><a href="#_step_generator">21.1.3. Step Generator</a></li>
-<li><a href="#_packaged_step">21.1.4. Packaged Step</a></li>
+<li><a href="#_starting_the_applications">21.1.1. Starting the applications</a></li>
+</ul>
+</li>
+<li><a href="#_1_0_0_release">21.2. 1.0.0 Release</a>
+<ul class="sectlevel3">
+<li><a href="#_workflows">21.2.1. Workflows</a></li>
+<li><a href="#_workorders">21.2.2. Workorders</a></li>
+<li><a href="#_step_generator">21.2.3. Step Generator</a></li>
+<li><a href="#_packaged_step">21.2.4. Packaged Step</a></li>
 </ul>
 </li>
 </ul>
@@ -903,7 +908,7 @@ In particular:</p>
 <h3 id="_process_management">1.2. Process Management</h3>
 <div class="paragraph">
 <p>RainCatcher focuses mainly on digitalizing business process
-by including set of the modules responsible for the process management to the user applications. Process management framework can be seen as simplified version of the BPMn solutions.</p>
+by including set of the modules responsible for the process management to the user applications.</p>
 </div>
 <div class="paragraph">
 <p>Main features of the Process Management modules:</p>
@@ -1163,7 +1168,7 @@ git checkout release-0.0.1</code></pre>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-bash" data-lang="bash">cd raincatcher-server/
-npm run start</code></pre>
+npm run start:ts</code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -2087,7 +2092,7 @@ You can refer to a specific release version by using tag.
 <div class="sect2">
 <h3 id="_server_side_application_development_guide">10.2. Server-side Application Development Guide</h3>
 <div class="paragraph">
-<p>To launch the Cloud Application, execute <code>npm run start</code>.</p>
+<p>To launch the Cloud Application, execute <code>npm run start:ts</code>, this runs the Server Application from its TypeScript sources.</p>
 </div>
 <div class="paragraph">
 <p>To start debugging, execute <code>npm run startDebug</code>.</p>
@@ -2105,7 +2110,7 @@ Both commands use a tool called <code>ts-node</code> and this runs a process wit
 </table>
 </div>
 <div class="paragraph">
-<p>To run the code using Node.js, ensure you compile the code first:</p>
+<p>To run the code using Node.JS, ensure you compile the code first:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2113,7 +2118,7 @@ Both commands use a tool called <code>ts-node</code> and this runs a process wit
 <p><code>npm run build</code></p>
 </li>
 <li>
-<p><code>node src/index.js</code></p>
+<p><code>npm run start</code></p>
 </li>
 </ul>
 </div>
@@ -4525,34 +4530,46 @@ RainCatcher connects a business back-office portal application with its fleet of
 Both mobile and portal applications are fully customizable.</p>
 </div>
 <div class="sect2">
-<h3 id="_about_1_0_0_release">21.1. About 1.0.0 Release</h3>
+<h3 id="_1_1_0_release">21.1. 1.1.0 Release</h3>
+<div class="sect3">
+<h4 id="_starting_the_applications">21.1.1. Starting the applications</h4>
 <div class="paragraph">
-<p>RainCatcher 1.0.0 is a new produce was previously in tech preview. The Features are listed below.</p>
+<p>The <code>npm run start</code> command now runs the compiled JavaScript code as opposed to utilizing <a href="https://github.com/TypeStrong/ts-node">TypeScript Node</a> to run everything from the TypeScript sources.</p>
+</div>
+<div class="paragraph">
+<p>The previous behavior is still achievable via <code>npm run start:ts</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_0_0_release">21.2. 1.0.0 Release</h3>
+<div class="paragraph">
+<p>RainCatcher 1.0.0 is a new product that was previously in tech preview. The Features are listed below.</p>
 </div>
 <div class="sect3">
-<h4 id="_workflows">21.1.1. Workflows</h4>
+<h4 id="_workflows">21.2.1. Workflows</h4>
 <div class="paragraph">
-<p>The ability to create customizable processes (called workflows). Workflows are made up of steps which can be the packaged steps
-or can be custom steps developed for a particular use case.</p>
+<p>The ability to create customizable processes (called Workflows). Workflows are made up of Steps which can be the Packaged Steps
+or can be custom Steps developed for a particular use case.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_workorders">21.1.2. Workorders</h4>
+<h4 id="_workorders">21.2.2. Workorders</h4>
 <div class="paragraph">
-<p>The ability to process instances called workorders. Workorder are a instance of a individual workflow.
-Workorder can be assigned via the portal to individual employees as a job for completion.</p>
+<p>The ability to process instances called Workorders. Workorders are a instance of an individual workflow.
+Workorder can be assigned via the Portal Application to individual employees as a job for completion.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_step_generator">21.1.3. Step Generator</h4>
+<h4 id="_step_generator">21.2.3. Step Generator</h4>
 <div class="paragraph">
-<p>Generates a step via cli, the step can be customized to meet a use case.</p>
+<p>Generates a Step via a CLI, the step can be customized to meet a use case.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_packaged_step">21.1.4. Packaged Step</h4>
+<h4 id="_packaged_step">21.2.4. Packaged Step</h4>
 <div class="paragraph">
-<p>Providing predefined signature step that can be used for any business needs.</p>
+<p>Providing predefined signature Step that can be used for any business needs.</p>
 </div>
 </div>
 </div>
@@ -4647,9 +4664,21 @@ The Core repository is automatically cloned by the command <code>npm run bootstr
 </ol>
 </div>
 <h3 id="{context}-starting-the-core-server" class="discrete">Starting the Core Server</h3>
+<div class="paragraph">
+<p>The following line runs the server application and the internal dependencies from their TypeScript sources:</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">npm run start</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm run start:ts</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To compile and run from JavaScript:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">npm run build
+npm run start</code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -4677,7 +4706,7 @@ The terminal is out of use while the Core Server is running.
 <p>Both the Mobile and Portal applications open automatically in a browser.</p>
 </div>
 <div class="paragraph">
-<p><em>Revised on 2017-10-13 14:53:41 IST</em></p>
+<p><em>Revised on 2017-10-19 13:39:55 IST</em></p>
 </div>
 </div>
 </div>
