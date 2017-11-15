@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.6.1">
-<title>WFM Overview</title>
+<title>Raincatcher Introduction</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -505,7 +505,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel0">
-<li><a href="#raincatcher">WFM Overview</a>
+<li><a href="#raincatcher">Raincatcher Introduction</a>
 <ul class="sectlevel1">
 <li><a href="#{context}-con-introducing-raincatcher">1. RainCatcher 1.0.0</a>
 <ul class="sectlevel2">
@@ -527,14 +527,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#getting-started">Running the RainCatcher Applications</a>
+<li><a href="#getting-started">Getting Started with the RainCatcher Applications</a>
 <ul class="sectlevel1">
 <li><a href="#{context}-pro-running-the-demo-repositories">2. Running the RainCatcher Applications on a Local Machine</a>
 <ul class="sectlevel2">
-<li><a href="#_credentials_for_the_mobile_and_portal_demo_application">2.1. Credentials for the Mobile and Portal Demo Application</a></li>
+<li><a href="#_credentials_for_the_portal_and_mobile_applications">2.1. Credentials for the Portal and Mobile Applications</a></li>
 </ul>
 </li>
-<li><a href="#{context}-pro-using-the-demo-app">3. Working with the Portal Application and Mobile Application</a>
+<li><a href="#{context}-pro-using-the-demo-app">3. Learning to Use Workflows and Workorders</a>
 <ul class="sectlevel2">
 <li><a href="#_working_with_the_portal_application">3.1. Working with the Portal Application</a></li>
 <li><a href="#_working_with_the_mobile_application">3.2. Working with the Mobile Application</a></li>
@@ -548,7 +548,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#building-wfm-process">Building WFM Process in RainCatcher</a>
+<li><a href="#building-wfm-process">Building a Workflow</a>
 <ul class="sectlevel1">
 <li><a href="#{context}-con-workflow-step">4. Building Your First Workflow Step</a>
 <ul class="sectlevel2">
@@ -810,7 +810,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-<h1 id="raincatcher" class="sect0">WFM Overview</h1>
+<h1 id="raincatcher" class="sect0">Raincatcher Introduction</h1>
 <div class="sect1">
 <h2 id="{context}-con-introducing-raincatcher">1. RainCatcher 1.0.0</h2>
 <div class="sectionbody">
@@ -1089,48 +1089,41 @@ The main differences between <strong>RainCatcher</strong> and <strong>Tech Previ
 </div>
 </div>
 </div>
-<h1 id="getting-started" class="sect0">Running the RainCatcher Applications</h1>
+<h1 id="getting-started" class="sect0">Getting Started with the RainCatcher Applications</h1>
 <div class="sect1">
 <h2 id="{context}-pro-running-the-demo-repositories">2. Running the RainCatcher Applications on a Local Machine</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The RainCatcher RainCatcher applications in this section are dependent on the <em>public NPM Registry</em>.</p>
-</div>
-<div class="paragraph">
-<p>This allows for a simpler setup of the RainCatcher applications for users that only require the application to run, and will not engage in development.</p>
+<p>Get started by running RainCatcher applications on your local machine. Follow
+these steps and use the <em>public NPM Registry</em> to set up the RainCatcher
+applications that contain sample Steps, Workflows, and Workorders.</p>
 </div>
 <h3 id="_prerequisites" class="discrete">Prerequisites</h3>
 <div class="paragraph">
-<p>Ensure you have:</p>
+<p>The following must be installed on your system:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Node and npm installed (tested on Node 6 LTS)</p>
+<p>Node and npm (tested version: 6 LTS)</p>
 </li>
 <li>
 <p>git</p>
 </li>
 <li>
-<p>access to <code>git@github.com:feedhenry-raincatcher/raincatcher-server.git</code></p>
+<p>MongoDB</p>
 </li>
 <li>
-<p>access to <code>git@github.com:feedhenry-raincatcher/raincatcher-mobile.git</code></p>
-</li>
-<li>
-<p>access to <code>git@github.com:feedhenry-raincatcher/raincatcher-portal.git</code></p>
-</li>
-<li>
-<p>MongoDB (tested with version: &lt;latest version&gt;)</p>
-</li>
-<li>
-<p>Redis (tested with version: &lt;latest version&gt;)</p>
+<p>Redis</p>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>You must have access to GitHub to install the RainCatcher applications.</p>
+</div>
 <h3 id="{context}-published-repositories-cloning-the-git-repositories" class="discrete">Cloning the Git Repositories</h3>
 <div class="paragraph">
-<p>The following commands will clone the <code>master</code> branch of each repository and they collectively contain the latest tagged release of the RainCatcher project.</p>
+<p>Clone the Git repositories as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1140,65 +1133,51 @@ git clone git@github.com:feedhenry-raincatcher/raincatcher-portal.git</code></pr
 </div>
 </div>
 <div class="paragraph">
-<p>Previous versions are available through branches named with the <code>release-{semver}</code> convention.
-For example, in order to checkout version <code>0.0.1</code> of <code>raincatcher-server</code>, run the following commands after the cloning:</p>
+<p>The master branch of each Git repository provides the latest version. Previous
+versions have the <code>release-*</code> tag. For example, run the following command to
+checkout version <code>1.0.0</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-bash" data-lang="bash">cd raincatcher-server/
-git checkout release-0.0.1</code></pre>
+git checkout release-1.0.0</code></pre>
 </div>
 </div>
 <h3 id="{context}-published-repositories-installing-repository-dependencies" class="discrete">Installing Repository Dependencies</h3>
 <div class="paragraph">
-<p>For each repository previously cloned, run <code>npm install</code> so regular NPM dependencies are downloaded.</p>
+<p>Run the <code>npm install</code> command in each repository to download the dependencies.
+For example, download dependencies for the Core server as follows:</p>
 </div>
-<h3 id="{context}-published-repositories-starting-mongodb-and-redis" class="discrete">Starting MongoDB and Redis</h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Start MongoDB. For more information, see <a href="https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#start-mongod-processes">Start MongoDB Processes</a>.</p>
-</li>
-<li>
-<p>Start Redis. For more information, see <a href="https://redis.io/topics/quickstart#starting-redis">Starting Redis</a>.</p>
-</li>
-</ol>
-</div>
-<h3 id="{context}-published-repositories-starting-the-core-server" class="discrete">Starting the Core Server</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-bash" data-lang="bash">cd raincatcher-server/
-npm run start:ts</code></pre>
+npm install</code></pre>
 </div>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-The terminal is out of use while the Core Server is running.
-</td>
-</tr>
-</table>
-</div>
-<h3 id="{context}-published-repositories-running-the-mobile-and-portal-applications" class="discrete">Running the Mobile and Portal Applications</h3>
+<h3 id="{context}-published-repositories-starting-mongodb-and-redis" class="discrete">Starting MongoDB and Redis</h3>
 <div class="paragraph">
-<p>Open a new terminal and execute the following command in folder <code>raincatcher-portal/</code> and also in folder <code>raincatcher-mobile/</code>:</p>
+<p>Ensure MongoDB and Redis are running on your local machine. For more
+information, see:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>MongoDB: <a href="https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#start-mongod-processes">Start MongoDB Processes</a></p>
+</li>
+<li>
+<p>Redis: <a href="https://redis.io/topics/quickstart#starting-redis">Starting Redis</a></p>
+</li>
+</ul>
+</div>
+<h3 id="{context}-published-repositories-starting-the-core-server" class="discrete">Starting the Core Server</h3>
+<div class="paragraph">
+<p>Run the <code>npm run start</code> command to start the Core server as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">npm run start</code></pre>
+<pre class="highlight"><code class="language-bash" data-lang="bash">cd raincatcher-server/
+npm run start</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>Both the Mobile and Portal Applications open automatically in a browser.</p>
-</div>
-<div class="sect2">
-<h3 id="_credentials_for_the_mobile_and_portal_demo_application">2.1. Credentials for the Mobile and Portal Demo Application</h3>
-<div class="paragraph">
-<p>Login using the following credentials:</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1207,11 +1186,55 @@ The terminal is out of use while the Core Server is running.
 <div class="title">Note</div>
 </td>
 <td class="content">
-<div class="title">Credentials for the Mobile and Portal Applications</div>
-Users are valid for both passport and Keycloak auth providers.
+After you start each RainCatcher application, it continues to run in
+the terminal. Closing the terminal stops the application. You must start the
+Portal and Mobile applications from separate terminals.
 </td>
 </tr>
 </table>
+</div>
+<h3 id="{context}-published-repositories-running-the-mobile-and-portal-applications" class="discrete">Starting the Portal and Mobile Applications</h3>
+<div class="paragraph">
+<p>Start the Portal application first, as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">cd raincatcher-portal/
+npm run start</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Next, start the Mobile application as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">cd raincatcher-mobile/
+npm run start</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The Portal and Mobile applications automatically open in a browser. If they do
+not open automatically, access them at the following URLs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Portal application: <code><a href="http://localhost:9002/?url=http://localhost:8001" class="bare">http://localhost:9002/?url=http://localhost:8001</a></code></p>
+</li>
+<li>
+<p>Mobile application: <code><a href="http://localhost:9003/?url=http://localhost:8001" class="bare">http://localhost:9003/?url=http://localhost:8001</a></code></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_credentials_for_the_portal_and_mobile_applications">2.1. Credentials for the Portal and Mobile Applications</h3>
+<div class="paragraph">
+<p>The Portal and Mobile applications contain sample Steps, Workflows, and
+Workorders that you can use to evaluate workforce management processes.</p>
+</div>
+<div class="paragraph">
+<p>Log in to the Portal and Mobile applications with the following credentials to
+access the sample content:</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
@@ -1228,19 +1251,19 @@ Users are valid for both passport and Keycloak auth providers.
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Mobile</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>trever</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Portal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>max</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>123</code></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Portal</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>max</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mobile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>trever</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>123</code></p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>For a complete list of available users, see the <a href="https://github.com/feedhenry-raincatcher/raincatcher-server/blob/master/src/modules/passport-auth/users.json">gitub repository</a></p>
+<p>For all available users, see: <a href="https://github.com/feedhenry-raincatcher/raincatcher-server/blob/master/src/modules/passport-auth/users.json">users.json</a></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1249,19 +1272,51 @@ Users are valid for both passport and Keycloak auth providers.
 <div class="title">Note</div>
 </td>
 <td class="content">
-The Mobile and Portal Applications contain sample Steps, Workflows and Workorders.
-They are used only for demonstration purposes.
-To create your own business logic, see the <a href="#building-wfm-process">WFM documentation</a>.
+Users are valid for both passport and Keycloak auth providers.
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>As a next step, you can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use the sample Workflows and Workorders. See <a href="#{context}-pro-using-the-demo-app">Learn to Use Workflows and Workorders</a>.</p>
+</li>
+<li>
+<p>Create your own business logic. See <a href="#building-wfm-process">Building a Workflow</a>.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="{context}-pro-using-the-demo-app">3. Working with the Portal Application and Mobile Application</h2>
+<h2 id="{context}-pro-using-the-demo-app">3. Learning to Use Workflows and Workorders</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>RainCatcher applications streamline process management with reusable objects
+called <em>Workflows</em> and <em>Workorders</em>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A <em>Workflow</em> is a set of steps that end users follow to complete a process.
+Administrators create <em>Workflows</em> with the Portal application.</p>
+</li>
+<li>
+<p>A <em>Workorder</em> is an instantiation of a <em>Workflow</em> that contains specific details.
+Administrators can assign <em>Workorders</em> to end users. End users access
+<em>Workorders</em> in the Mobile application.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In the following section, you can use the sample content in the RainCatcher
+applications running on your local machine.</p>
+</div>
 <div class="sect2">
 <h3 id="_working_with_the_portal_application">3.1. Working with the Portal Application</h3>
 <div class="paragraph">
@@ -1560,7 +1615,7 @@ This will open a sidebar with options, one being the option to log out.</p>
 </div>
 </div>
 </div>
-<h1 id="building-wfm-process" class="sect0">Building WFM Process in RainCatcher</h1>
+<h1 id="building-wfm-process" class="sect0">Building a Workflow</h1>
 <div class="sect1">
 <h2 id="{context}-con-workflow-step">4. Building Your First Workflow Step</h2>
 <div class="sectionbody">
@@ -4610,10 +4665,10 @@ The instructions in this section are for developers who want to contribute to Ra
 <p>access to <code>git@github.com:feedhenry-raincatcher/raincatcher-angularjs.git</code></p>
 </li>
 <li>
-<p>MongoDB (tested with version: &lt;latest version&gt;)</p>
+<p>MongoDB</p>
 </li>
 <li>
-<p>Redis (tested with version: &lt;latest version&gt;)</p>
+<p>Redis</p>
 </li>
 </ul>
 </div>
@@ -4706,7 +4761,7 @@ The terminal is out of use while the Core Server is running.
 <p>Both the Mobile and Portal applications open automatically in a browser.</p>
 </div>
 <div class="paragraph">
-<p><em>Revised on 2017-10-19 13:39:55 IST</em></p>
+<p><em>Revised on 2017-11-15 11:55:50 GMT</em></p>
 </div>
 </div>
 </div>

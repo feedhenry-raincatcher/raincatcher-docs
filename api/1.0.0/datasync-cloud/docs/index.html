@@ -911,66 +911,6 @@ img { max-width: 100%; }
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<div class="tsd-panel tsd-typography">
-			<h1 id="raincatcher-sync-cloud">RainCatcher Sync Cloud</h1>
-			<p>Raincatcher wrapper for Feedhenry DataSync server.
-				This module creates server side service that allows mobile applications to sync offline data to preferred database.
-				By default server connects and stores all client data in mongodb database.
-			This behavior can be changed by providing custom handlers.</p>
-			<p>For advanced usage see <a href="https://github.com/feedhenry/fh-sync/tree/master/docs">FeedHenry Sync documentation</a>.</p>
-			<blockquote>
-				<p><strong>Note</strong>: Cloud service is utilized by one of the sync clients. See <a href="https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/client/datasync-client">datasync-js</a></p>
-			</blockquote>
-			<h2 id="quick-start">Quick start</h2>
-			<ol>
-				<li>Start sync service process</li>
-			</ol>
-			<p>Starting sync service  will monitor and process
-			mew tasks are sent from sync clients</p>
-			<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> SyncServer, { SyncApi, SyncExpressMiddleware, SyncOptions } <span class="hljs-keyword">from</span> <span class="hljs-string">'@raincatcher/datasync-cloud'</span>;
-<span class="hljs-keyword">const</span> sync: SyncApi = SyncServer;
-
-<span class="hljs-comment">// Connect sync</span>
-<span class="hljs-keyword">const</span> connectOptions: SyncOptions = {
-  <span class="hljs-comment">// Use intelisense to get list of options</span>
-};
-sync.connect(connectOptions, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
-  <span class="hljs-keyword">if</span> (err) {
-    <span class="hljs-built_in">console</span>.log(err);
-  }
-});
-</code></pre>
-			<ol>
-				<li>Create api endpoint for sync.</li>
-			</ol>
-			<p>This endpoint will be called by all clients that wish to synchronize their local data with server.</p>
-			<pre><code class="lang-typescript"><span class="hljs-comment">//middleware</span>
-app.use(bodyParser.json());
-app.use(cors());
-
-<span class="hljs-comment">// Use api path of your wish</span>
-<span class="hljs-comment">// Same endpoint needs to be configured in js client</span>
-<span class="hljs-keyword">const</span> path = <span class="hljs-string">'/sync/:datasetId'</span>;
-<span class="hljs-keyword">const</span> middleware: SyncExpressMiddleware = <span class="hljs-keyword">new</span> SyncExpressMiddleware();
-
-<span class="hljs-keyword">const</span> router = middleware.createSyncExpressRouter();
-app.use(<span class="hljs-string">'/'</span>, router);
-</code></pre>
-			<p>See <a href="https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/datasync/example">example app</a> for complete runnable example.</p>
-			<h2 id="accessing-underlying-sync-library">Accessing underlying sync library</h2>
-			<p>For advanced use cases developers can access sync library using <code>sync</code> namespace.
-			Library is shipped with their own typings. You can import this directly into your application as below:</p>
-			<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { sync } <span class="hljs-keyword">from</span> <span class="hljs-string">'../src/index'</span>
-sync.anyapicall(...) ;
-</code></pre>
-			<p>Where <code>anyapicall</code> is one of the types defined in:
-			<a href="https://github.com/feedhenry/fh-sync/blob/master/types/fh-sync.d.ts">https://github.com/feedhenry/fh-sync/blob/master/types/fh-sync.d.ts</a></p>
-			<p>For more advanced usages please follow <a href="https://access.redhat.com/documentation/en-us/red_hat_mobile_application_platform_hosted/3/html/client_api/fh-sync">FeedHenry sync documentation</a></p>
-			<h2 id="overriding-sync-filter-on-server">Overriding sync filter on server</h2>
-			<p>By default sync clients can specify any type of filter and efectivelly get access to
-			every record for dataset. If you wish to disable user query_filters for certain datasets for security reasons <code>userMapperMiddleware</code> should be used, before mounting sync express router.</p>
-		</div>
-		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">

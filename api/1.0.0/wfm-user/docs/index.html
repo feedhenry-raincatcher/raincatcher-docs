@@ -911,45 +911,6 @@ img { max-width: 100%; }
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<div class="tsd-panel tsd-typography">
-			<h1 id="wfm-user">wfm-user</h1>
-			<p>Module responsible for user operations required by all WFM modules.</p>
-			<h2 id="restfull-api">RESTfull API</h2>
-			<h3 id="filter">Filter</h3>
-			<blockquote>
-				<p>GET /?filter=name&amp;limit=10</p>
-			</blockquote>
-			<p>Retruns JSON array containing users</p>
-			<pre><code class="lang-json">{
-  <span class="hljs-attr">"users"</span>: []
-}
-</code></pre>
-			<h4 id="example">Example</h4>
-			<p><a href="http://localhost:8001/api/users?filter=a&amp;limit=1">http://localhost:8001/api/users?filter=a&amp;limit=1</a></p>
-			<blockquote>
-				<p>Note: Default limit is 10</p>
-			</blockquote>
-			<h4 id="errors">Errors</h4>
-			<p>Missing filter: <code>{status: 400 , code: &#39;InvalidFilter&#39;}</code></p>
-			<h3 id="get-user-by-id">Get user by id</h3>
-			<blockquote>
-				<p>GET /:id</p>
-			</blockquote>
-			<p>Gets user by id</p>
-			<h4 id="example">Example</h4>
-			<p><a href="http://localhost:8001/api/users/fhj3nf">http://localhost:8001/api/users/fhj3nf</a></p>
-			<h4 id="errors">Errors</h4>
-			<p>Missing id <code>{status: 400 , code: &#39;InvalidID&#39;}</code></p>
-			<h2 id="implementing-userrepository">Implementing UserRepository</h2>
-			<p>In order for module to be able to fetch user data any implementations
-			need to implement user repository class.</p>
-			<p>See demo application integration or <a href="https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/wfm-user/example">example application</a> for more details.</p>
-			<h2 id="relation-to-security-module">Relation to security module</h2>
-			<p>The main purpose of this module is to allow administrators to retrieve and manage mobile users.
-				This data may come from different datasource than data from security module.
-			This module should not be used to fech any user related details like user profile etc.</p>
-		</div>
-		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">

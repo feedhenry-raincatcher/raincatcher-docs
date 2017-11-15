@@ -911,66 +911,6 @@ img { max-width: 100%; }
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<div class="tsd-panel tsd-typography">
-			<h1 id="raincatcher-passportauth">RainCatcher PassportAuth</h1>
-			<p>The PassportAuth module is RainCatcher&#39;s implementation of  <a href="http://passportjs.org/">PassportJS</a> and is the default authentication and authorization module for RainCatcher. The PassportAuth module provides:</p>
-			<ul>
-				<li>Creation and initialization of a Passport authentication service using Passport&#39;s local and JWT strategy</li>
-				<li>Protection of express routes from requests by user authentication and authorization</li>
-				<li>Usage of persistent login sessions using <a href="https://github.com/expressjs/session">express-session</a></li>
-			</ul>
-			<h2 id="quick-start">Quick Start</h2>
-			<h3 id="setup">Setup</h3>
-			<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { PassportAuth, UserRepository, UserService }  <span class="hljs-keyword">from</span> <span class="hljs-string">'@raincatcher/auth-passport'</span>
-
-<span class="hljs-comment">// Initialize user data repository, user service and passport</span>
-<span class="hljs-keyword">const</span> userRepo: UserRepository = <span class="hljs-keyword">new</span> YourUserRepository();
-<span class="hljs-keyword">const</span> userService: UserService = <span class="hljs-keyword">new</span> YourUserService();
-<span class="hljs-keyword">const</span> authService: PassportAuth = <span class="hljs-keyword">new</span> PassportAuth(userRepo, userService);
-...
-authService.init(router, sessionOptions);
-  or
-authService.init(router, <span class="hljs-literal">undefined</span>, secret);
-...
-</code></pre>
-			<p>In order to use cookie-based authentication, specify the sessionOptions.</p>
-			<ul>
-				<li>For more information about the available express session options, see  <a href="https://github.com/expressjs/session">express-session</a>.</li>
-			</ul>
-			<p>When the sessionOptions is not passed, Passport will use token-based authentication using Passport&#39;s JWT strategy by default.</p>
-			<ul>
-				<li>Ensure that a secret is defined to be used by Passport&#39;s JWT strategy.</li>
-			</ul>
-			<h3 id="usage">Usage</h3>
-			<h4 id="authentication">Authentication</h4>
-			<p>Using session based authentication</p>
-			<pre><code class="lang-typescript">app.post(<span class="hljs-string">'/cookie-login'</span>, authService.authenticate(<span class="hljs-string">'local'</span>, options));
-</code></pre>
-			<ul>
-				<li>For more information on Passport&#39;s authenticate options, see <a href="http://passportjs.org/docs/authenticate">PassportJS authenticate documentation</a></li>
-			</ul>
-			<p>Using token based authentication</p>
-			<pre><code class="lang-typescript">app.post(<span class="hljs-string">'/token-login'</span>, authService.authenticateWithToken(secret, userService, userRepo));
-</code></pre>
-			<ul>
-				<li>This sends the signed token and user profile back to the client upon successful authentication.</li>
-				<li>The token&#39;s payload contains the user&#39;s username and is signed using the given secret.</li>
-			</ul>
-			<h4 id="protecting-routes">Protecting Routes</h4>
-			<pre><code class="lang-typescript">app.get(<span class="hljs-string">'/secureEndpoint'</span>, authService.protect(<span class="hljs-string">'admin'</span>), <span class="hljs-function">(<span class="hljs-params">req: express.Request, res: express.Response</span>) =&gt;</span> {
-    res.json({routeName: <span class="hljs-string">'/secureEndpoint'</span>, msg: <span class="hljs-string">'authenticated and authorized to access secure resource'</span>});
-});
-</code></pre>
-			<h4 id="jwt-">JWT:</h4>
-			<p>When using token based authentication, the JWT token needs to be included in each subsequent requests after a successful login as part of the <code>Authorization</code> header: </p>
-			<pre><code><span class="hljs-symbol">    Authorization:</span> JWT JSON_WEB_TOKEN_STRING
-</code></pre><ul>
-				<li>For more information on Passport&#39;s JWT strategy, please see <a href="https://github.com/themikenicholson/passport-jwt">passport-jwt</a></li>
-			</ul>
-			<h3 id="sample-implementation">Sample Implementation</h3>
-			<p>See <a href="https://github.com/feedhenry-raincatcher/raincatcher-core/tree/master/cloud/passportauth/example">./example</a> for a sample implementation</p>
-		</div>
-		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
