@@ -2282,9 +2282,19 @@ It illustrates a way to include a relatively complex MongoDB query filter into t
 <h1 id="integrations" class="sect0">RainCatcher Integrations</h1>
 <div class="openblock partintro">
 <div class="content">
-An integration is the use of existing Open Source projects to solve specific needs or provide extra functionality for RainCatcher.
-RainCatcher has a number of intergrations that leverage other Open Source projects for their expertise in paticular fields and particular important features.
-Thes integrations enable the inclusion of domain expertise in, for instance, the areas of authentication, authoriztion and security, and data synchronization in RainCatcher.
+<div class="ulist">
+<ul>
+<li>
+<p>An integration is the use of existing Open Source projects to solve specific needs or provide extra functionality for RainCatcher.</p>
+</li>
+<li>
+<p>RainCatcher has a number of intergrations that leverage other Open Source projects for their expertise in paticular fields and particular important features.</p>
+</li>
+<li>
+<p>These integrations enable the inclusion of domain expertise in, for instance, the areas of authentication, authoriztion and security, and data synchronization in RainCatcher.</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -2417,25 +2427,25 @@ Red Hat recommends using <strong>Keycloak</strong> in production to avail of the
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://www.keycloak.org/docs/latest/server_admin/topics/sso-protocols.html">Single-Sign On</a></p>
+<p>Single-Sign On</p>
 </li>
 <li>
-<p><a href="http://www.keycloak.org/docs/latest/server_admin/topics/user-federation.html">User Federation</a></p>
+<p>User Federation</p>
 </li>
 <li>
-<p><a href="http://www.keycloak.org/docs/latest/server_admin/topics/authentication/x509.html">Client Cert Authentication</a></p>
+<p>Client Cert Authentication</p>
 </li>
 <li>
-<p><a href="http://www.keycloak.org/docs/latest/server_admin/topics/authentication/otp-policies.html">2FA with OTP</a></p>
+<p>2FA with OTP</p>
 </li>
 <li>
-<p><a href="http://www.keycloak.org/docs/latest/server_admin/topics/sessions/administering.html">User Session Management</a></p>
+<p>User Session Management</p>
 </li>
 <li>
-<p><a href="http://www.keycloak.org/docs/latest/server_admin/topics/events.html">Auditing</a></p>
+<p>Auditing</p>
 </li>
 <li>
-<p><a href="http://www.keycloak.org/docs/latest/server_admin/topics/threat/brute-force.html">Brute Force Detection</a></p>
+<p>Brute Force Detection</p>
 </li>
 </ul>
 </div>
@@ -2487,7 +2497,7 @@ Red Hat recommends using <strong>Keycloak</strong> in production to avail of the
 <p><strong>Keycloak</strong> is a complete identity management solution.</p>
 </div>
 <div class="paragraph">
-<p>The <strong>RainCatcher</strong> demo application allows for authentication and access management using <a href="http://www.keycloak.org/index.html"><strong>Keycloak</strong></a>
+<p>The <strong>RainCatcher</strong> demo application allows for authentication and access management using <a href="http://www.keycloak.org"><strong>Keycloak</strong></a>
 however, <strong>Keycloak</strong> is not the default authorization and authentication module for <strong>RainCatcher</strong>.</p>
 </div>
 <div class="paragraph">
@@ -2500,7 +2510,7 @@ however, <strong>Keycloak</strong> is not the default authorization and authenti
 <div class="title">Note</div>
 </td>
 <td class="content">
-To configure your own instance of <strong>Keycloak</strong>, see the <a href="http://www.keycloak.org/docs/latest/getting_started/topics/first-boot.html">Keycloak Getting Started Guide</a>.
+To configure your own instance of <strong>Keycloak</strong>, see the Keycloak documentation Getting Started Guide.
 </td>
 </tr>
 </table>
@@ -2573,48 +2583,45 @@ To configure your own instance of <strong>Keycloak</strong>, see the <a href="ht
 <h5 id="{context}-understanding-keycloak-terminologies" class="discrete">Understanding Keycloak Terminologies</h5>
 <div class="paragraph">
 <p>There are some key concepts and terminologies to be aware of before using Keycloak. For more
-information on these key concepts and terminologies, see the <a href="http://www.keycloak.org/docs/latest/server_admin/topics/overview/concepts.html">Keycloak Core Concepts</a> documentation.</p>
+information on these key concepts and terminologies, refer to the Keycloak Core Concepts documentation.</p>
 </div>
 <h5 id="{context}-understanding-keycloak-client-adapters" class="discrete">Understanding Keycloak Client Adapters</h5>
 <div class="paragraph">
 <p>RainCatcher uses the Node.js Client Adapter for the RainCatcher server and the Javascript Client Adapter for the RainCatcher mobile and portal.</p>
 </div>
 <div class="paragraph">
-<p>For more information on the Node.js Client Adapter, see the <a href="http://www.keycloak.org/docs/latest/securing_apps/topics/oidc/nodejs-adapter.html#_nodejs_adapter">Node.js Adapter</a> documentation</p>
-</div>
-<div class="paragraph">
-<p>For more information on the Javascript Client Adapter, see the <a href="http://www.keycloak.org/docs/latest/securing_apps/topics/oidc/javascript-adapter.html">Javascript Adapter</a> documentation.</p>
+<p>For more information on the Node.js Client Adapter, see the <a href="https://github.com/keycloak/keycloak-nodejs-connect/blob/master/README.md">Keycloak Node.js Adapter</a>
+For more information on the Javascript Client Adapter, see the <a href="https://github.com/keycloak/keycloak-js-bower/blob/master/README.md">Javascript Adapter</a> documentation.</p>
 </div>
 <h5 id="{context}-understanding-keycloak-session-management" class="discrete">Understanding Keycloak Session Management</h5>
 <div class="paragraph">
 <p>The <em>express-session</em> module provides session management functionality and
-the management of sessions is performed on the <a href="http://www.keycloak.org/docs/latest/server_admin/topics/sessions/administering.html">Keycloak server</a>
+the management of sessions is performed on the Keycloak server
 For more information on <em>express-session</em>, see <a href="https://github.com/expressjs/session">express-session</a>.</p>
 </div>
 <h5 id="{context}-defining-keycloak-access-control" class="discrete">Defining Keycloak Access Control</h5>
 <div class="paragraph">
-<p>Keycloak provides role-based access control and is configured on the Keycloak server.
-For more information about role-based access control, see <a href="http://www.keycloak.org/docs/latest/server_admin/topics/roles.html">Keycloak Roles</a>.</p>
+<p>Keycloak provides role-based access control and is configured on the Keycloak server.</p>
 </div>
 <div class="paragraph">
 <p>See the <a href="#{context}-protect-express-routes">Protect Express Routes</a> section on how routes are protected in the application.
-For more information on protecting express routes, see the Keycloak <a href="http://www.keycloak.org/docs/latest/securing_apps/topics/oidc/nodejs-adapter.html">Node.js Adapter</a>.</p>
+For more information on protecting express routes, see the Keycloak <a href="https://github.com/keycloak/keycloak-nodejs-connect/blob/master/README.md">Node.js Adapter</a>.</p>
 </div>
 <h5 id="{context}-defining-keycloak-password-storage" class="discrete">Defining Keycloak Password Storage</h5>
 <div class="paragraph">
 <p>Keycloak uses the <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2 algorithm</a> for password hashing by default.
-Keycloak also provides enforced <a href="http://www.keycloak.org/docs/latest/server_admin/topics/authentication/password-policies.html">password policies</a> from the server.</p>
+Keycloak also provides enforced password policies from the server.</p>
 </div>
 <div class="paragraph">
-<p>For more information on server administration topics, see <a href="http://www.keycloak.org/docs/latest/server_admin/topics/identity-broker.html">identity-broker</a> and <a href="http://www.keycloak.org/docs/latest/server_admin/topics/user-federation.html">user federation</a>.</p>
+<p>For more information on server administration topics, see <a href="https://github.com/keycloak/keycloak/blob/master/README.md">Keycloak documentation</a> on identity-broker and user federation.</p>
 </div>
 <h5 id="{context}-keycloak-authentication" class="discrete">Keycloak Authentication</h5>
 <div class="paragraph">
-<p>Keycloak has a wide variety of authentication mechanisms available. For more information, see the <a href="http://www.keycloak.org/docs/latest/server_admin/topics/authentication.html">Keycloak Authentication Documentation</a>.</p>
+<p>Keycloak has a wide variety of authentication mechanisms available. For more information, refer to the Keycloak Authentication Documentation.</p>
 </div>
 <h5 id="{context}-keycloak-authorization" class="discrete">Keycloak Authorization</h5>
 <div class="paragraph">
-<p>Authorization is fully documented in the <a href="http://www.keycloak.org/docs/latest/authorization_services/index.html">Keycloak Authorization Documentation</a>.</p>
+<p>Authorization is fully documented in the Keycloak Authorization Documentation.</p>
 </div>
 </div>
 </div>
@@ -2772,7 +2779,7 @@ Creating your own Keycloak Realm requireds an advanced understanding of Keycloak
 </table>
 </div>
 <div class="paragraph">
-<p>See the Keycloak <a href="http://www.keycloak.org/docs/latest/server_admin/topics/realms/create.html">realm</a> documentation for more information on how to create a new realm within a Keycloak instance.</p>
+<p>See the Keycloak <a href="https://github.com/keycloak/keycloak/blob/master/README.md">documentation</a> on realms for more information on how to create a new realm within a Keycloak instance.</p>
 </div>
 <div class="paragraph">
 <p>The realm must adhere to the following configurations in order to use it with the RainCatcher applications:</p>
@@ -2831,7 +2838,7 @@ Web Origins: *</pre>
 </div>
 </li>
 <li>
-<p>For more information on the configurations above, see the Keycloak <a href="http://www.keycloak.org/docs/latest/server_admin/topics/clients/client-oidc.html">OpenID Connect configurations</a> documentation.</p>
+<p>For more information on the configurations above, see the Keycloak OpenID Connect configurations documentation.</p>
 </li>
 </ul>
 </div>
@@ -2857,7 +2864,7 @@ Web Origins: *</pre>
 </div>
 </li>
 <li>
-<p>For more information on user attributes, see the Keycloak <a href="http://www.keycloak.org/docs/latest/server_admin/topics/users/attributes.html">user attributes</a> documentation.</p>
+<p>For more information on user attributes, see the Keycloak user attributes documentation.</p>
 </li>
 <li>
 <p>Ensure that each user has the appropriate roles. For more information on roles, see <a href="#{context}-defining-keycloak-access-control">Defining Keycloak Access Control</a>.</p>
@@ -2926,7 +2933,7 @@ Web Origins: *</pre>
 <td class="content">
 Ensure that the realm, auth-server-url and resource values correspond to your client configuration within your
 realm. Ensure that the values for the fields <strong>bearer-only</strong>, <strong>ssl-required</strong> and <strong>use-resource-role-mappings</strong> are not changed.
-For more information, see the Keycloak <a href="http://www.keycloak.org/docs/latest/securing_apps/topics/oidc/nodejs-adapter.html">Node.js Adapter documentation</a>.
+For more information, see the Keycloak <a href="https://github.com/keycloak/keycloak-nodejs-connect/blob/master/README.md">Node.js Adapter documentation</a>.
 </td>
 </tr>
 </table>
@@ -2965,7 +2972,7 @@ Ensure that the values for the rest of the fields apart from the realm, url and 
 </div>
 <div class="paragraph">
 <p>For more information on Javascript Adapter configurations,
-see the Keycloak <a href="http://www.keycloak.org/docs/latest/securing_apps/topics/oidc/javascript-adapter.html">Javascript Adapter</a> documentation.</p>
+see the Keycloak <a href="https://github.com/keycloak/keycloak-js-bower/blob/master/README.md">Javascript Adapter</a> documentation.</p>
 </div>
 <h5 id="_keycloak_configuration_in_the_portal_application" class="discrete">Keycloak Configuration in the Portal Application</h5>
 <div class="paragraph">
@@ -2986,7 +2993,7 @@ Ensure that the values for the rest of the fields apart from the realm, url and 
 </div>
 <div class="paragraph">
 <p>For more information on Javascript Adapter configurations,
-see the Keycloak <a href="http://www.keycloak.org/docs/latest/securing_apps/topics/oidc/javascript-adapter.html">Javascript Adapter</a> documentation.</p>
+see the Keycloak <a href="https://github.com/keycloak/keycloak-js-bower/blob/master/README.md">Javascript Adapter</a> documentation.</p>
 </div>
 </div>
 <div class="sect3">
@@ -3075,9 +3082,6 @@ to see the credentials used by the Keycloak docker image.</p>
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p>For more information about the admin console, see Keycloak <a href="http://www.keycloak.org/docs/latest/server_admin/topics/admin-console.html">admin console</a> documentation.</p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="{context}-keycloak-configuration-production">13.3.7. Keycloak Configuration for Production Environments</h4>
@@ -3085,25 +3089,15 @@ to see the credentials used by the Keycloak docker image.</p>
 <p>The provided Keycloak realm is configured for local development only. Ensure that you provide proper configurations
 for production environments.</p>
 </div>
-<div class="paragraph">
-<p>For more information on Keycloak server administration, see the <a href="http://www.keycloak.org/docs/latest/server_admin/index.html">server administration</a> documentation.</p>
-</div>
 <h5 id="_client_configurations" class="discrete">Client Configurations</h5>
 <div class="paragraph">
 <p>The existing Keycloak realm provides three clients for the server, mobile and portal applications. These three clients
-are using <a href="http://www.keycloak.org/docs/latest/server_admin/topics/sso-protocols/oidc.html">OpenID Connect</a> authentication protocol.
+are using OpenID Connect authentication protocol.
 Ensure that these clients are configured properly to be secure for production environments.</p>
-</div>
-<div class="paragraph">
-<p>For more information, see the Keycloak <a href="http://www.keycloak.org/docs/latest/server_admin/topics/clients/client-oidc.html">OpenID Connect Client Configurations</a> documentation.</p>
 </div>
 <h5 id="_user_configuration" class="discrete">User Configuration</h5>
 <div class="paragraph">
 <p>The existing Keycloak realm is configured with sample users. Ensure that you provide proper user and user storage configuration when moving to production environments.</p>
-</div>
-<div class="paragraph">
-<p>For more information on user management, see Keycloak <a href="http://www.keycloak.org/docs/latest/server_admin/topics/users.html">User Management</a> documentation.
-For more information on user storage federations, see Keycloak <a href="http://www.keycloak.org/docs/latest/server_admin/topics/user-federation.html">User Federation</a> documentation.</p>
 </div>
 </div>
 </div>
@@ -3187,7 +3181,7 @@ const securityMiddleware = initKeycloak(app);</code></pre>
 </ol>
 </div>
 <div class="paragraph">
-<p>For more information on how to setup the Keycloak Node.js Adapter, see the <a href="http://www.keycloak.org/docs/latest/securing_apps/topics/oidc/nodejs-adapter.html">Node.js Adapter documentation</a>.</p>
+<p>For more information on how to setup the Keycloak Node.js Adapter, see the <a href="https://github.com/keycloak/keycloak-nodejs-connect/blob/master/README.md">Node.js Adapter documentation</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -3207,7 +3201,7 @@ This is used by the server application <a href="https://github.com/feedhenry-rai
 See the <a href="https://github.com/feedhenry-raincatcher/raincatcher-server/blob/master/src/modules/index.ts">security setup</a> as a reference on how routes can be protected.</p>
 </div>
 <div class="paragraph">
-<p>For more information on protecting express routes, see the <a href="http://www.keycloak.org/docs/latest/securing_apps/topics/oidc/nodejs-adapter.html">Node.js Adapter documentation</a>.</p>
+<p>For more information on protecting express routes, see the <a href="https://github.com/keycloak/keycloak-nodejs-connect/blob/master/README.md">Node.js Adapter documentation</a>.</p>
 </div>
 </div>
 </div>
@@ -3286,7 +3280,7 @@ For more information, see <a href="https://github.com/expressjs/session">express
 <h5 id="{context}-defining-passportauth-access-control" class="discrete">Defining PassportAuth Access Control</h5>
 <div class="paragraph">
 <p><em>Routes</em> are protected by <strong>PassportAuth</strong> which provides role based access control.
-<em>AuthService</em> is an an implementation of <a href="../../../raincatcher-docs/1.1.0/auth-passport/docs/classes/_src_auth_passportauth_.passportauth.html">PassportAuth</a>.
+<em>AuthService</em> is an an implementation of <a href="../../../api/1.1.0/auth-passport/docs/classes/_src_auth_passportauth_.passportauth.html">PassportAuth</a>.
 For more information, see the following example:</p>
 </div>
 <div class="listingblock">
@@ -4464,7 +4458,7 @@ Additionally Keycloak configuration can be changed.</p>
 <h4 id="_cordova_configuration">21.2.1. Cordova configuration</h4>
 <div class="paragraph">
 <p>Apache Cordova configuration needs to be adjusted before doing release.
-Configuration can be found in <a href="https://github.com/feedhenry-raincatcher/raincatcher-mobile/blob/master/src/config.xml">Cordova config.xml file</a>
+Configuration can be found in <a href="https://github.com/feedhenry-raincatcher/raincatcher-mobile/blob/master/config.xml">Cordova config.xml file</a>
 Developers should review Cordova file by removing permissions and plugins that aren&#8217;t used.
 Additionally developers should restrict and remove any origins that aren&#8217;t used in the application</p>
 </div>
@@ -4843,7 +4837,7 @@ The terminal is out of use while the Core Server is running.
 <p>Both the Mobile and Portal applications open automatically in a browser.</p>
 </div>
 <div class="paragraph">
-<p><em>Revised on 2017-11-23 14:23:12 -02</em></p>
+<p><em>Revised on 2017-11-24 11:43:47 GMT</em></p>
 </div>
 </div>
 </div>
