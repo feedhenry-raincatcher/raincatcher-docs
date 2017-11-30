@@ -1,0 +1,3 @@
+﻿var typedoc = typedoc || {};
+            typedoc.search = typedoc.search || {};
+            typedoc.search.data = {"kinds":{"256":"Interface","2048":"Method"},"rows":[{"id":0,"kind":256,"name":"EndpointSecurity","url":"interfaces/endpointsecurity.html","classes":"tsd-kind-interface"},{"id":1,"kind":2048,"name":"protect","url":"interfaces/endpointsecurity.html#protect","classes":"tsd-kind-method tsd-parent-kind-interface","parent":"EndpointSecurity"}]};
