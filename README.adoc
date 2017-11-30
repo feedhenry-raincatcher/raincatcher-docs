@@ -63,8 +63,8 @@ Setup required packages (Node.js/npm required)
 
 Publishing
 
-    npm run buildAsciiDocs
-    npm run buildApiDocs
+    npm run build:docs
+    npm run build:api
     npm run publish
 
 NOTE: _ascidoctor_ needs to be installed on machine. To install asciidoctor run _gem install asciidoctor_
