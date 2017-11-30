@@ -102,8 +102,8 @@ git push --tags
 
 5. Build documentation
 
-    npm run build:docs
-    npm run build:api
+        npm run build:docs
+        npm run build:api
 
 6. Publish to page:
 
