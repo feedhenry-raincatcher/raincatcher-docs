@@ -1,6 +1,6 @@
 {
   "name": "@raincatcher/website",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "RainCatcher website source code",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "bs-broken-links-checker": "^0.2.0",
     "fs-extra": "^4.0.1",
     "gh-pages": "^1.0.0",
-    "moment": "^2.18.1",
+    "moment": "2.19.3",
     "yargs": "^8.0.2"
   },
   "devDependencies": {
